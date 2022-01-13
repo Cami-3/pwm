@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Generated 20 nov 2021, 18:11:58 by Hibernate Tools 5.4.12.Final --><!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping auto-import="true" default-access="property" default-cascade="none" default-lazy="true">
+    <class catalog="pwm" dynamic-insert="false" dynamic-update="false" mutable="true" name="it.unirc.pwm.ht.prodotto.Prodotto" optimistic-lock="version" polymorphism="implicit" select-before-update="false" table="prodotto">
+        <id name="idprodotto" type="int">
+            <column name="idprodotto"/>
+            <generator class="assigned"/>
+        </id>
+        <property generated="never" lazy="false" name="nome" optimistic-lock="true" type="string" unique="false">
+            <column length="45" name="nome" not-null="true"/>
+        </property>
+        <property generated="never" lazy="false" name="marca" optimistic-lock="true" type="string" unique="false">
+            <column length="45" name="marca" not-null="true"/>
+        </property>
+        <property generated="never" lazy="false" name="prezzo" optimistic-lock="true" type="float" unique="false">
+            <column name="prezzo" not-null="true" precision="12" scale="0"/>
+        </property>
+        <property generated="never" lazy="false" name="genere" optimistic-lock="true" type="string" unique="false">
+            <column length="45" name="genere" not-null="true"/>
+        </property>
+        <property generated="never" lazy="false" name="taglia" optimistic-lock="true" type="int" unique="false">
+            <column name="taglia" not-null="true"/>
+        </property>
+        <property generated="never" lazy="false" name="colore" optimistic-lock="true" type="string" unique="false">
+            <column length="45" name="colore" not-null="true"/>
+        </property>
+        <property generated="never" lazy="false" name="quantita" optimistic-lock="true" type="int" unique="false">
+            <column name="quantita" not-null="true"/>
+        </property>
+        <property generated="never" lazy="false" name="tipo_cliente" optimistic-lock="true" type="string" unique="false">
+            <column name="tipo_cliente" not-null="true"/>
+        </property>
+        <set embed-xml="true" fetch="select" inverse="true" lazy="true" mutable="true" name="ordines" optimistic-lock="true" sort="unsorted" table="ordine_prodotto">
+            <key on-delete="noaction">
+                <column name="idprod" not-null="true"/>
+            </key>
+            <many-to-many embed-xml="true" entity-name="it.unirc.pwm.ht.ordine.Ordine" not-found="exception" unique="false">
+                <column name="idordine" not-null="true"/>
+            </many-to-many>
+        </set>
+    </class>
+</hibernate-mapping>

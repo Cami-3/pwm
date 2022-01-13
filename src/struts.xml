@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.5//EN" "http://struts.apache.org/dtds/struts-2.5.dtd">
+
+
+<struts>
+
+	<!-- Ai fini del libro, lasceremo devMode impostato su true. Questo consente 
+		che si verifichino diverse cose, inclusa la fornitura di informazioni a livello 
+		di debug sulle pagine di errore e ricaricare varie risorse con ogni richiesta. -->
+
+	<constant name="struts.devMode" value="true" />
+
+	<!-- Puoi definire i pacchetti direttamente in questo file, ma probabilmente 
+		è il migliore per modularizzare i file di configurazione con file xml separati 
+		per ciascuno pacchetto. In definitiva è lo stesso perché l'elemento include, 
+		visto di seguito, estrae il documento di configurazione incluso direttamente 
+		nel documento primario. L'unica cosa da considerare è che un referenziato 
+		l'elemento deve essere stato dichiarato sopra l'elemento di riferimento. -->
+
+	<!-- Questa è l'azione del menu che consentirà al lettore di vedere il diverso 
+		esempi di azioni dai diversi capitoli in un formato di menu. Dichiariamo 
+		qui, nello spazio dei nomi radice, perché non è realmente correlato a nessuno 
+		di gli esempi o i capitoli specifici, è solo una sorta di utilità per il 
+		tutto applicazione. -->
+
+	<package name="default" namespace="/" extends="struts-default">
+		<action name="Menu">
+			<result>WEB-INF/home1.jsp</result>
+		</action>
+
+		<action name="Uomo" class="it.unirc.pwm.action.ActionUomo">
+			<result name="success"> WEB-INF/shop-uomo.jsp</result>
+		</action>
+
+		<action name="Donna" class="it.unirc.pwm.action.ActionDonna">
+			<result name="success">WEB-INF/shop-donna.jsp</result>
+		</action>
+
+		<action name="Bambino"
+			class="it.unirc.pwm.action.ActionBambino">
+			<result name="success">WEB-INF/shop-bambino.jsp</result>
+		</action>
+
+		<action name="Offerte" class="it.unirc.pwm.action.Offerte">
+			<result>WEB-INF/offerte.jsp</result>
+		</action>
+
+
+		<action name="ShoeDescription"
+			class="it.unirc.pwm.action.ShoeDescription">
+			<result name="success">WEB-INF/ShoeDescription.jsp</result>
+		</action>
+
+		<action name="Header">
+			<result>WEB-INF/Header.jsp</result>
+		</action>
+
+
+		<action name="Footer">
+			<result>WEB-INF/footer.jsp</result>
+		</action>
+
+		<action name="Home1">
+			<result>WEB-INF/home1.jsp</result>
+		</action>
+
+		<action name="Contatti">
+			<result>WEB-INF/contatti.jsp</result>
+		</action>
+
+		<action name="Login" class="it.unirc.pwm.action.Login">
+			<result name="input">WEB-INF/login.jsp</result>
+			<result name="cliente">WEB-INF/areacliente.jsp</result>
+			<result name="titolare">WEB-INF/areatitolare.jsp</result>
+		</action>
+		<action name="RichiediLogin">
+			<result>WEB-INF/login.jsp</result>
+		</action>
+
+		<action name="Registrazione"
+			class="it.unirc.pwm.action.Registrazione">
+			<result>WEB-INF/home1.jsp</result>
+		</action>
+		<action name="RichiediRegistrazione">
+			<result>WEB-INF/registrazione.jsp</result>
+		</action> 
+		<action name="VisualizzaCarrello" class="it.unirc.pwm.action.VisualizzaCarrello">
+			<result>WEB-INF/carrello.jsp</result>
+		</action>
+
+	</package>
+
+
+</struts>

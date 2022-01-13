@@ -1,0 +1,671 @@
+10:20:17.010 [main]  INFO  VerificaMapping - Sono nel main
+10:20:17.082 [main]  DEBUG org.jboss.logging - Logging Provider: org.jboss.logging.Log4j2LoggerProvider
+10:20:17.094 [main]  DEBUG org.hibernate.integrator.internal.IntegratorServiceImpl - Adding Integrator [org.hibernate.cfg.beanvalidation.BeanValidationIntegrator].
+10:20:17.097 [main]  DEBUG org.hibernate.integrator.internal.IntegratorServiceImpl - Adding Integrator [org.hibernate.secure.spi.JaccIntegrator].
+10:20:17.102 [main]  DEBUG org.hibernate.integrator.internal.IntegratorServiceImpl - Adding Integrator [org.hibernate.cache.internal.CollectionCacheInvalidator].
+10:20:17.117 [main]  TRACE org.hibernate.boot.registry.selector.internal.StrategySelectorImpl - Registering named strategy selector [org.hibernate.resource.transaction.spi.TransactionCoordinatorBuilder] : [jdbc] -> [org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorBuilderImpl]
+10:20:17.118 [main]  TRACE org.hibernate.boot.registry.selector.internal.StrategySelectorImpl - Registering named strategy selector [org.hibernate.resource.transaction.spi.TransactionCoordinatorBuilder] : [jta] -> [org.hibernate.resource.transaction.backend.jta.internal.JtaTransactionCoordinatorBuilderImpl]
+10:20:17.119 [main]  TRACE org.hibernate.boot.registry.selector.internal.StrategySelectorImpl - Registering named strategy selector [org.hibernate.resource.transaction.spi.TransactionCoordinatorBuilder] : [org.hibernate.transaction.JDBCTransactionFactory] -> [org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorBuilderImpl]
+10:20:17.119 [main]  TRACE org.hibernate.boot.registry.selector.internal.StrategySelectorImpl - Registering named strategy selector [org.hibernate.resource.transaction.spi.TransactionCoordinatorBuilder] : [org.hibernate.transaction.JTATransactionFactory] -> [org.hibernate.resource.transaction.backend.jta.internal.JtaTransactionCoordinatorBuilderImpl]
+10:20:17.119 [main]  TRACE org.hibernate.boot.registry.selector.internal.StrategySelectorImpl - Registering named strategy selector [org.hibernate.resource.transaction.spi.TransactionCoordinatorBuilder] : [org.hibernate.transaction.CMTTransactionFactory] -> [org.hibernate.resource.transaction.backend.jta.internal.JtaTransactionCoordinatorBuilderImpl]
+10:20:17.121 [main]  TRACE org.hibernate.boot.registry.selector.internal.StrategySelectorImpl - Registering named strategy selector [org.hibernate.hql.spi.id.MultiTableBulkIdStrategy] : [persistent] -> [org.hibernate.hql.spi.id.persistent.PersistentTableBulkIdStrategy]
+10:20:17.122 [main]  TRACE org.hibernate.boot.registry.selector.internal.StrategySelectorImpl - Registering named strategy selector [org.hibernate.hql.spi.id.MultiTableBulkIdStrategy] : [global_temporary] -> [org.hibernate.hql.spi.id.global.GlobalTemporaryTableBulkIdStrategy]
+10:20:17.122 [main]  TRACE org.hibernate.boot.registry.selector.internal.StrategySelectorImpl - Registering named strategy selector [org.hibernate.hql.spi.id.MultiTableBulkIdStrategy] : [local_temporary] -> [org.hibernate.hql.spi.id.local.LocalTemporaryTableBulkIdStrategy]
+10:20:17.123 [main]  TRACE org.hibernate.boot.registry.selector.internal.StrategySelectorImpl - Registering named strategy selector [org.hibernate.boot.model.naming.ImplicitNamingStrategy] : [default] -> [org.hibernate.boot.model.naming.ImplicitNamingStrategyJpaCompliantImpl]
+10:20:17.124 [main]  TRACE org.hibernate.boot.registry.selector.internal.StrategySelectorImpl - Registering named strategy selector [org.hibernate.boot.model.naming.ImplicitNamingStrategy] : [jpa] -> [org.hibernate.boot.model.naming.ImplicitNamingStrategyJpaCompliantImpl]
+10:20:17.124 [main]  TRACE org.hibernate.boot.registry.selector.internal.StrategySelectorImpl - Registering named strategy selector [org.hibernate.boot.model.naming.ImplicitNamingStrategy] : [legacy-jpa] -> [org.hibernate.boot.model.naming.ImplicitNamingStrategyLegacyJpaImpl]
+10:20:17.124 [main]  TRACE org.hibernate.boot.registry.selector.internal.StrategySelectorImpl - Registering named strategy selector [org.hibernate.boot.model.naming.ImplicitNamingStrategy] : [legacy-hbm] -> [org.hibernate.boot.model.naming.ImplicitNamingStrategyLegacyHbmImpl]
+10:20:17.125 [main]  TRACE org.hibernate.boot.registry.selector.internal.StrategySelectorImpl - Registering named strategy selector [org.hibernate.boot.model.naming.ImplicitNamingStrategy] : [component-path] -> [org.hibernate.boot.model.naming.ImplicitNamingStrategyComponentPathImpl]
+10:20:17.126 [main]  TRACE org.hibernate.boot.registry.selector.internal.StrategySelectorImpl - Registering named strategy selector [org.hibernate.cache.spi.CacheKeysFactory] : [default] -> [org.hibernate.cache.internal.DefaultCacheKeysFactory]
+10:20:17.126 [main]  TRACE org.hibernate.boot.registry.selector.internal.StrategySelectorImpl - Registering named strategy selector [org.hibernate.cache.spi.CacheKeysFactory] : [simple] -> [org.hibernate.cache.internal.SimpleCacheKeysFactory]
+10:20:17.143 [main]  INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.5.7.Final
+10:20:17.145 [main]  DEBUG org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+10:20:17.367 [main]  TRACE org.hibernate.boot.registry.classloading.internal.ClassLoaderServiceImpl - trying via [new URL("hibernate.cfg.xml")]
+10:20:17.367 [main]  TRACE org.hibernate.boot.registry.classloading.internal.ClassLoaderServiceImpl - trying via [ClassLoader.getResourceAsStream("hibernate.cfg.xml")]
+10:20:17.387 [main]  TRACE org.hibernate.boot.jaxb.internal.stax.LocalXmlResourceResolver - In resolveEntity(-//Hibernate/Hibernate Configuration DTD//EN, http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd, null, null)
+10:20:17.387 [main]  DEBUG org.hibernate.boot.jaxb.internal.stax.LocalXmlResourceResolver - Interpreting public/system identifier : [-//Hibernate/Hibernate Configuration DTD//EN] - [http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd]
+10:20:17.387 [main]  DEBUG org.hibernate.boot.jaxb.internal.stax.LocalXmlResourceResolver - Recognized hibernate-configuration identifier; attempting to resolve on classpath under org/hibernate/
+10:20:17.392 [main]  DEBUG org.hibernate.boot.cfgxml.internal.JaxbCfgProcessor - cfg.xml document did not define namespaces; wrapping in custom event reader to introduce namespace information
+10:20:17.757 [main]  DEBUG org.hibernate.cfg.Configuration - Building session factory using internal StandardServiceRegistryBuilder
+10:20:17.766 [main]  DEBUG org.hibernate.service.spi.ServiceBinding - Overriding existing service binding [org.hibernate.secure.spi.JaccService]
+10:20:17.766 [main]  DEBUG org.hibernate.cfg.Configuration - Building session factory using provided StandardServiceRegistry
+10:20:17.775 [main]  TRACE org.hibernate.service.internal.AbstractServiceRegistryImpl - Initializing service [role=org.hibernate.engine.config.spi.ConfigurationService]
+10:20:17.789 [main]  TRACE org.hibernate.service.internal.AbstractServiceRegistryImpl - Initializing service [role=org.hibernate.cache.spi.RegionFactory]
+10:20:17.791 [main]  DEBUG org.hibernate.cache.internal.RegionFactoryInitiator - Cannot default RegionFactory based on registered strategies as `[]` RegionFactory strategies were registered
+10:20:17.793 [main]  DEBUG org.hibernate.cache.internal.RegionFactoryInitiator - Cache region factory : org.hibernate.cache.internal.NoCachingRegionFactory
+10:20:17.823 [main]  INFO  org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+10:20:18.014 [main]  DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration boolean -> org.hibernate.type.BooleanType@57bd802b
+10:20:18.014 [main]  DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration boolean -> org.hibernate.type.BooleanType@57bd802b
+10:20:18.015 [main]  DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Boolean -> org.hibernate.type.BooleanType@57bd802b
+10:20:18.016 [main]  DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration numeric_boolean -> org.hibernate.type.NumericBooleanType@5183d589
+10:20:18.016 [main]  DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration true_false -> org.hibernate.type.TrueFalseType@68e62ca4
+10:20:18.017 [main]  DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration yes_no -> org.hibernate.type.YesNoType@11653e3b
+10:20:18.019 [main]  DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration byte -> org.hibernate.type.ByteType@1eea9d2d
+10:20:18.020 [main]  DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration byte -> org.hibernate.type.ByteType@1eea9d2d
+10:20:18.021 [main]  DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Byte -> org.hibernate.type.ByteType@1eea9d2d
+10:20:18.022 [main]  DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration character -> org.hibernate.type.CharacterType@6d91790b
+10:20:18.022 [main]  DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration char -> org.hibernate.type.CharacterType@6d91790b
+10:20:18.022 [main]  DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Character -> org.hibernate.type.CharacterType@6d91790b
+10:20:18.024 [main]  DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration short -> org.hibernate.type.ShortType@4b1c0397
+10:20:18.024 [main]  DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration short -> org.hibernate.type.ShortType@4b1c0397
+10:20:18.024 [main]  DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Short -> org.hibernate.type.ShortType@4b1c0397
+10:20:18.025 [main]  DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration integer -> org.hibernate.type.IntegerType@2d84cb86
+10:20:18.025 [main]  DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration int -> org.hibernate.type.IntegerType@2d84cb86
+10:20:18.025 [main]  DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Integer -> org.hibernate.type.IntegerType@2d84cb86
+10:20:18.026 [main]  DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration long -> org.hibernate.type.LongType@4482469c
+10:20:18.027 [main]  DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration long -> org.hibernate.type.LongType@4482469c
+10:20:18.027 [main]  DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Long -> org.hibernate.type.LongType@4482469c
+10:20:18.028 [main]  DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration float -> org.hibernate.type.FloatType@4b1abd11
+10:20:18.028 [main]  DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration float -> org.hibernate.type.FloatType@4b1abd11
+10:20:18.029 [main]  DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Float -> org.hibernate.type.FloatType@4b1abd11
+10:20:18.030 [main]  DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration double -> org.hibernate.type.DoubleType@1b32cd16
+10:20:18.030 [main]  DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration double -> org.hibernate.type.DoubleType@1b32cd16
+10:20:18.030 [main]  DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Double -> org.hibernate.type.DoubleType@1b32cd16
+10:20:18.032 [main]  DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration big_decimal -> org.hibernate.type.BigDecimalType@19593091
+10:20:18.032 [main]  DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.math.BigDecimal -> org.hibernate.type.BigDecimalType@19593091
+10:20:18.034 [main]  DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration big_integer -> org.hibernate.type.BigIntegerType@4e868ef5
+10:20:18.034 [main]  DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.math.BigInteger -> org.hibernate.type.BigIntegerType@4e868ef5
+10:20:18.036 [main]  DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration string -> org.hibernate.type.StringType@afb5821
+10:20:18.036 [main]  DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.String -> org.hibernate.type.StringType@afb5821
+10:20:18.037 [main]  DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration nstring -> org.hibernate.type.StringNVarcharType@2f879bab
+10:20:18.037 [main]  DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration ncharacter -> org.hibernate.type.CharacterNCharType@458544e0
+10:20:18.038 [main]  DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration url -> org.hibernate.type.UrlType@47b2e9e1
+10:20:18.039 [main]  DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.net.URL -> org.hibernate.type.UrlType@47b2e9e1
+10:20:18.040 [main]  DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration Duration -> org.hibernate.type.DurationType@25b865b5
+10:20:18.040 [main]  DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.time.Duration -> org.hibernate.type.DurationType@25b865b5
+10:20:18.054 [main]  DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration Instant -> org.hibernate.type.InstantType@4650a407
+10:20:18.054 [main]  DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.time.Instant -> org.hibernate.type.InstantType@4650a407
+10:20:18.056 [main]  DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration LocalDateTime -> org.hibernate.type.LocalDateTimeType@aced190
+10:20:18.056 [main]  DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.time.LocalDateTime -> org.hibernate.type.LocalDateTimeType@aced190
+10:20:18.057 [main]  DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration LocalDate -> org.hibernate.type.LocalDateType@2d6aca33
+10:20:18.058 [main]  DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.time.LocalDate -> org.hibernate.type.LocalDateType@2d6aca33
+10:20:18.059 [main]  DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration LocalTime -> org.hibernate.type.LocalTimeType@63e5e5b4
+10:20:18.059 [main]  DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.time.LocalTime -> org.hibernate.type.LocalTimeType@63e5e5b4
+10:20:18.061 [main]  DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration OffsetDateTime -> org.hibernate.type.OffsetDateTimeType@4fcc0416
+10:20:18.061 [main]  DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.time.OffsetDateTime -> org.hibernate.type.OffsetDateTimeType@4fcc0416
+10:20:18.062 [main]  DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration OffsetTime -> org.hibernate.type.OffsetTimeType@6ef81f31
+10:20:18.063 [main]  DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.time.OffsetTime -> org.hibernate.type.OffsetTimeType@6ef81f31
+10:20:18.064 [main]  DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration ZonedDateTime -> org.hibernate.type.ZonedDateTimeType@4bdc8b5d
+10:20:18.065 [main]  DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.time.ZonedDateTime -> org.hibernate.type.ZonedDateTimeType@4bdc8b5d
+10:20:18.067 [main]  DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration date -> org.hibernate.type.DateType@6ff37443
+10:20:18.067 [main]  DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.sql.Date -> org.hibernate.type.DateType@6ff37443
+10:20:18.069 [main]  DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration time -> org.hibernate.type.TimeType@304a3655
+10:20:18.069 [main]  DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.sql.Time -> org.hibernate.type.TimeType@304a3655
+10:20:18.071 [main]  DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration timestamp -> org.hibernate.type.TimestampType@43826ec
+10:20:18.071 [main]  DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.sql.Timestamp -> org.hibernate.type.TimestampType@43826ec
+10:20:18.071 [main]  DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.util.Date -> org.hibernate.type.TimestampType@43826ec
+10:20:18.072 [main]  DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration dbtimestamp -> org.hibernate.type.DbTimestampType@30b2b76f
+10:20:18.074 [main]  DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration calendar -> org.hibernate.type.CalendarType@231baf51
+10:20:18.074 [main]  DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.util.Calendar -> org.hibernate.type.CalendarType@231baf51
+10:20:18.074 [main]  DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.util.GregorianCalendar -> org.hibernate.type.CalendarType@231baf51
+10:20:18.075 [main]  DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration calendar_date -> org.hibernate.type.CalendarDateType@34523d46
+10:20:18.076 [main]  DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration calendar_time -> org.hibernate.type.CalendarTimeType@3af356f
+10:20:18.077 [main]  DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration locale -> org.hibernate.type.LocaleType@41aaedaa
+10:20:18.077 [main]  DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.util.Locale -> org.hibernate.type.LocaleType@41aaedaa
+10:20:18.079 [main]  DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration currency -> org.hibernate.type.CurrencyType@71391b3f
+10:20:18.080 [main]  DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.util.Currency -> org.hibernate.type.CurrencyType@71391b3f
+10:20:18.081 [main]  DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration timezone -> org.hibernate.type.TimeZoneType@42c2f48c
+10:20:18.081 [main]  DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.util.TimeZone -> org.hibernate.type.TimeZoneType@42c2f48c
+10:20:18.082 [main]  DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration class -> org.hibernate.type.ClassType@14151bc5
+10:20:18.082 [main]  DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Class -> org.hibernate.type.ClassType@14151bc5
+10:20:18.083 [main]  DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration uuid-binary -> org.hibernate.type.UUIDBinaryType@982bb90
+10:20:18.083 [main]  DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.util.UUID -> org.hibernate.type.UUIDBinaryType@982bb90
+10:20:18.083 [main]  DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration uuid-char -> org.hibernate.type.UUIDCharType@57fae983
+10:20:18.084 [main]  DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration binary -> org.hibernate.type.BinaryType@489543a6
+10:20:18.085 [main]  DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration byte[] -> org.hibernate.type.BinaryType@489543a6
+10:20:18.085 [main]  DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration [B -> org.hibernate.type.BinaryType@489543a6
+10:20:18.086 [main]  DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration wrapper-binary -> org.hibernate.type.WrapperBinaryType@7906578e
+10:20:18.087 [main]  DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration Byte[] -> org.hibernate.type.WrapperBinaryType@7906578e
+10:20:18.087 [main]  DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration [Ljava.lang.Byte; -> org.hibernate.type.WrapperBinaryType@7906578e
+10:20:18.088 [main]  DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration row_version -> org.hibernate.type.RowVersionType@47f08b81
+10:20:18.088 [main]  DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration image -> org.hibernate.type.ImageType@267517e4
+10:20:18.089 [main]  DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration characters -> org.hibernate.type.CharArrayType@4b2a30d
+10:20:18.089 [main]  DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration char[] -> org.hibernate.type.CharArrayType@4b2a30d
+10:20:18.089 [main]  DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration [C -> org.hibernate.type.CharArrayType@4b2a30d
+10:20:18.090 [main]  DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration wrapper-characters -> org.hibernate.type.CharacterArrayType@3a91d146
+10:20:18.090 [main]  DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration [Ljava.lang.Character; -> org.hibernate.type.CharacterArrayType@3a91d146
+10:20:18.091 [main]  DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration Character[] -> org.hibernate.type.CharacterArrayType@3a91d146
+10:20:18.091 [main]  DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration text -> org.hibernate.type.TextType@6d4a65c6
+10:20:18.092 [main]  DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration ntext -> org.hibernate.type.NTextType@7f02251
+10:20:18.094 [main]  DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration blob -> org.hibernate.type.BlobType@460b6d54
+10:20:18.094 [main]  DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.sql.Blob -> org.hibernate.type.BlobType@460b6d54
+10:20:18.095 [main]  DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration materialized_blob -> org.hibernate.type.MaterializedBlobType@27b71f50
+10:20:18.096 [main]  DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration clob -> org.hibernate.type.ClobType@6c37bd27
+10:20:18.097 [main]  DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.sql.Clob -> org.hibernate.type.ClobType@6c37bd27
+10:20:18.098 [main]  DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration nclob -> org.hibernate.type.NClobType@7bde1f3a
+10:20:18.098 [main]  DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.sql.NClob -> org.hibernate.type.NClobType@7bde1f3a
+10:20:18.099 [main]  DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration materialized_clob -> org.hibernate.type.MaterializedClobType@5cf8edcf
+10:20:18.099 [main]  DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration materialized_nclob -> org.hibernate.type.MaterializedNClobType@ecfbe91
+10:20:18.101 [main]  DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration serializable -> org.hibernate.type.SerializableType@989da1
+10:20:18.105 [main]  DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration object -> org.hibernate.type.ObjectType@1a5f7e7c
+10:20:18.105 [main]  DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Object -> org.hibernate.type.ObjectType@1a5f7e7c
+10:20:18.106 [main]  DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration imm_date -> org.hibernate.type.AdaptedImmutableType@1cbb3d3b
+10:20:18.106 [main]  DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration imm_time -> org.hibernate.type.AdaptedImmutableType@529cfee5
+10:20:18.106 [main]  DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration imm_timestamp -> org.hibernate.type.AdaptedImmutableType@7ca0863b
+10:20:18.106 [main]  DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration imm_dbtimestamp -> org.hibernate.type.AdaptedImmutableType@319854f0
+10:20:18.106 [main]  DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration imm_calendar -> org.hibernate.type.AdaptedImmutableType@748fe51d
+10:20:18.106 [main]  DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration imm_calendar_date -> org.hibernate.type.AdaptedImmutableType@415156bf
+10:20:18.106 [main]  DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration imm_binary -> org.hibernate.type.AdaptedImmutableType@393881f0
+10:20:18.106 [main]  DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration imm_serializable -> org.hibernate.type.AdaptedImmutableType@4af46df3
+10:20:18.119 [main]  TRACE org.hibernate.service.internal.AbstractServiceRegistryImpl - Initializing service [role=org.hibernate.boot.cfgxml.spi.CfgXmlAccessService]
+10:20:18.125 [main]  TRACE org.hibernate.boot.spi.XmlMappingBinderAccess - reading mappings from resource : it/unirc/pwm/ht/account/Account.hbm.xml
+10:20:18.130 [main]  TRACE org.hibernate.boot.jaxb.internal.stax.LocalXmlResourceResolver - In resolveEntity(-//Hibernate/Hibernate Mapping DTD 3.0//EN, http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd, null, null)
+10:20:18.130 [main]  DEBUG org.hibernate.boot.jaxb.internal.stax.LocalXmlResourceResolver - Interpreting public/system identifier : [-//Hibernate/Hibernate Mapping DTD 3.0//EN] - [http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd]
+10:20:18.130 [main]  DEBUG org.hibernate.boot.jaxb.internal.stax.LocalXmlResourceResolver - Recognized hibernate-mapping identifier; attempting to resolve on classpath under org/hibernate/
+10:20:18.153 [main]  DEBUG org.hibernate.boot.jaxb.internal.MappingBinder - Performing JAXB binding of hbm.xml document : Origin(name=it/unirc/pwm/ht/account/Account.hbm.xml,type=RESOURCE)
+10:20:18.863 [main]  TRACE org.hibernate.boot.spi.XmlMappingBinderAccess - reading mappings from resource : it/unirc/pwm/ht/cliente/Cliente.hbm.xml
+10:20:18.865 [main]  TRACE org.hibernate.boot.jaxb.internal.stax.LocalXmlResourceResolver - In resolveEntity(-//Hibernate/Hibernate Mapping DTD 3.0//EN, http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd, null, null)
+10:20:18.865 [main]  DEBUG org.hibernate.boot.jaxb.internal.stax.LocalXmlResourceResolver - Interpreting public/system identifier : [-//Hibernate/Hibernate Mapping DTD 3.0//EN] - [http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd]
+10:20:18.865 [main]  DEBUG org.hibernate.boot.jaxb.internal.stax.LocalXmlResourceResolver - Recognized hibernate-mapping identifier; attempting to resolve on classpath under org/hibernate/
+10:20:18.876 [main]  DEBUG org.hibernate.boot.jaxb.internal.MappingBinder - Performing JAXB binding of hbm.xml document : Origin(name=it/unirc/pwm/ht/cliente/Cliente.hbm.xml,type=RESOURCE)
+10:20:18.895 [main]  TRACE org.hibernate.boot.spi.XmlMappingBinderAccess - reading mappings from resource : it/unirc/pwm/ht/ordine/Ordine.hbm.xml
+10:20:18.896 [main]  TRACE org.hibernate.boot.jaxb.internal.stax.LocalXmlResourceResolver - In resolveEntity(-//Hibernate/Hibernate Mapping DTD 3.0//EN, http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd, null, null)
+10:20:18.896 [main]  DEBUG org.hibernate.boot.jaxb.internal.stax.LocalXmlResourceResolver - Interpreting public/system identifier : [-//Hibernate/Hibernate Mapping DTD 3.0//EN] - [http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd]
+10:20:18.897 [main]  DEBUG org.hibernate.boot.jaxb.internal.stax.LocalXmlResourceResolver - Recognized hibernate-mapping identifier; attempting to resolve on classpath under org/hibernate/
+10:20:18.907 [main]  DEBUG org.hibernate.boot.jaxb.internal.MappingBinder - Performing JAXB binding of hbm.xml document : Origin(name=it/unirc/pwm/ht/ordine/Ordine.hbm.xml,type=RESOURCE)
+10:20:18.917 [main]  TRACE org.hibernate.boot.spi.XmlMappingBinderAccess - reading mappings from resource : it/unirc/pwm/ht/prodotto/Prodotto.hbm.xml
+10:20:18.919 [main]  TRACE org.hibernate.boot.jaxb.internal.stax.LocalXmlResourceResolver - In resolveEntity(-//Hibernate/Hibernate Mapping DTD 3.0//EN, http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd, null, null)
+10:20:18.919 [main]  DEBUG org.hibernate.boot.jaxb.internal.stax.LocalXmlResourceResolver - Interpreting public/system identifier : [-//Hibernate/Hibernate Mapping DTD 3.0//EN] - [http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd]
+10:20:18.919 [main]  DEBUG org.hibernate.boot.jaxb.internal.stax.LocalXmlResourceResolver - Recognized hibernate-mapping identifier; attempting to resolve on classpath under org/hibernate/
+10:20:18.927 [main]  DEBUG org.hibernate.boot.jaxb.internal.MappingBinder - Performing JAXB binding of hbm.xml document : Origin(name=it/unirc/pwm/ht/prodotto/Prodotto.hbm.xml,type=RESOURCE)
+10:20:18.941 [main]  TRACE org.hibernate.boot.spi.XmlMappingBinderAccess - reading mappings from resource : it/unirc/pwm/ht/titolare/Titolare.hbm.xml
+10:20:18.943 [main]  TRACE org.hibernate.boot.jaxb.internal.stax.LocalXmlResourceResolver - In resolveEntity(-//Hibernate/Hibernate Mapping DTD 3.0//EN, http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd, null, null)
+10:20:18.943 [main]  DEBUG org.hibernate.boot.jaxb.internal.stax.LocalXmlResourceResolver - Interpreting public/system identifier : [-//Hibernate/Hibernate Mapping DTD 3.0//EN] - [http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd]
+10:20:18.943 [main]  DEBUG org.hibernate.boot.jaxb.internal.stax.LocalXmlResourceResolver - Recognized hibernate-mapping identifier; attempting to resolve on classpath under org/hibernate/
+10:20:18.947 [main]  DEBUG org.hibernate.boot.jaxb.internal.MappingBinder - Performing JAXB binding of hbm.xml document : Origin(name=it/unirc/pwm/ht/titolare/Titolare.hbm.xml,type=RESOURCE)
+10:20:18.985 [main]  TRACE org.hibernate.service.internal.AbstractServiceRegistryImpl - Initializing service [role=org.hibernate.id.factory.spi.MutableIdentifierGeneratorFactory]
+10:20:18.988 [main]  DEBUG org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [uuid2] -> [org.hibernate.id.UUIDGenerator]
+10:20:18.988 [main]  DEBUG org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [guid] -> [org.hibernate.id.GUIDGenerator]
+10:20:18.989 [main]  DEBUG org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [uuid] -> [org.hibernate.id.UUIDHexGenerator]
+10:20:18.989 [main]  DEBUG org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [uuid.hex] -> [org.hibernate.id.UUIDHexGenerator]
+10:20:18.990 [main]  DEBUG org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [assigned] -> [org.hibernate.id.Assigned]
+10:20:18.991 [main]  DEBUG org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [identity] -> [org.hibernate.id.IdentityGenerator]
+10:20:18.991 [main]  DEBUG org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [select] -> [org.hibernate.id.SelectGenerator]
+10:20:18.993 [main]  DEBUG org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [sequence] -> [org.hibernate.id.enhanced.SequenceStyleGenerator]
+10:20:18.994 [main]  DEBUG org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [seqhilo] -> [org.hibernate.id.SequenceHiLoGenerator]
+10:20:18.994 [main]  DEBUG org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [increment] -> [org.hibernate.id.IncrementGenerator]
+10:20:18.995 [main]  DEBUG org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [foreign] -> [org.hibernate.id.ForeignGenerator]
+10:20:18.995 [main]  DEBUG org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [sequence-identity] -> [org.hibernate.id.SequenceIdentityGenerator]
+10:20:18.996 [main]  DEBUG org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [enhanced-sequence] -> [org.hibernate.id.enhanced.SequenceStyleGenerator]
+10:20:18.997 [main]  DEBUG org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [enhanced-table] -> [org.hibernate.id.enhanced.TableGenerator]
+10:20:18.997 [main]  TRACE org.hibernate.service.internal.AbstractServiceRegistryImpl - Initializing service [role=org.hibernate.engine.jdbc.env.spi.JdbcEnvironment]
+10:20:18.997 [main]  TRACE org.hibernate.service.internal.AbstractServiceRegistryImpl - Initializing service [role=org.hibernate.engine.jdbc.dialect.spi.DialectFactory]
+10:20:18.998 [main]  TRACE org.hibernate.service.internal.AbstractServiceRegistryImpl - Initializing service [role=org.hibernate.engine.jdbc.dialect.spi.DialectResolver]
+10:20:19.001 [main]  TRACE org.hibernate.service.internal.AbstractServiceRegistryImpl - Initializing service [role=org.hibernate.engine.jdbc.connections.spi.ConnectionProvider]
+10:20:19.004 [main]  WARN  org.hibernate.orm.connections.pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+10:20:19.011 [main]  INFO  org.hibernate.orm.connections.pooling - HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/pwm]
+10:20:19.012 [main]  INFO  org.hibernate.orm.connections.pooling - HHH10001001: Connection properties: {password=root, serverTimezone=Europe/Rome, user=root, useSSL=false}
+10:20:19.012 [main]  INFO  org.hibernate.orm.connections.pooling - HHH10001003: Autocommit mode: false
+10:20:19.015 [main]  DEBUG org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - Initializing Connection pool with 1 Connections
+10:20:19.015 [main]  INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20 (min=1)
+10:20:19.274 [main]  DEBUG org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator - Database ->
+       name : MySQL
+    version : 5.7.35-log
+      major : 5
+      minor : 7
+10:20:19.274 [main]  DEBUG org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator - Driver ->
+       name : MySQL Connector/J
+    version : mysql-connector-java-8.0.13 (Revision: 66459e9d39c8fd09767992bc592acd2053279be6)
+      major : 8
+      minor : 0
+10:20:19.274 [main]  DEBUG org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator - JDBC version : 4.2
+10:20:19.291 [main]  INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+10:20:19.314 [main]  DEBUG org.hibernate.engine.jdbc.env.spi.IdentifierHelperBuilder - JDBC driver metadata reported database stores quoted identifiers in more than one case
+10:20:19.315 [main]  DEBUG org.hibernate.engine.jdbc.env.spi.IdentifierHelperBuilder - IdentifierCaseStrategy for both quoted and unquoted identifiers was set to the same strategy [LOWER]; that will likely lead to problems in schema update and validation if using quoted identifiers
+10:20:19.322 [main]  TRACE org.hibernate.engine.jdbc.env.internal.NormalizingIdentifierHelperImpl - Normalizing identifier quoting [pwm]
+10:20:19.322 [main]  TRACE org.hibernate.engine.jdbc.env.internal.NormalizingIdentifierHelperImpl - Normalizing identifier quoting [null]
+10:20:19.329 [main]  TRACE org.hibernate.service.internal.AbstractServiceRegistryImpl - Initializing service [role=org.hibernate.resource.beans.spi.ManagedBeanRegistry]
+10:20:19.334 [main]  TRACE org.hibernate.service.internal.AbstractServiceRegistryImpl - Initializing service [role=org.hibernate.engine.jdbc.spi.JdbcServices]
+10:20:19.339 [main]  DEBUG org.hibernate.boot.model.relational.Namespace - Created database namespace [logicalName=Name{catalog=null, schema=null}, physicalName=Name{catalog=null, schema=null}]
+10:20:19.343 [main]  DEBUG org.hibernate.type.spi.TypeConfiguration$Scope - Scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration@517a2b0] to MetadataBuildingContext [org.hibernate.boot.internal.MetadataBuildingContextRootImpl@53b7ce6]
+10:20:19.355 [main]  TRACE org.hibernate.boot.model.source.internal.hbm.EntityHierarchyBuilder - Indexing mapping document [Origin(name=it/unirc/pwm/ht/account/Account.hbm.xml,type=RESOURCE)] for purpose of building entity hierarchy ordering
+10:20:19.385 [main]  TRACE org.hibernate.boot.model.source.internal.hbm.EntityHierarchyBuilder - Indexing mapping document [Origin(name=it/unirc/pwm/ht/cliente/Cliente.hbm.xml,type=RESOURCE)] for purpose of building entity hierarchy ordering
+10:20:19.403 [main]  TRACE org.hibernate.boot.model.source.internal.hbm.EntityHierarchyBuilder - Indexing mapping document [Origin(name=it/unirc/pwm/ht/ordine/Ordine.hbm.xml,type=RESOURCE)] for purpose of building entity hierarchy ordering
+10:20:19.409 [main]  TRACE org.hibernate.boot.model.source.internal.hbm.EntityHierarchyBuilder - Indexing mapping document [Origin(name=it/unirc/pwm/ht/prodotto/Prodotto.hbm.xml,type=RESOURCE)] for purpose of building entity hierarchy ordering
+10:20:19.409 [main]  TRACE org.hibernate.boot.model.source.internal.hbm.EntityHierarchyBuilder - Indexing mapping document [Origin(name=it/unirc/pwm/ht/titolare/Titolare.hbm.xml,type=RESOURCE)] for purpose of building entity hierarchy ordering
+10:20:19.452 [main]  TRACE org.hibernate.boot.internal.InFlightMetadataCollectorImpl - Import: it.unirc.pwm.ht.account.Account -> it.unirc.pwm.ht.account.Account
+10:20:19.452 [main]  TRACE org.hibernate.boot.internal.InFlightMetadataCollectorImpl - Import: Account -> it.unirc.pwm.ht.account.Account
+10:20:19.452 [main]  TRACE org.hibernate.engine.jdbc.env.internal.NormalizingIdentifierHelperImpl - Normalizing identifier quoting [pwm]
+10:20:19.452 [main]  DEBUG org.hibernate.boot.model.relational.Namespace - Created database namespace [logicalName=Name{catalog=pwm, schema=null}, physicalName=Name{catalog=pwm, schema=null}]
+10:20:19.452 [main]  TRACE org.hibernate.engine.jdbc.env.internal.NormalizingIdentifierHelperImpl - Normalizing identifier quoting [account]
+10:20:19.455 [main]  DEBUG org.hibernate.boot.model.source.internal.hbm.ModelBinder - Mapping class: it.unirc.pwm.ht.account.Account -> account
+10:20:19.458 [main]  TRACE org.hibernate.engine.jdbc.env.internal.NormalizingIdentifierHelperImpl - Normalizing identifier quoting [id]
+10:20:19.459 [main]  DEBUG org.hibernate.boot.model.source.internal.hbm.ModelBinder - Mapped property: id -> [id]
+10:20:19.461 [main]  DEBUG org.hibernate.mapping.PrimaryKey - Forcing column [id] to be non-null as it is part of the primary key for table [account]
+10:20:19.465 [main]  WARN  org.hibernate.orm.deprecation - HHH90000004: embed-xml attributes were intended to be used for DOM4J entity mode. Since that entity mode has been removed, embed-xml attributes are no longer supported and should be removed from mappings.
+10:20:19.467 [main]  DEBUG org.hibernate.boot.model.source.internal.hbm.ModelBinder - Mapped property: cliente -> []
+10:20:19.467 [main]  WARN  org.hibernate.orm.deprecation - HHH90000004: embed-xml attributes were intended to be used for DOM4J entity mode. Since that entity mode has been removed, embed-xml attributes are no longer supported and should be removed from mappings.
+10:20:19.468 [main]  DEBUG org.hibernate.boot.model.source.internal.hbm.ModelBinder - Mapped property: titolare -> []
+10:20:19.468 [main]  TRACE org.hibernate.engine.jdbc.env.internal.NormalizingIdentifierHelperImpl - Normalizing identifier quoting [email]
+10:20:19.469 [main]  DEBUG org.hibernate.boot.model.source.internal.hbm.ModelBinder - Mapped property: email -> [email]
+10:20:19.469 [main]  TRACE org.hibernate.engine.jdbc.env.internal.NormalizingIdentifierHelperImpl - Normalizing identifier quoting [password]
+10:20:19.469 [main]  DEBUG org.hibernate.boot.model.source.internal.hbm.ModelBinder - Mapped property: password -> [password]
+10:20:19.469 [main]  TRACE org.hibernate.engine.jdbc.env.internal.NormalizingIdentifierHelperImpl - Normalizing identifier quoting [numero]
+10:20:19.469 [main]  DEBUG org.hibernate.boot.model.source.internal.hbm.ModelBinder - Mapped property: numero -> [numero]
+10:20:19.471 [main]  TRACE org.hibernate.boot.internal.InFlightMetadataCollectorImpl - Import: it.unirc.pwm.ht.cliente.Cliente -> it.unirc.pwm.ht.cliente.Cliente
+10:20:19.471 [main]  TRACE org.hibernate.boot.internal.InFlightMetadataCollectorImpl - Import: Cliente -> it.unirc.pwm.ht.cliente.Cliente
+10:20:19.471 [main]  TRACE org.hibernate.engine.jdbc.env.internal.NormalizingIdentifierHelperImpl - Normalizing identifier quoting [pwm]
+10:20:19.472 [main]  TRACE org.hibernate.engine.jdbc.env.internal.NormalizingIdentifierHelperImpl - Normalizing identifier quoting [cliente]
+10:20:19.472 [main]  DEBUG org.hibernate.boot.model.source.internal.hbm.ModelBinder - Mapping class: it.unirc.pwm.ht.cliente.Cliente -> cliente
+10:20:19.472 [main]  TRACE org.hibernate.engine.jdbc.env.internal.NormalizingIdentifierHelperImpl - Normalizing identifier quoting [idcliente]
+10:20:19.472 [main]  DEBUG org.hibernate.boot.model.source.internal.hbm.ModelBinder - Mapped property: idcliente -> [idcliente]
+10:20:19.472 [main]  DEBUG org.hibernate.mapping.PrimaryKey - Forcing column [idcliente] to be non-null as it is part of the primary key for table [cliente]
+10:20:19.473 [main]  TRACE org.hibernate.engine.jdbc.env.internal.NormalizingIdentifierHelperImpl - Normalizing identifier quoting [nome]
+10:20:19.473 [main]  DEBUG org.hibernate.boot.model.source.internal.hbm.ModelBinder - Mapped property: nome -> [nome]
+10:20:19.473 [main]  TRACE org.hibernate.engine.jdbc.env.internal.NormalizingIdentifierHelperImpl - Normalizing identifier quoting [cognome]
+10:20:19.473 [main]  DEBUG org.hibernate.boot.model.source.internal.hbm.ModelBinder - Mapped property: cognome -> [cognome]
+10:20:19.473 [main]  TRACE org.hibernate.engine.jdbc.env.internal.NormalizingIdentifierHelperImpl - Normalizing identifier quoting [datanascita]
+10:20:19.473 [main]  DEBUG org.hibernate.boot.model.source.internal.hbm.ModelBinder - Mapped property: datanascita -> [datanascita]
+10:20:19.473 [main]  TRACE org.hibernate.engine.jdbc.env.internal.NormalizingIdentifierHelperImpl - Normalizing identifier quoting [c_f]
+10:20:19.473 [main]  DEBUG org.hibernate.boot.model.source.internal.hbm.ModelBinder - Mapped property: CF -> [c_f]
+10:20:19.473 [main]  TRACE org.hibernate.engine.jdbc.env.internal.NormalizingIdentifierHelperImpl - Normalizing identifier quoting [iban]
+10:20:19.474 [main]  DEBUG org.hibernate.boot.model.source.internal.hbm.ModelBinder - Mapped property: iban -> [iban]
+10:20:19.474 [main]  TRACE org.hibernate.engine.jdbc.env.internal.NormalizingIdentifierHelperImpl - Normalizing identifier quoting [p_iva]
+10:20:19.475 [main]  DEBUG org.hibernate.boot.model.source.internal.hbm.ModelBinder - Mapped property: PIva -> [p_iva]
+10:20:19.475 [main]  WARN  org.hibernate.orm.deprecation - HHH90000004: embed-xml attributes were intended to be used for DOM4J entity mode. Since that entity mode has been removed, embed-xml attributes are no longer supported and should be removed from mappings.
+10:20:19.475 [main]  DEBUG org.hibernate.boot.model.source.internal.hbm.ModelBinder - Mapped property: account -> []
+10:20:19.486 [main]  DEBUG org.hibernate.boot.model.source.internal.hbm.ModelBinder - Mapped property: ordines -> []
+10:20:19.486 [main]  TRACE org.hibernate.boot.internal.InFlightMetadataCollectorImpl - Import: it.unirc.pwm.ht.ordine.Ordine -> it.unirc.pwm.ht.ordine.Ordine
+10:20:19.486 [main]  TRACE org.hibernate.boot.internal.InFlightMetadataCollectorImpl - Import: Ordine -> it.unirc.pwm.ht.ordine.Ordine
+10:20:19.486 [main]  TRACE org.hibernate.engine.jdbc.env.internal.NormalizingIdentifierHelperImpl - Normalizing identifier quoting [pwm]
+10:20:19.486 [main]  TRACE org.hibernate.engine.jdbc.env.internal.NormalizingIdentifierHelperImpl - Normalizing identifier quoting [ordine]
+10:20:19.486 [main]  DEBUG org.hibernate.boot.model.source.internal.hbm.ModelBinder - Mapping class: it.unirc.pwm.ht.ordine.Ordine -> ordine
+10:20:19.486 [main]  TRACE org.hibernate.engine.jdbc.env.internal.NormalizingIdentifierHelperImpl - Normalizing identifier quoting [idordine]
+10:20:19.486 [main]  DEBUG org.hibernate.boot.model.source.internal.hbm.ModelBinder - Mapped property: idordine -> [idordine]
+10:20:19.486 [main]  DEBUG org.hibernate.mapping.PrimaryKey - Forcing column [idordine] to be non-null as it is part of the primary key for table [ordine]
+10:20:19.487 [main]  WARN  org.hibernate.orm.deprecation - HHH90000004: embed-xml attributes were intended to be used for DOM4J entity mode. Since that entity mode has been removed, embed-xml attributes are no longer supported and should be removed from mappings.
+10:20:19.488 [main]  TRACE org.hibernate.engine.jdbc.env.internal.NormalizingIdentifierHelperImpl - Normalizing identifier quoting [idcliente]
+10:20:19.489 [main]  DEBUG org.hibernate.boot.model.source.internal.hbm.ModelBinder - Mapped property: cliente -> [idcliente]
+10:20:19.490 [main]  TRACE org.hibernate.engine.jdbc.env.internal.NormalizingIdentifierHelperImpl - Normalizing identifier quoting [quantita]
+10:20:19.490 [main]  DEBUG org.hibernate.boot.model.source.internal.hbm.ModelBinder - Mapped property: quantita -> [quantita]
+10:20:19.490 [main]  TRACE org.hibernate.engine.jdbc.env.internal.NormalizingIdentifierHelperImpl - Normalizing identifier quoting [data]
+10:20:19.491 [main]  DEBUG org.hibernate.boot.model.source.internal.hbm.ModelBinder - Mapped property: data -> [data]
+10:20:19.491 [main]  DEBUG org.hibernate.boot.model.source.internal.hbm.ModelBinder - Mapped property: prodottos -> []
+10:20:19.491 [main]  TRACE org.hibernate.boot.internal.InFlightMetadataCollectorImpl - Import: it.unirc.pwm.ht.prdotto.Prodotto -> it.unirc.pwm.ht.prdotto.Prodotto
+10:20:19.491 [main]  TRACE org.hibernate.boot.internal.InFlightMetadataCollectorImpl - Import: Prodotto -> it.unirc.pwm.ht.prdotto.Prodotto
+10:20:19.491 [main]  TRACE org.hibernate.engine.jdbc.env.internal.NormalizingIdentifierHelperImpl - Normalizing identifier quoting [pwm]
+10:20:19.491 [main]  TRACE org.hibernate.engine.jdbc.env.internal.NormalizingIdentifierHelperImpl - Normalizing identifier quoting [prodotto]
+10:20:19.491 [main]  DEBUG org.hibernate.boot.model.source.internal.hbm.ModelBinder - Mapping class: it.unirc.pwm.ht.prdotto.Prodotto -> prodotto
+10:20:19.491 [main]  TRACE org.hibernate.engine.jdbc.env.internal.NormalizingIdentifierHelperImpl - Normalizing identifier quoting [idprodotto]
+10:20:19.491 [main]  DEBUG org.hibernate.boot.model.source.internal.hbm.ModelBinder - Mapped property: idprodotto -> [idprodotto]
+10:20:19.491 [main]  DEBUG org.hibernate.mapping.PrimaryKey - Forcing column [idprodotto] to be non-null as it is part of the primary key for table [prodotto]
+10:20:19.492 [main]  TRACE org.hibernate.engine.jdbc.env.internal.NormalizingIdentifierHelperImpl - Normalizing identifier quoting [nome]
+10:20:19.492 [main]  DEBUG org.hibernate.boot.model.source.internal.hbm.ModelBinder - Mapped property: nome -> [nome]
+10:20:19.492 [main]  TRACE org.hibernate.engine.jdbc.env.internal.NormalizingIdentifierHelperImpl - Normalizing identifier quoting [marca]
+10:20:19.492 [main]  DEBUG org.hibernate.boot.model.source.internal.hbm.ModelBinder - Mapped property: marca -> [marca]
+10:20:19.492 [main]  TRACE org.hibernate.engine.jdbc.env.internal.NormalizingIdentifierHelperImpl - Normalizing identifier quoting [prezzo]
+10:20:19.492 [main]  DEBUG org.hibernate.boot.model.source.internal.hbm.ModelBinder - Mapped property: prezzo -> [prezzo]
+10:20:19.492 [main]  TRACE org.hibernate.engine.jdbc.env.internal.NormalizingIdentifierHelperImpl - Normalizing identifier quoting [genere]
+10:20:19.492 [main]  DEBUG org.hibernate.boot.model.source.internal.hbm.ModelBinder - Mapped property: genere -> [genere]
+10:20:19.492 [main]  TRACE org.hibernate.engine.jdbc.env.internal.NormalizingIdentifierHelperImpl - Normalizing identifier quoting [taglia]
+10:20:19.493 [main]  DEBUG org.hibernate.boot.model.source.internal.hbm.ModelBinder - Mapped property: taglia -> [taglia]
+10:20:19.493 [main]  TRACE org.hibernate.engine.jdbc.env.internal.NormalizingIdentifierHelperImpl - Normalizing identifier quoting [colore]
+10:20:19.493 [main]  DEBUG org.hibernate.boot.model.source.internal.hbm.ModelBinder - Mapped property: colore -> [colore]
+10:20:19.493 [main]  TRACE org.hibernate.engine.jdbc.env.internal.NormalizingIdentifierHelperImpl - Normalizing identifier quoting [quantita]
+10:20:19.493 [main]  DEBUG org.hibernate.boot.model.source.internal.hbm.ModelBinder - Mapped property: quantita -> [quantita]
+10:20:19.493 [main]  DEBUG org.hibernate.boot.model.source.internal.hbm.ModelBinder - Mapped property: ordines -> []
+10:20:19.493 [main]  TRACE org.hibernate.boot.internal.InFlightMetadataCollectorImpl - Import: it.unirc.pwm.ht.titolare.Titolare -> it.unirc.pwm.ht.titolare.Titolare
+10:20:19.493 [main]  TRACE org.hibernate.boot.internal.InFlightMetadataCollectorImpl - Import: Titolare -> it.unirc.pwm.ht.titolare.Titolare
+10:20:19.493 [main]  TRACE org.hibernate.engine.jdbc.env.internal.NormalizingIdentifierHelperImpl - Normalizing identifier quoting [pwm]
+10:20:19.494 [main]  TRACE org.hibernate.engine.jdbc.env.internal.NormalizingIdentifierHelperImpl - Normalizing identifier quoting [titolare]
+10:20:19.494 [main]  DEBUG org.hibernate.boot.model.source.internal.hbm.ModelBinder - Mapping class: it.unirc.pwm.ht.titolare.Titolare -> titolare
+10:20:19.494 [main]  TRACE org.hibernate.engine.jdbc.env.internal.NormalizingIdentifierHelperImpl - Normalizing identifier quoting [idtitolare]
+10:20:19.494 [main]  DEBUG org.hibernate.boot.model.source.internal.hbm.ModelBinder - Mapped property: idtitolare -> [idtitolare]
+10:20:19.495 [main]  DEBUG org.hibernate.mapping.PrimaryKey - Forcing column [idtitolare] to be non-null as it is part of the primary key for table [titolare]
+10:20:19.495 [main]  TRACE org.hibernate.engine.jdbc.env.internal.NormalizingIdentifierHelperImpl - Normalizing identifier quoting [nome]
+10:20:19.495 [main]  DEBUG org.hibernate.boot.model.source.internal.hbm.ModelBinder - Mapped property: nome -> [nome]
+10:20:19.495 [main]  TRACE org.hibernate.engine.jdbc.env.internal.NormalizingIdentifierHelperImpl - Normalizing identifier quoting [cognome]
+10:20:19.495 [main]  DEBUG org.hibernate.boot.model.source.internal.hbm.ModelBinder - Mapped property: cognome -> [cognome]
+10:20:19.495 [main]  TRACE org.hibernate.engine.jdbc.env.internal.NormalizingIdentifierHelperImpl - Normalizing identifier quoting [capitale]
+10:20:19.495 [main]  DEBUG org.hibernate.boot.model.source.internal.hbm.ModelBinder - Mapped property: capitale -> [capitale]
+10:20:19.496 [main]  TRACE org.hibernate.engine.jdbc.env.internal.NormalizingIdentifierHelperImpl - Normalizing identifier quoting [c_f]
+10:20:19.496 [main]  DEBUG org.hibernate.boot.model.source.internal.hbm.ModelBinder - Mapped property: CF -> [c_f]
+10:20:19.496 [main]  WARN  org.hibernate.orm.deprecation - HHH90000004: embed-xml attributes were intended to be used for DOM4J entity mode. Since that entity mode has been removed, embed-xml attributes are no longer supported and should be removed from mappings.
+10:20:19.496 [main]  DEBUG org.hibernate.boot.model.source.internal.hbm.ModelBinder - Mapped property: account -> []
+10:20:19.501 [main]  DEBUG org.hibernate.boot.model.source.internal.hbm.ModelBinder - Mapping collection: it.unirc.pwm.ht.cliente.Cliente.ordines -> ordine
+10:20:19.503 [main]  TRACE org.hibernate.engine.jdbc.env.internal.NormalizingIdentifierHelperImpl - Normalizing identifier quoting [idcliente]
+10:20:19.504 [main]  DEBUG org.hibernate.boot.model.source.internal.hbm.ModelBinder - Binding [ONE_TO_MANY] element type for a [SET]
+10:20:19.505 [main]  DEBUG org.hibernate.boot.model.source.internal.hbm.ModelBinder - Mapped collection : it.unirc.pwm.ht.cliente.Cliente.ordines
+10:20:19.506 [main]  DEBUG org.hibernate.boot.model.source.internal.hbm.ModelBinder -    + table -> cliente
+10:20:19.506 [main]  DEBUG org.hibernate.boot.model.source.internal.hbm.ModelBinder -    + key -> idcliente
+10:20:19.506 [main]  DEBUG org.hibernate.boot.model.source.internal.hbm.ModelBinder -    + one-to-many -> it.unirc.pwm.ht.ordine.Ordine
+10:20:19.506 [main]  DEBUG org.hibernate.boot.model.source.internal.hbm.ModelBinder - Mapping collection: it.unirc.pwm.ht.ordine.Ordine.prodottos -> ordine_prodotto
+10:20:19.506 [main]  TRACE org.hibernate.engine.jdbc.env.internal.NormalizingIdentifierHelperImpl - Normalizing identifier quoting [idordine]
+10:20:19.506 [main]  DEBUG org.hibernate.boot.model.source.internal.hbm.ModelBinder - Binding [MANY_TO_MANY] element type for a [SET]
+10:20:19.507 [main]  TRACE org.hibernate.engine.jdbc.env.internal.NormalizingIdentifierHelperImpl - Normalizing identifier quoting [idprod]
+10:26:37.786 [main]  INFO  VerificaMapping - Sono nel main
+10:26:37.860 [main]  DEBUG org.jboss.logging - Logging Provider: org.jboss.logging.Log4j2LoggerProvider
+10:26:37.877 [main]  DEBUG org.hibernate.integrator.internal.IntegratorServiceImpl - Adding Integrator [org.hibernate.cfg.beanvalidation.BeanValidationIntegrator].
+10:26:37.879 [main]  DEBUG org.hibernate.integrator.internal.IntegratorServiceImpl - Adding Integrator [org.hibernate.secure.spi.JaccIntegrator].
+10:26:37.886 [main]  DEBUG org.hibernate.integrator.internal.IntegratorServiceImpl - Adding Integrator [org.hibernate.cache.internal.CollectionCacheInvalidator].
+10:26:37.912 [main]  TRACE org.hibernate.boot.registry.selector.internal.StrategySelectorImpl - Registering named strategy selector [org.hibernate.resource.transaction.spi.TransactionCoordinatorBuilder] : [jdbc] -> [org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorBuilderImpl]
+10:26:37.914 [main]  TRACE org.hibernate.boot.registry.selector.internal.StrategySelectorImpl - Registering named strategy selector [org.hibernate.resource.transaction.spi.TransactionCoordinatorBuilder] : [jta] -> [org.hibernate.resource.transaction.backend.jta.internal.JtaTransactionCoordinatorBuilderImpl]
+10:26:37.915 [main]  TRACE org.hibernate.boot.registry.selector.internal.StrategySelectorImpl - Registering named strategy selector [org.hibernate.resource.transaction.spi.TransactionCoordinatorBuilder] : [org.hibernate.transaction.JDBCTransactionFactory] -> [org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorBuilderImpl]
+10:26:37.915 [main]  TRACE org.hibernate.boot.registry.selector.internal.StrategySelectorImpl - Registering named strategy selector [org.hibernate.resource.transaction.spi.TransactionCoordinatorBuilder] : [org.hibernate.transaction.JTATransactionFactory] -> [org.hibernate.resource.transaction.backend.jta.internal.JtaTransactionCoordinatorBuilderImpl]
+10:26:37.915 [main]  TRACE org.hibernate.boot.registry.selector.internal.StrategySelectorImpl - Registering named strategy selector [org.hibernate.resource.transaction.spi.TransactionCoordinatorBuilder] : [org.hibernate.transaction.CMTTransactionFactory] -> [org.hibernate.resource.transaction.backend.jta.internal.JtaTransactionCoordinatorBuilderImpl]
+10:26:37.917 [main]  TRACE org.hibernate.boot.registry.selector.internal.StrategySelectorImpl - Registering named strategy selector [org.hibernate.hql.spi.id.MultiTableBulkIdStrategy] : [persistent] -> [org.hibernate.hql.spi.id.persistent.PersistentTableBulkIdStrategy]
+10:26:37.918 [main]  TRACE org.hibernate.boot.registry.selector.internal.StrategySelectorImpl - Registering named strategy selector [org.hibernate.hql.spi.id.MultiTableBulkIdStrategy] : [global_temporary] -> [org.hibernate.hql.spi.id.global.GlobalTemporaryTableBulkIdStrategy]
+10:26:37.920 [main]  TRACE org.hibernate.boot.registry.selector.internal.StrategySelectorImpl - Registering named strategy selector [org.hibernate.hql.spi.id.MultiTableBulkIdStrategy] : [local_temporary] -> [org.hibernate.hql.spi.id.local.LocalTemporaryTableBulkIdStrategy]
+10:26:37.923 [main]  TRACE org.hibernate.boot.registry.selector.internal.StrategySelectorImpl - Registering named strategy selector [org.hibernate.boot.model.naming.ImplicitNamingStrategy] : [default] -> [org.hibernate.boot.model.naming.ImplicitNamingStrategyJpaCompliantImpl]
+10:26:37.923 [main]  TRACE org.hibernate.boot.registry.selector.internal.StrategySelectorImpl - Registering named strategy selector [org.hibernate.boot.model.naming.ImplicitNamingStrategy] : [jpa] -> [org.hibernate.boot.model.naming.ImplicitNamingStrategyJpaCompliantImpl]
+10:26:37.924 [main]  TRACE org.hibernate.boot.registry.selector.internal.StrategySelectorImpl - Registering named strategy selector [org.hibernate.boot.model.naming.ImplicitNamingStrategy] : [legacy-jpa] -> [org.hibernate.boot.model.naming.ImplicitNamingStrategyLegacyJpaImpl]
+10:26:37.925 [main]  TRACE org.hibernate.boot.registry.selector.internal.StrategySelectorImpl - Registering named strategy selector [org.hibernate.boot.model.naming.ImplicitNamingStrategy] : [legacy-hbm] -> [org.hibernate.boot.model.naming.ImplicitNamingStrategyLegacyHbmImpl]
+10:26:37.926 [main]  TRACE org.hibernate.boot.registry.selector.internal.StrategySelectorImpl - Registering named strategy selector [org.hibernate.boot.model.naming.ImplicitNamingStrategy] : [component-path] -> [org.hibernate.boot.model.naming.ImplicitNamingStrategyComponentPathImpl]
+10:26:37.927 [main]  TRACE org.hibernate.boot.registry.selector.internal.StrategySelectorImpl - Registering named strategy selector [org.hibernate.cache.spi.CacheKeysFactory] : [default] -> [org.hibernate.cache.internal.DefaultCacheKeysFactory]
+10:26:37.928 [main]  TRACE org.hibernate.boot.registry.selector.internal.StrategySelectorImpl - Registering named strategy selector [org.hibernate.cache.spi.CacheKeysFactory] : [simple] -> [org.hibernate.cache.internal.SimpleCacheKeysFactory]
+10:26:37.952 [main]  INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.5.7.Final
+10:26:37.956 [main]  DEBUG org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+10:26:38.217 [main]  TRACE org.hibernate.boot.registry.classloading.internal.ClassLoaderServiceImpl - trying via [new URL("hibernate.cfg.xml")]
+10:26:38.217 [main]  TRACE org.hibernate.boot.registry.classloading.internal.ClassLoaderServiceImpl - trying via [ClassLoader.getResourceAsStream("hibernate.cfg.xml")]
+10:26:38.237 [main]  TRACE org.hibernate.boot.jaxb.internal.stax.LocalXmlResourceResolver - In resolveEntity(-//Hibernate/Hibernate Configuration DTD//EN, http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd, null, null)
+10:26:38.238 [main]  DEBUG org.hibernate.boot.jaxb.internal.stax.LocalXmlResourceResolver - Interpreting public/system identifier : [-//Hibernate/Hibernate Configuration DTD//EN] - [http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd]
+10:26:38.238 [main]  DEBUG org.hibernate.boot.jaxb.internal.stax.LocalXmlResourceResolver - Recognized hibernate-configuration identifier; attempting to resolve on classpath under org/hibernate/
+10:26:38.243 [main]  DEBUG org.hibernate.boot.cfgxml.internal.JaxbCfgProcessor - cfg.xml document did not define namespaces; wrapping in custom event reader to introduce namespace information
+10:26:38.614 [main]  DEBUG org.hibernate.cfg.Configuration - Building session factory using internal StandardServiceRegistryBuilder
+10:26:38.621 [main]  DEBUG org.hibernate.service.spi.ServiceBinding - Overriding existing service binding [org.hibernate.secure.spi.JaccService]
+10:26:38.622 [main]  DEBUG org.hibernate.cfg.Configuration - Building session factory using provided StandardServiceRegistry
+10:26:38.632 [main]  TRACE org.hibernate.service.internal.AbstractServiceRegistryImpl - Initializing service [role=org.hibernate.engine.config.spi.ConfigurationService]
+10:26:38.646 [main]  TRACE org.hibernate.service.internal.AbstractServiceRegistryImpl - Initializing service [role=org.hibernate.cache.spi.RegionFactory]
+10:26:38.648 [main]  DEBUG org.hibernate.cache.internal.RegionFactoryInitiator - Cannot default RegionFactory based on registered strategies as `[]` RegionFactory strategies were registered
+10:26:38.651 [main]  DEBUG org.hibernate.cache.internal.RegionFactoryInitiator - Cache region factory : org.hibernate.cache.internal.NoCachingRegionFactory
+10:26:38.682 [main]  INFO  org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+10:26:38.889 [main]  DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration boolean -> org.hibernate.type.BooleanType@57bd802b
+10:26:38.889 [main]  DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration boolean -> org.hibernate.type.BooleanType@57bd802b
+10:26:38.889 [main]  DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Boolean -> org.hibernate.type.BooleanType@57bd802b
+10:26:38.890 [main]  DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration numeric_boolean -> org.hibernate.type.NumericBooleanType@5183d589
+10:26:38.891 [main]  DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration true_false -> org.hibernate.type.TrueFalseType@68e62ca4
+10:26:38.892 [main]  DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration yes_no -> org.hibernate.type.YesNoType@11653e3b
+10:26:38.893 [main]  DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration byte -> org.hibernate.type.ByteType@1eea9d2d
+10:26:38.893 [main]  DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration byte -> org.hibernate.type.ByteType@1eea9d2d
+10:26:38.893 [main]  DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Byte -> org.hibernate.type.ByteType@1eea9d2d
+10:26:38.894 [main]  DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration character -> org.hibernate.type.CharacterType@6d91790b
+10:26:38.894 [main]  DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration char -> org.hibernate.type.CharacterType@6d91790b
+10:26:38.894 [main]  DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Character -> org.hibernate.type.CharacterType@6d91790b
+10:26:38.895 [main]  DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration short -> org.hibernate.type.ShortType@4b1c0397
+10:26:38.896 [main]  DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration short -> org.hibernate.type.ShortType@4b1c0397
+10:26:38.896 [main]  DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Short -> org.hibernate.type.ShortType@4b1c0397
+10:26:38.897 [main]  DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration integer -> org.hibernate.type.IntegerType@2d84cb86
+10:26:38.897 [main]  DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration int -> org.hibernate.type.IntegerType@2d84cb86
+10:26:38.897 [main]  DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Integer -> org.hibernate.type.IntegerType@2d84cb86
+10:26:38.899 [main]  DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration long -> org.hibernate.type.LongType@4482469c
+10:26:38.899 [main]  DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration long -> org.hibernate.type.LongType@4482469c
+10:26:38.899 [main]  DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Long -> org.hibernate.type.LongType@4482469c
+10:26:38.901 [main]  DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration float -> org.hibernate.type.FloatType@4b1abd11
+10:26:38.901 [main]  DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration float -> org.hibernate.type.FloatType@4b1abd11
+10:26:38.902 [main]  DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Float -> org.hibernate.type.FloatType@4b1abd11
+10:26:38.903 [main]  DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration double -> org.hibernate.type.DoubleType@1b32cd16
+10:26:38.904 [main]  DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration double -> org.hibernate.type.DoubleType@1b32cd16
+10:26:38.904 [main]  DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Double -> org.hibernate.type.DoubleType@1b32cd16
+10:26:38.906 [main]  DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration big_decimal -> org.hibernate.type.BigDecimalType@19593091
+10:26:38.906 [main]  DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.math.BigDecimal -> org.hibernate.type.BigDecimalType@19593091
+10:26:38.907 [main]  DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration big_integer -> org.hibernate.type.BigIntegerType@4e868ef5
+10:26:38.907 [main]  DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.math.BigInteger -> org.hibernate.type.BigIntegerType@4e868ef5
+10:26:38.908 [main]  DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration string -> org.hibernate.type.StringType@afb5821
+10:26:38.909 [main]  DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.String -> org.hibernate.type.StringType@afb5821
+10:26:38.910 [main]  DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration nstring -> org.hibernate.type.StringNVarcharType@2f879bab
+10:26:38.910 [main]  DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration ncharacter -> org.hibernate.type.CharacterNCharType@458544e0
+10:26:38.912 [main]  DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration url -> org.hibernate.type.UrlType@47b2e9e1
+10:26:38.912 [main]  DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.net.URL -> org.hibernate.type.UrlType@47b2e9e1
+10:26:38.914 [main]  DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration Duration -> org.hibernate.type.DurationType@25b865b5
+10:26:38.915 [main]  DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.time.Duration -> org.hibernate.type.DurationType@25b865b5
+10:26:38.925 [main]  DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration Instant -> org.hibernate.type.InstantType@4650a407
+10:26:38.925 [main]  DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.time.Instant -> org.hibernate.type.InstantType@4650a407
+10:26:38.927 [main]  DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration LocalDateTime -> org.hibernate.type.LocalDateTimeType@aced190
+10:26:38.928 [main]  DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.time.LocalDateTime -> org.hibernate.type.LocalDateTimeType@aced190
+10:26:38.929 [main]  DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration LocalDate -> org.hibernate.type.LocalDateType@2d6aca33
+10:26:38.930 [main]  DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.time.LocalDate -> org.hibernate.type.LocalDateType@2d6aca33
+10:26:38.931 [main]  DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration LocalTime -> org.hibernate.type.LocalTimeType@63e5e5b4
+10:26:38.931 [main]  DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.time.LocalTime -> org.hibernate.type.LocalTimeType@63e5e5b4
+10:26:38.932 [main]  DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration OffsetDateTime -> org.hibernate.type.OffsetDateTimeType@4fcc0416
+10:26:38.933 [main]  DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.time.OffsetDateTime -> org.hibernate.type.OffsetDateTimeType@4fcc0416
+10:26:38.934 [main]  DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration OffsetTime -> org.hibernate.type.OffsetTimeType@6ef81f31
+10:26:38.935 [main]  DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.time.OffsetTime -> org.hibernate.type.OffsetTimeType@6ef81f31
+10:26:38.937 [main]  DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration ZonedDateTime -> org.hibernate.type.ZonedDateTimeType@4bdc8b5d
+10:26:38.937 [main]  DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.time.ZonedDateTime -> org.hibernate.type.ZonedDateTimeType@4bdc8b5d
+10:26:38.939 [main]  DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration date -> org.hibernate.type.DateType@6ff37443
+10:26:38.939 [main]  DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.sql.Date -> org.hibernate.type.DateType@6ff37443
+10:26:38.941 [main]  DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration time -> org.hibernate.type.TimeType@304a3655
+10:26:38.941 [main]  DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.sql.Time -> org.hibernate.type.TimeType@304a3655
+10:26:38.942 [main]  DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration timestamp -> org.hibernate.type.TimestampType@43826ec
+10:26:38.942 [main]  DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.sql.Timestamp -> org.hibernate.type.TimestampType@43826ec
+10:26:38.942 [main]  DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.util.Date -> org.hibernate.type.TimestampType@43826ec
+10:26:38.944 [main]  DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration dbtimestamp -> org.hibernate.type.DbTimestampType@30b2b76f
+10:26:38.946 [main]  DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration calendar -> org.hibernate.type.CalendarType@231baf51
+10:26:38.946 [main]  DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.util.Calendar -> org.hibernate.type.CalendarType@231baf51
+10:26:38.946 [main]  DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.util.GregorianCalendar -> org.hibernate.type.CalendarType@231baf51
+10:26:38.947 [main]  DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration calendar_date -> org.hibernate.type.CalendarDateType@34523d46
+10:26:38.948 [main]  DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration calendar_time -> org.hibernate.type.CalendarTimeType@3af356f
+10:26:38.949 [main]  DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration locale -> org.hibernate.type.LocaleType@41aaedaa
+10:26:38.949 [main]  DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.util.Locale -> org.hibernate.type.LocaleType@41aaedaa
+10:26:38.951 [main]  DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration currency -> org.hibernate.type.CurrencyType@71391b3f
+10:26:38.951 [main]  DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.util.Currency -> org.hibernate.type.CurrencyType@71391b3f
+10:26:38.952 [main]  DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration timezone -> org.hibernate.type.TimeZoneType@42c2f48c
+10:26:38.952 [main]  DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.util.TimeZone -> org.hibernate.type.TimeZoneType@42c2f48c
+10:26:38.954 [main]  DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration class -> org.hibernate.type.ClassType@14151bc5
+10:26:38.954 [main]  DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Class -> org.hibernate.type.ClassType@14151bc5
+10:26:38.955 [main]  DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration uuid-binary -> org.hibernate.type.UUIDBinaryType@982bb90
+10:26:38.955 [main]  DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.util.UUID -> org.hibernate.type.UUIDBinaryType@982bb90
+10:26:38.955 [main]  DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration uuid-char -> org.hibernate.type.UUIDCharType@57fae983
+10:26:38.956 [main]  DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration binary -> org.hibernate.type.BinaryType@489543a6
+10:26:38.956 [main]  DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration byte[] -> org.hibernate.type.BinaryType@489543a6
+10:26:38.956 [main]  DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration [B -> org.hibernate.type.BinaryType@489543a6
+10:26:38.957 [main]  DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration wrapper-binary -> org.hibernate.type.WrapperBinaryType@7906578e
+10:26:38.957 [main]  DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration Byte[] -> org.hibernate.type.WrapperBinaryType@7906578e
+10:26:38.958 [main]  DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration [Ljava.lang.Byte; -> org.hibernate.type.WrapperBinaryType@7906578e
+10:26:38.958 [main]  DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration row_version -> org.hibernate.type.RowVersionType@47f08b81
+10:26:38.959 [main]  DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration image -> org.hibernate.type.ImageType@267517e4
+10:26:38.960 [main]  DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration characters -> org.hibernate.type.CharArrayType@4b2a30d
+10:26:38.960 [main]  DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration char[] -> org.hibernate.type.CharArrayType@4b2a30d
+10:26:38.960 [main]  DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration [C -> org.hibernate.type.CharArrayType@4b2a30d
+10:26:38.961 [main]  DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration wrapper-characters -> org.hibernate.type.CharacterArrayType@3a91d146
+10:26:38.961 [main]  DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration [Ljava.lang.Character; -> org.hibernate.type.CharacterArrayType@3a91d146
+10:26:38.962 [main]  DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration Character[] -> org.hibernate.type.CharacterArrayType@3a91d146
+10:26:38.962 [main]  DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration text -> org.hibernate.type.TextType@6d4a65c6
+10:26:38.963 [main]  DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration ntext -> org.hibernate.type.NTextType@7f02251
+10:26:38.964 [main]  DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration blob -> org.hibernate.type.BlobType@460b6d54
+10:26:38.964 [main]  DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.sql.Blob -> org.hibernate.type.BlobType@460b6d54
+10:26:38.965 [main]  DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration materialized_blob -> org.hibernate.type.MaterializedBlobType@27b71f50
+10:26:38.966 [main]  DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration clob -> org.hibernate.type.ClobType@6c37bd27
+10:26:38.966 [main]  DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.sql.Clob -> org.hibernate.type.ClobType@6c37bd27
+10:26:38.967 [main]  DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration nclob -> org.hibernate.type.NClobType@7bde1f3a
+10:26:38.967 [main]  DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.sql.NClob -> org.hibernate.type.NClobType@7bde1f3a
+10:26:38.968 [main]  DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration materialized_clob -> org.hibernate.type.MaterializedClobType@5cf8edcf
+10:26:38.968 [main]  DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration materialized_nclob -> org.hibernate.type.MaterializedNClobType@ecfbe91
+10:26:38.969 [main]  DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration serializable -> org.hibernate.type.SerializableType@989da1
+10:26:38.972 [main]  DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration object -> org.hibernate.type.ObjectType@1a5f7e7c
+10:26:38.973 [main]  DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Object -> org.hibernate.type.ObjectType@1a5f7e7c
+10:26:38.973 [main]  DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration imm_date -> org.hibernate.type.AdaptedImmutableType@1cbb3d3b
+10:26:38.973 [main]  DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration imm_time -> org.hibernate.type.AdaptedImmutableType@529cfee5
+10:26:38.973 [main]  DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration imm_timestamp -> org.hibernate.type.AdaptedImmutableType@7ca0863b
+10:26:38.973 [main]  DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration imm_dbtimestamp -> org.hibernate.type.AdaptedImmutableType@319854f0
+10:26:38.973 [main]  DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration imm_calendar -> org.hibernate.type.AdaptedImmutableType@748fe51d
+10:26:38.973 [main]  DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration imm_calendar_date -> org.hibernate.type.AdaptedImmutableType@415156bf
+10:26:38.973 [main]  DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration imm_binary -> org.hibernate.type.AdaptedImmutableType@393881f0
+10:26:38.973 [main]  DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration imm_serializable -> org.hibernate.type.AdaptedImmutableType@4af46df3
+10:26:38.984 [main]  TRACE org.hibernate.service.internal.AbstractServiceRegistryImpl - Initializing service [role=org.hibernate.boot.cfgxml.spi.CfgXmlAccessService]
+10:26:38.990 [main]  TRACE org.hibernate.boot.spi.XmlMappingBinderAccess - reading mappings from resource : it/unirc/pwm/ht/account/Account.hbm.xml
+10:26:38.996 [main]  TRACE org.hibernate.boot.jaxb.internal.stax.LocalXmlResourceResolver - In resolveEntity(-//Hibernate/Hibernate Mapping DTD 3.0//EN, http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd, null, null)
+10:26:38.996 [main]  DEBUG org.hibernate.boot.jaxb.internal.stax.LocalXmlResourceResolver - Interpreting public/system identifier : [-//Hibernate/Hibernate Mapping DTD 3.0//EN] - [http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd]
+10:26:38.997 [main]  DEBUG org.hibernate.boot.jaxb.internal.stax.LocalXmlResourceResolver - Recognized hibernate-mapping identifier; attempting to resolve on classpath under org/hibernate/
+10:26:39.013 [main]  DEBUG org.hibernate.boot.jaxb.internal.MappingBinder - Performing JAXB binding of hbm.xml document : Origin(name=it/unirc/pwm/ht/account/Account.hbm.xml,type=RESOURCE)
+10:26:39.618 [main]  TRACE org.hibernate.boot.spi.XmlMappingBinderAccess - reading mappings from resource : it/unirc/pwm/ht/cliente/Cliente.hbm.xml
+10:26:39.620 [main]  TRACE org.hibernate.boot.jaxb.internal.stax.LocalXmlResourceResolver - In resolveEntity(-//Hibernate/Hibernate Mapping DTD 3.0//EN, http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd, null, null)
+10:26:39.620 [main]  DEBUG org.hibernate.boot.jaxb.internal.stax.LocalXmlResourceResolver - Interpreting public/system identifier : [-//Hibernate/Hibernate Mapping DTD 3.0//EN] - [http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd]
+10:26:39.620 [main]  DEBUG org.hibernate.boot.jaxb.internal.stax.LocalXmlResourceResolver - Recognized hibernate-mapping identifier; attempting to resolve on classpath under org/hibernate/
+10:26:39.626 [main]  DEBUG org.hibernate.boot.jaxb.internal.MappingBinder - Performing JAXB binding of hbm.xml document : Origin(name=it/unirc/pwm/ht/cliente/Cliente.hbm.xml,type=RESOURCE)
+10:26:39.638 [main]  TRACE org.hibernate.boot.spi.XmlMappingBinderAccess - reading mappings from resource : it/unirc/pwm/ht/ordine/Ordine.hbm.xml
+10:26:39.642 [main]  TRACE org.hibernate.boot.jaxb.internal.stax.LocalXmlResourceResolver - In resolveEntity(-//Hibernate/Hibernate Mapping DTD 3.0//EN, http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd, null, null)
+10:26:39.643 [main]  DEBUG org.hibernate.boot.jaxb.internal.stax.LocalXmlResourceResolver - Interpreting public/system identifier : [-//Hibernate/Hibernate Mapping DTD 3.0//EN] - [http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd]
+10:26:39.643 [main]  DEBUG org.hibernate.boot.jaxb.internal.stax.LocalXmlResourceResolver - Recognized hibernate-mapping identifier; attempting to resolve on classpath under org/hibernate/
+10:26:39.648 [main]  DEBUG org.hibernate.boot.jaxb.internal.MappingBinder - Performing JAXB binding of hbm.xml document : Origin(name=it/unirc/pwm/ht/ordine/Ordine.hbm.xml,type=RESOURCE)
+10:26:39.659 [main]  TRACE org.hibernate.boot.spi.XmlMappingBinderAccess - reading mappings from resource : it/unirc/pwm/ht/prodotto/Prodotto.hbm.xml
+10:26:39.661 [main]  TRACE org.hibernate.boot.jaxb.internal.stax.LocalXmlResourceResolver - In resolveEntity(-//Hibernate/Hibernate Mapping DTD 3.0//EN, http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd, null, null)
+10:26:39.661 [main]  DEBUG org.hibernate.boot.jaxb.internal.stax.LocalXmlResourceResolver - Interpreting public/system identifier : [-//Hibernate/Hibernate Mapping DTD 3.0//EN] - [http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd]
+10:26:39.661 [main]  DEBUG org.hibernate.boot.jaxb.internal.stax.LocalXmlResourceResolver - Recognized hibernate-mapping identifier; attempting to resolve on classpath under org/hibernate/
+10:26:39.667 [main]  DEBUG org.hibernate.boot.jaxb.internal.MappingBinder - Performing JAXB binding of hbm.xml document : Origin(name=it/unirc/pwm/ht/prodotto/Prodotto.hbm.xml,type=RESOURCE)
+10:26:39.681 [main]  TRACE org.hibernate.boot.spi.XmlMappingBinderAccess - reading mappings from resource : it/unirc/pwm/ht/titolare/Titolare.hbm.xml
+10:26:39.683 [main]  TRACE org.hibernate.boot.jaxb.internal.stax.LocalXmlResourceResolver - In resolveEntity(-//Hibernate/Hibernate Mapping DTD 3.0//EN, http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd, null, null)
+10:26:39.683 [main]  DEBUG org.hibernate.boot.jaxb.internal.stax.LocalXmlResourceResolver - Interpreting public/system identifier : [-//Hibernate/Hibernate Mapping DTD 3.0//EN] - [http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd]
+10:26:39.683 [main]  DEBUG org.hibernate.boot.jaxb.internal.stax.LocalXmlResourceResolver - Recognized hibernate-mapping identifier; attempting to resolve on classpath under org/hibernate/
+10:26:39.699 [main]  DEBUG org.hibernate.boot.jaxb.internal.MappingBinder - Performing JAXB binding of hbm.xml document : Origin(name=it/unirc/pwm/ht/titolare/Titolare.hbm.xml,type=RESOURCE)
+10:26:39.726 [main]  TRACE org.hibernate.service.internal.AbstractServiceRegistryImpl - Initializing service [role=org.hibernate.id.factory.spi.MutableIdentifierGeneratorFactory]
+10:26:39.730 [main]  DEBUG org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [uuid2] -> [org.hibernate.id.UUIDGenerator]
+10:26:39.730 [main]  DEBUG org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [guid] -> [org.hibernate.id.GUIDGenerator]
+10:26:39.732 [main]  DEBUG org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [uuid] -> [org.hibernate.id.UUIDHexGenerator]
+10:26:39.732 [main]  DEBUG org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [uuid.hex] -> [org.hibernate.id.UUIDHexGenerator]
+10:26:39.732 [main]  DEBUG org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [assigned] -> [org.hibernate.id.Assigned]
+10:26:39.734 [main]  DEBUG org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [identity] -> [org.hibernate.id.IdentityGenerator]
+10:26:39.734 [main]  DEBUG org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [select] -> [org.hibernate.id.SelectGenerator]
+10:26:39.736 [main]  DEBUG org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [sequence] -> [org.hibernate.id.enhanced.SequenceStyleGenerator]
+10:26:39.737 [main]  DEBUG org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [seqhilo] -> [org.hibernate.id.SequenceHiLoGenerator]
+10:26:39.737 [main]  DEBUG org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [increment] -> [org.hibernate.id.IncrementGenerator]
+10:26:39.737 [main]  DEBUG org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [foreign] -> [org.hibernate.id.ForeignGenerator]
+10:26:39.738 [main]  DEBUG org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [sequence-identity] -> [org.hibernate.id.SequenceIdentityGenerator]
+10:26:39.738 [main]  DEBUG org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [enhanced-sequence] -> [org.hibernate.id.enhanced.SequenceStyleGenerator]
+10:26:39.739 [main]  DEBUG org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [enhanced-table] -> [org.hibernate.id.enhanced.TableGenerator]
+10:26:39.739 [main]  TRACE org.hibernate.service.internal.AbstractServiceRegistryImpl - Initializing service [role=org.hibernate.engine.jdbc.env.spi.JdbcEnvironment]
+10:26:39.739 [main]  TRACE org.hibernate.service.internal.AbstractServiceRegistryImpl - Initializing service [role=org.hibernate.engine.jdbc.dialect.spi.DialectFactory]
+10:26:39.740 [main]  TRACE org.hibernate.service.internal.AbstractServiceRegistryImpl - Initializing service [role=org.hibernate.engine.jdbc.dialect.spi.DialectResolver]
+10:26:39.742 [main]  TRACE org.hibernate.service.internal.AbstractServiceRegistryImpl - Initializing service [role=org.hibernate.engine.jdbc.connections.spi.ConnectionProvider]
+10:26:39.745 [main]  WARN  org.hibernate.orm.connections.pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+10:26:39.753 [main]  INFO  org.hibernate.orm.connections.pooling - HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/pwm]
+10:26:39.753 [main]  INFO  org.hibernate.orm.connections.pooling - HHH10001001: Connection properties: {password=root, serverTimezone=Europe/Rome, user=root, useSSL=false}
+10:26:39.753 [main]  INFO  org.hibernate.orm.connections.pooling - HHH10001003: Autocommit mode: false
+10:26:39.756 [main]  DEBUG org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - Initializing Connection pool with 1 Connections
+10:26:39.756 [main]  INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20 (min=1)
+10:26:40.006 [main]  DEBUG org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator - Database ->
+       name : MySQL
+    version : 5.7.35-log
+      major : 5
+      minor : 7
+10:26:40.007 [main]  DEBUG org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator - Driver ->
+       name : MySQL Connector/J
+    version : mysql-connector-java-8.0.13 (Revision: 66459e9d39c8fd09767992bc592acd2053279be6)
+      major : 8
+      minor : 0
+10:26:40.007 [main]  DEBUG org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator - JDBC version : 4.2
+10:26:40.025 [main]  INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+10:26:40.049 [main]  DEBUG org.hibernate.engine.jdbc.env.spi.IdentifierHelperBuilder - JDBC driver metadata reported database stores quoted identifiers in more than one case
+10:26:40.051 [main]  DEBUG org.hibernate.engine.jdbc.env.spi.IdentifierHelperBuilder - IdentifierCaseStrategy for both quoted and unquoted identifiers was set to the same strategy [LOWER]; that will likely lead to problems in schema update and validation if using quoted identifiers
+10:26:40.058 [main]  TRACE org.hibernate.engine.jdbc.env.internal.NormalizingIdentifierHelperImpl - Normalizing identifier quoting [pwm]
+10:26:40.059 [main]  TRACE org.hibernate.engine.jdbc.env.internal.NormalizingIdentifierHelperImpl - Normalizing identifier quoting [null]
+10:26:40.067 [main]  TRACE org.hibernate.service.internal.AbstractServiceRegistryImpl - Initializing service [role=org.hibernate.resource.beans.spi.ManagedBeanRegistry]
+10:26:40.075 [main]  TRACE org.hibernate.service.internal.AbstractServiceRegistryImpl - Initializing service [role=org.hibernate.engine.jdbc.spi.JdbcServices]
+10:26:40.079 [main]  DEBUG org.hibernate.boot.model.relational.Namespace - Created database namespace [logicalName=Name{catalog=null, schema=null}, physicalName=Name{catalog=null, schema=null}]
+10:26:40.084 [main]  DEBUG org.hibernate.type.spi.TypeConfiguration$Scope - Scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration@517a2b0] to MetadataBuildingContext [org.hibernate.boot.internal.MetadataBuildingContextRootImpl@53b7ce6]
+10:26:40.099 [main]  TRACE org.hibernate.boot.model.source.internal.hbm.EntityHierarchyBuilder - Indexing mapping document [Origin(name=it/unirc/pwm/ht/account/Account.hbm.xml,type=RESOURCE)] for purpose of building entity hierarchy ordering
+10:26:40.130 [main]  TRACE org.hibernate.boot.model.source.internal.hbm.EntityHierarchyBuilder - Indexing mapping document [Origin(name=it/unirc/pwm/ht/cliente/Cliente.hbm.xml,type=RESOURCE)] for purpose of building entity hierarchy ordering
+10:26:40.142 [main]  TRACE org.hibernate.boot.model.source.internal.hbm.EntityHierarchyBuilder - Indexing mapping document [Origin(name=it/unirc/pwm/ht/ordine/Ordine.hbm.xml,type=RESOURCE)] for purpose of building entity hierarchy ordering
+10:26:40.148 [main]  TRACE org.hibernate.boot.model.source.internal.hbm.EntityHierarchyBuilder - Indexing mapping document [Origin(name=it/unirc/pwm/ht/prodotto/Prodotto.hbm.xml,type=RESOURCE)] for purpose of building entity hierarchy ordering
+10:26:40.148 [main]  TRACE org.hibernate.boot.model.source.internal.hbm.EntityHierarchyBuilder - Indexing mapping document [Origin(name=it/unirc/pwm/ht/titolare/Titolare.hbm.xml,type=RESOURCE)] for purpose of building entity hierarchy ordering
+10:26:40.194 [main]  TRACE org.hibernate.boot.internal.InFlightMetadataCollectorImpl - Import: it.unirc.pwm.ht.account.Account -> it.unirc.pwm.ht.account.Account
+10:26:40.194 [main]  TRACE org.hibernate.boot.internal.InFlightMetadataCollectorImpl - Import: Account -> it.unirc.pwm.ht.account.Account
+10:26:40.194 [main]  TRACE org.hibernate.engine.jdbc.env.internal.NormalizingIdentifierHelperImpl - Normalizing identifier quoting [pwm]
+10:26:40.195 [main]  DEBUG org.hibernate.boot.model.relational.Namespace - Created database namespace [logicalName=Name{catalog=pwm, schema=null}, physicalName=Name{catalog=pwm, schema=null}]
+10:26:40.195 [main]  TRACE org.hibernate.engine.jdbc.env.internal.NormalizingIdentifierHelperImpl - Normalizing identifier quoting [account]
+10:26:40.200 [main]  DEBUG org.hibernate.boot.model.source.internal.hbm.ModelBinder - Mapping class: it.unirc.pwm.ht.account.Account -> account
+10:26:40.206 [main]  TRACE org.hibernate.engine.jdbc.env.internal.NormalizingIdentifierHelperImpl - Normalizing identifier quoting [id]
+10:26:40.208 [main]  DEBUG org.hibernate.boot.model.source.internal.hbm.ModelBinder - Mapped property: id -> [id]
+10:26:40.210 [main]  DEBUG org.hibernate.mapping.PrimaryKey - Forcing column [id] to be non-null as it is part of the primary key for table [account]
+10:26:40.223 [main]  WARN  org.hibernate.orm.deprecation - HHH90000004: embed-xml attributes were intended to be used for DOM4J entity mode. Since that entity mode has been removed, embed-xml attributes are no longer supported and should be removed from mappings.
+10:26:40.225 [main]  DEBUG org.hibernate.boot.model.source.internal.hbm.ModelBinder - Mapped property: cliente -> []
+10:26:40.225 [main]  WARN  org.hibernate.orm.deprecation - HHH90000004: embed-xml attributes were intended to be used for DOM4J entity mode. Since that entity mode has been removed, embed-xml attributes are no longer supported and should be removed from mappings.
+10:26:40.225 [main]  DEBUG org.hibernate.boot.model.source.internal.hbm.ModelBinder - Mapped property: titolare -> []
+10:26:40.225 [main]  TRACE org.hibernate.engine.jdbc.env.internal.NormalizingIdentifierHelperImpl - Normalizing identifier quoting [email]
+10:26:40.226 [main]  DEBUG org.hibernate.boot.model.source.internal.hbm.ModelBinder - Mapped property: email -> [email]
+10:26:40.226 [main]  TRACE org.hibernate.engine.jdbc.env.internal.NormalizingIdentifierHelperImpl - Normalizing identifier quoting [password]
+10:26:40.226 [main]  DEBUG org.hibernate.boot.model.source.internal.hbm.ModelBinder - Mapped property: password -> [password]
+10:26:40.226 [main]  TRACE org.hibernate.engine.jdbc.env.internal.NormalizingIdentifierHelperImpl - Normalizing identifier quoting [numero]
+10:26:40.226 [main]  DEBUG org.hibernate.boot.model.source.internal.hbm.ModelBinder - Mapped property: numero -> [numero]
+10:26:40.227 [main]  TRACE org.hibernate.boot.internal.InFlightMetadataCollectorImpl - Import: it.unirc.pwm.ht.cliente.Cliente -> it.unirc.pwm.ht.cliente.Cliente
+10:26:40.227 [main]  TRACE org.hibernate.boot.internal.InFlightMetadataCollectorImpl - Import: Cliente -> it.unirc.pwm.ht.cliente.Cliente
+10:26:40.227 [main]  TRACE org.hibernate.engine.jdbc.env.internal.NormalizingIdentifierHelperImpl - Normalizing identifier quoting [pwm]
+10:26:40.228 [main]  TRACE org.hibernate.engine.jdbc.env.internal.NormalizingIdentifierHelperImpl - Normalizing identifier quoting [cliente]
+10:26:40.228 [main]  DEBUG org.hibernate.boot.model.source.internal.hbm.ModelBinder - Mapping class: it.unirc.pwm.ht.cliente.Cliente -> cliente
+10:26:40.228 [main]  TRACE org.hibernate.engine.jdbc.env.internal.NormalizingIdentifierHelperImpl - Normalizing identifier quoting [idcliente]
+10:26:40.228 [main]  DEBUG org.hibernate.boot.model.source.internal.hbm.ModelBinder - Mapped property: idcliente -> [idcliente]
+10:26:40.228 [main]  DEBUG org.hibernate.mapping.PrimaryKey - Forcing column [idcliente] to be non-null as it is part of the primary key for table [cliente]
+10:26:40.228 [main]  TRACE org.hibernate.engine.jdbc.env.internal.NormalizingIdentifierHelperImpl - Normalizing identifier quoting [nome]
+10:26:40.228 [main]  DEBUG org.hibernate.boot.model.source.internal.hbm.ModelBinder - Mapped property: nome -> [nome]
+10:26:40.229 [main]  TRACE org.hibernate.engine.jdbc.env.internal.NormalizingIdentifierHelperImpl - Normalizing identifier quoting [cognome]
+10:26:40.229 [main]  DEBUG org.hibernate.boot.model.source.internal.hbm.ModelBinder - Mapped property: cognome -> [cognome]
+10:26:40.229 [main]  TRACE org.hibernate.engine.jdbc.env.internal.NormalizingIdentifierHelperImpl - Normalizing identifier quoting [datanascita]
+10:26:40.229 [main]  DEBUG org.hibernate.boot.model.source.internal.hbm.ModelBinder - Mapped property: datanascita -> [datanascita]
+10:26:40.229 [main]  TRACE org.hibernate.engine.jdbc.env.internal.NormalizingIdentifierHelperImpl - Normalizing identifier quoting [c_f]
+10:26:40.229 [main]  DEBUG org.hibernate.boot.model.source.internal.hbm.ModelBinder - Mapped property: CF -> [c_f]
+10:26:40.229 [main]  TRACE org.hibernate.engine.jdbc.env.internal.NormalizingIdentifierHelperImpl - Normalizing identifier quoting [iban]
+10:26:40.230 [main]  DEBUG org.hibernate.boot.model.source.internal.hbm.ModelBinder - Mapped property: iban -> [iban]
+10:26:40.230 [main]  TRACE org.hibernate.engine.jdbc.env.internal.NormalizingIdentifierHelperImpl - Normalizing identifier quoting [p_iva]
+10:26:40.230 [main]  DEBUG org.hibernate.boot.model.source.internal.hbm.ModelBinder - Mapped property: PIva -> [p_iva]
+10:26:40.230 [main]  WARN  org.hibernate.orm.deprecation - HHH90000004: embed-xml attributes were intended to be used for DOM4J entity mode. Since that entity mode has been removed, embed-xml attributes are no longer supported and should be removed from mappings.
+10:26:40.231 [main]  DEBUG org.hibernate.boot.model.source.internal.hbm.ModelBinder - Mapped property: account -> []
+10:26:40.237 [main]  DEBUG org.hibernate.boot.model.source.internal.hbm.ModelBinder - Mapped property: ordines -> []
+10:26:40.237 [main]  TRACE org.hibernate.boot.internal.InFlightMetadataCollectorImpl - Import: it.unirc.pwm.ht.ordine.Ordine -> it.unirc.pwm.ht.ordine.Ordine
+10:26:40.237 [main]  TRACE org.hibernate.boot.internal.InFlightMetadataCollectorImpl - Import: Ordine -> it.unirc.pwm.ht.ordine.Ordine
+10:26:40.237 [main]  TRACE org.hibernate.engine.jdbc.env.internal.NormalizingIdentifierHelperImpl - Normalizing identifier quoting [pwm]
+10:26:40.237 [main]  TRACE org.hibernate.engine.jdbc.env.internal.NormalizingIdentifierHelperImpl - Normalizing identifier quoting [ordine]
+10:26:40.238 [main]  DEBUG org.hibernate.boot.model.source.internal.hbm.ModelBinder - Mapping class: it.unirc.pwm.ht.ordine.Ordine -> ordine
+10:26:40.238 [main]  TRACE org.hibernate.engine.jdbc.env.internal.NormalizingIdentifierHelperImpl - Normalizing identifier quoting [idordine]
+10:26:40.238 [main]  DEBUG org.hibernate.boot.model.source.internal.hbm.ModelBinder - Mapped property: idordine -> [idordine]
+10:26:40.238 [main]  DEBUG org.hibernate.mapping.PrimaryKey - Forcing column [idordine] to be non-null as it is part of the primary key for table [ordine]
+10:26:40.238 [main]  WARN  org.hibernate.orm.deprecation - HHH90000004: embed-xml attributes were intended to be used for DOM4J entity mode. Since that entity mode has been removed, embed-xml attributes are no longer supported and should be removed from mappings.
+10:26:40.239 [main]  TRACE org.hibernate.engine.jdbc.env.internal.NormalizingIdentifierHelperImpl - Normalizing identifier quoting [idcliente]
+10:26:40.241 [main]  DEBUG org.hibernate.boot.model.source.internal.hbm.ModelBinder - Mapped property: cliente -> [idcliente]
+10:26:40.241 [main]  TRACE org.hibernate.engine.jdbc.env.internal.NormalizingIdentifierHelperImpl - Normalizing identifier quoting [quantita]
+10:26:40.241 [main]  DEBUG org.hibernate.boot.model.source.internal.hbm.ModelBinder - Mapped property: quantita -> [quantita]
+10:26:40.241 [main]  TRACE org.hibernate.engine.jdbc.env.internal.NormalizingIdentifierHelperImpl - Normalizing identifier quoting [data]
+10:26:40.241 [main]  DEBUG org.hibernate.boot.model.source.internal.hbm.ModelBinder - Mapped property: data -> [data]
+10:26:40.241 [main]  DEBUG org.hibernate.boot.model.source.internal.hbm.ModelBinder - Mapped property: prodottos -> []
+10:26:40.242 [main]  TRACE org.hibernate.boot.internal.InFlightMetadataCollectorImpl - Import: it.unirc.pwm.ht.prdotto.Prodotto -> it.unirc.pwm.ht.prdotto.Prodotto
+10:26:40.242 [main]  TRACE org.hibernate.boot.internal.InFlightMetadataCollectorImpl - Import: Prodotto -> it.unirc.pwm.ht.prdotto.Prodotto
+10:26:40.242 [main]  TRACE org.hibernate.engine.jdbc.env.internal.NormalizingIdentifierHelperImpl - Normalizing identifier quoting [pwm]
+10:26:40.242 [main]  TRACE org.hibernate.engine.jdbc.env.internal.NormalizingIdentifierHelperImpl - Normalizing identifier quoting [prodotto]
+10:26:40.242 [main]  DEBUG org.hibernate.boot.model.source.internal.hbm.ModelBinder - Mapping class: it.unirc.pwm.ht.prdotto.Prodotto -> prodotto
+10:26:40.242 [main]  TRACE org.hibernate.engine.jdbc.env.internal.NormalizingIdentifierHelperImpl - Normalizing identifier quoting [idprodotto]
+10:26:40.242 [main]  DEBUG org.hibernate.boot.model.source.internal.hbm.ModelBinder - Mapped property: idprodotto -> [idprodotto]
+10:26:40.242 [main]  DEBUG org.hibernate.mapping.PrimaryKey - Forcing column [idprodotto] to be non-null as it is part of the primary key for table [prodotto]
+10:26:40.243 [main]  TRACE org.hibernate.engine.jdbc.env.internal.NormalizingIdentifierHelperImpl - Normalizing identifier quoting [nome]
+10:26:40.243 [main]  DEBUG org.hibernate.boot.model.source.internal.hbm.ModelBinder - Mapped property: nome -> [nome]
+10:26:40.243 [main]  TRACE org.hibernate.engine.jdbc.env.internal.NormalizingIdentifierHelperImpl - Normalizing identifier quoting [marca]
+10:26:40.243 [main]  DEBUG org.hibernate.boot.model.source.internal.hbm.ModelBinder - Mapped property: marca -> [marca]
+10:26:40.243 [main]  TRACE org.hibernate.engine.jdbc.env.internal.NormalizingIdentifierHelperImpl - Normalizing identifier quoting [prezzo]
+10:26:40.243 [main]  DEBUG org.hibernate.boot.model.source.internal.hbm.ModelBinder - Mapped property: prezzo -> [prezzo]
+10:26:40.243 [main]  TRACE org.hibernate.engine.jdbc.env.internal.NormalizingIdentifierHelperImpl - Normalizing identifier quoting [genere]
+10:26:40.243 [main]  DEBUG org.hibernate.boot.model.source.internal.hbm.ModelBinder - Mapped property: genere -> [genere]
+10:26:40.243 [main]  TRACE org.hibernate.engine.jdbc.env.internal.NormalizingIdentifierHelperImpl - Normalizing identifier quoting [taglia]
+10:26:40.244 [main]  DEBUG org.hibernate.boot.model.source.internal.hbm.ModelBinder - Mapped property: taglia -> [taglia]
+10:26:40.244 [main]  TRACE org.hibernate.engine.jdbc.env.internal.NormalizingIdentifierHelperImpl - Normalizing identifier quoting [colore]
+10:26:40.244 [main]  DEBUG org.hibernate.boot.model.source.internal.hbm.ModelBinder - Mapped property: colore -> [colore]
+10:26:40.244 [main]  TRACE org.hibernate.engine.jdbc.env.internal.NormalizingIdentifierHelperImpl - Normalizing identifier quoting [quantita]
+10:26:40.244 [main]  DEBUG org.hibernate.boot.model.source.internal.hbm.ModelBinder - Mapped property: quantita -> [quantita]
+10:26:40.244 [main]  DEBUG org.hibernate.boot.model.source.internal.hbm.ModelBinder - Mapped property: ordines -> []
+10:26:40.244 [main]  TRACE org.hibernate.boot.internal.InFlightMetadataCollectorImpl - Import: it.unirc.pwm.ht.titolare.Titolare -> it.unirc.pwm.ht.titolare.Titolare
+10:26:40.244 [main]  TRACE org.hibernate.boot.internal.InFlightMetadataCollectorImpl - Import: Titolare -> it.unirc.pwm.ht.titolare.Titolare
+10:26:40.244 [main]  TRACE org.hibernate.engine.jdbc.env.internal.NormalizingIdentifierHelperImpl - Normalizing identifier quoting [pwm]
+10:26:40.244 [main]  TRACE org.hibernate.engine.jdbc.env.internal.NormalizingIdentifierHelperImpl - Normalizing identifier quoting [titolare]
+10:26:40.244 [main]  DEBUG org.hibernate.boot.model.source.internal.hbm.ModelBinder - Mapping class: it.unirc.pwm.ht.titolare.Titolare -> titolare
+10:26:40.244 [main]  TRACE org.hibernate.engine.jdbc.env.internal.NormalizingIdentifierHelperImpl - Normalizing identifier quoting [idtitolare]
+10:26:40.245 [main]  DEBUG org.hibernate.boot.model.source.internal.hbm.ModelBinder - Mapped property: idtitolare -> [idtitolare]
+10:26:40.245 [main]  DEBUG org.hibernate.mapping.PrimaryKey - Forcing column [idtitolare] to be non-null as it is part of the primary key for table [titolare]
+10:26:40.245 [main]  TRACE org.hibernate.engine.jdbc.env.internal.NormalizingIdentifierHelperImpl - Normalizing identifier quoting [nome]
+10:26:40.245 [main]  DEBUG org.hibernate.boot.model.source.internal.hbm.ModelBinder - Mapped property: nome -> [nome]
+10:26:40.245 [main]  TRACE org.hibernate.engine.jdbc.env.internal.NormalizingIdentifierHelperImpl - Normalizing identifier quoting [cognome]
+10:26:40.246 [main]  DEBUG org.hibernate.boot.model.source.internal.hbm.ModelBinder - Mapped property: cognome -> [cognome]
+10:26:40.246 [main]  TRACE org.hibernate.engine.jdbc.env.internal.NormalizingIdentifierHelperImpl - Normalizing identifier quoting [capitale]
+10:26:40.246 [main]  DEBUG org.hibernate.boot.model.source.internal.hbm.ModelBinder - Mapped property: capitale -> [capitale]
+10:26:40.246 [main]  TRACE org.hibernate.engine.jdbc.env.internal.NormalizingIdentifierHelperImpl - Normalizing identifier quoting [c_f]
+10:26:40.246 [main]  DEBUG org.hibernate.boot.model.source.internal.hbm.ModelBinder - Mapped property: CF -> [c_f]
+10:26:40.246 [main]  WARN  org.hibernate.orm.deprecation - HHH90000004: embed-xml attributes were intended to be used for DOM4J entity mode. Since that entity mode has been removed, embed-xml attributes are no longer supported and should be removed from mappings.
+10:26:40.246 [main]  DEBUG org.hibernate.boot.model.source.internal.hbm.ModelBinder - Mapped property: account -> []
+10:26:40.249 [main]  DEBUG org.hibernate.boot.model.source.internal.hbm.ModelBinder - Mapping collection: it.unirc.pwm.ht.cliente.Cliente.ordines -> ordine
+10:26:40.253 [main]  TRACE org.hibernate.engine.jdbc.env.internal.NormalizingIdentifierHelperImpl - Normalizing identifier quoting [idcliente]
+10:26:40.254 [main]  DEBUG org.hibernate.boot.model.source.internal.hbm.ModelBinder - Binding [ONE_TO_MANY] element type for a [SET]
+10:26:40.256 [main]  DEBUG org.hibernate.boot.model.source.internal.hbm.ModelBinder - Mapped collection : it.unirc.pwm.ht.cliente.Cliente.ordines
+10:26:40.256 [main]  DEBUG org.hibernate.boot.model.source.internal.hbm.ModelBinder -    + table -> cliente
+10:26:40.256 [main]  DEBUG org.hibernate.boot.model.source.internal.hbm.ModelBinder -    + key -> idcliente
+10:26:40.257 [main]  DEBUG org.hibernate.boot.model.source.internal.hbm.ModelBinder -    + one-to-many -> it.unirc.pwm.ht.ordine.Ordine
+10:26:40.257 [main]  DEBUG org.hibernate.boot.model.source.internal.hbm.ModelBinder - Mapping collection: it.unirc.pwm.ht.ordine.Ordine.prodottos -> ordine_prodotto
+10:26:40.257 [main]  TRACE org.hibernate.engine.jdbc.env.internal.NormalizingIdentifierHelperImpl - Normalizing identifier quoting [idordine]
+10:26:40.257 [main]  DEBUG org.hibernate.boot.model.source.internal.hbm.ModelBinder - Binding [MANY_TO_MANY] element type for a [SET]
+10:26:40.257 [main]  TRACE org.hibernate.engine.jdbc.env.internal.NormalizingIdentifierHelperImpl - Normalizing identifier quoting [idprod]
+10:28:47.738 [main]  INFO  VerificaMapping - ok
