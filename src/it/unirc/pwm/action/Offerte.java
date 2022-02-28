@@ -22,6 +22,8 @@ public class Offerte extends ActionSupport implements Action{
 
 	
 
+	
+
 	public List<Prodotto> getOfferte() {
 		return offerte;
 	}
