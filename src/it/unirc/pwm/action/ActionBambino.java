@@ -18,6 +18,7 @@ public class ActionBambino extends ActionSupport {
 	private static Logger logger = LogManager.getLogger("ShopBambino: ");//classico logger, si deve utilizzare log4j
 
 	
+	
 	public List<Prodotto> getProdottiBambino() {
 		return prodottiBambino;
 	}
