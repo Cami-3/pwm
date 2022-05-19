@@ -42,9 +42,9 @@ public class Offerte extends ActionSupport implements Action{
 		
 		offerte = po.getProdottiRandom();
 		
-		Collections.shuffle(offerte, new Random(5));
 		
-		logger.info("Array ok");
+		
+		logger.info("Offerte:"+offerte);
 		
 		
 		

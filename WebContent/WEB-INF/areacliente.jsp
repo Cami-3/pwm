@@ -59,16 +59,16 @@
 											</tr>
 										</thead>
 										<tbody>
-											<s:iterator value="listaAcquistiCliente">
-												<tr>
-													<td><a href="#"> <s:property value="id.idacquisto" />
-													</a></td>
-													<td><s:property value="data" /></td>
-													<td><a
-														href="VisualizzaSchedaOrdine?id=<s:property value="id.idacquisto"/>"
-														class="btn btn-sm btn-primary">Dettagli</a></td>
-												</tr>
-											</s:iterator>
+<%-- 											<s:iterator value="listaAcquistiCliente"> --%>
+<!-- 												<tr> -->
+<%-- 													<td><a href="#"> <s:property value="id.idacquisto" /> --%>
+<!-- 													</a></td> -->
+<%-- 													<td><s:property value="data" /></td> --%>
+<!-- 													<td><a -->
+<%-- 														href="VisualizzaSchedaOrdine?id=<s:property value="id.idacquisto"/>" --%>
+<!-- 														class="btn btn-sm btn-primary">Dettagli</a></td> -->
+<!-- 												</tr> -->
+<%-- 											</s:iterator> --%>
 										</tbody>
 									</table>
 								</div>

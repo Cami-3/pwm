@@ -70,7 +70,8 @@
 
 		<action name="Login" class="it.unirc.pwm.action.Login">
 			<result name="input">WEB-INF/login.jsp</result>
-			<result name="cliente">WEB-INF/areacliente.jsp</result>
+			<result name="cliente" type="redirect">/AreaCliente
+			</result>
 			<result name="titolare">WEB-INF/areatitolare.jsp</result>
 		</action>
 		<action name="RichiediLogin">
@@ -86,6 +87,25 @@
 		</action> 
 		<action name="VisualizzaCarrello" class="it.unirc.pwm.action.VisualizzaCarrello">
 			<result>WEB-INF/carrello.jsp</result>
+		</action>
+		<action name="AggiungiCarrello" class="it.unirc.pwm.action.AggiungiAlCarrello">
+			<result type="redirect" name="success">/VisualizzaCarrello
+			</result>
+		</action>	
+		<action name="EliminaCarrello" class="it.unirc.pwm.action.EliminaDalCarrello">
+			<result type="redirect" name="success">/VisualizzaCarrello
+			</result>
+		</action>
+				<action name="Profilo">
+			<result >WEB-INF/areacliente.jsp </result>
+		</action>
+		
+		<action name="AreaCliente" class="it.unirc.pwm.action.AreaCliente">
+			<result >WEB-INF/areacliente.jsp </result>
+		</action>
+		
+		<action name="Profilo">
+			<result >WEB-INF/areacliente.jsp </result>
 		</action>
 
 	</package>

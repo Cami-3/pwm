@@ -13,6 +13,8 @@ import org.apache.struts2.interceptor.SessionAware;
 
 import com.opensymphony.xwork2.ActionSupport;
 
+import it.unirc.pwm.ht.prodotto.ProdottoPerCarrello;
+
 
 
 
@@ -43,17 +45,17 @@ public class EliminaDalCarrello extends ActionSupport implements ServletResponse
 	public String execute() throws Exception {
 		// TODO Auto-generated method stub
 		
-		Vector<ComponenteCarrello> carrello = (Vector<ComponenteCarrello>) session.get("carrello");
-		Iterator<ComponenteCarrello> iter = carrello.iterator();
+		Vector<ProdottoPerCarrello> carrello = (Vector<ProdottoPerCarrello>) session.get("carrello");
+		Iterator<ProdottoPerCarrello> iter = carrello.iterator();
 		while(iter.hasNext()) {
-			ComponenteCarrello c2=iter.next();
-	/*		if(c2.getC().getIdprodotto()==idProdElim) {
+			ProdottoPerCarrello c2=iter.next();
+		if(c2.getP().getIdprodotto()==idProdElim) {
 				iter.remove();
-				logger.info("Ho eliminato il prodotto n° " + c2.getC().getIdprodotto() + " dal carrello"  );
+				logger.info("Ho eliminato il prodotto n° " + c2.getP().getIdprodotto() + " dal carrello"  );
 			}
 			else {
 				logger.info("il prodotto non è presente nel carrello");
-			}*/
+			}
 		}	
 		session.put("carrello", carrello);	
 		return SUCCESS;

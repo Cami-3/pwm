@@ -20,7 +20,7 @@ import it.unirc.pwm.ht.titolare.Titolare;
 import it.unirc.pwm.ht.titolare.TitolareDAO;
 import it.unirc.pwm.ht.titolare.TitolareDAOFactory;
 
-public class Login extends ActionSupport implements SessionAware,ClienteAware {
+public class AreaTitolare extends ActionSupport implements SessionAware,ClienteAware {
 
 	private static Logger logger = LogManager.getLogger("Login");
 	private String email;
@@ -104,19 +104,25 @@ public class Login extends ActionSupport implements SessionAware,ClienteAware {
 
         cliente=new Cliente();
         titolare=new Titolare();
-        
-        //provo a fare il login del cliente
-        if(cd.getCliente(cliente)!=null) {
+		cliente.setIdcliente(account.getId());
+		cliente = cd.getCliente(cliente);
+		titolare.setIdtitolare(account.getId());
+		titolare = td.getTitolare(titolare);
+		session=new HashMap<String, Object>();
+		logger.info("Cliente: (prima dell'if) " + cliente.getNome() + " " + cliente.getCognome());
+		if(cliente.getNome()!=null){
+			
 			logger.info("Cliente: (dopo IF) " + cliente.getNome() + " " + cliente.getCognome());
 			session.put("utente", cliente);
 			logger.info("cliente ok");
 			return "cliente";	
-        }
-        //provo a fare il login titolare
-        else if(td.getTitolare(titolare)!=null) {
-        	logger.info("titolare  ok");
-        	return "titolare";
-        }
+
+		}
+		if(titolare!=null) {
+			session.put("utente", titolare);
+
+			return "titolare";
+		}
 		else {
 			return INPUT;
 		}

@@ -30,58 +30,63 @@
 	<%@ include file="Header.jsp"%>
 
 	<div class="container">
-	<div id="content" class="site-content">
-		<div id="primary" class="content-area column full">
-			<main id="main" class="site-main" role="main">
-				<p class="woocommerce-result-count">Mostra 1–8 di 12 risultati</p>
-				<form class="woocommerce-ordering" method="get">
-					<select name="orderby" class="orderby">
-						<option value="menu_order" selected="selected">Ordinamento di Default</option>
-						<option value="popularity">Popolari</option>
-						<option value="rating">Più comprate</option>
-						<option value="date">Novità</option>
-						<option value="price">Prezzo: crescente</option>
-						<option value="price-desc">Prezzo: descrescente</option>
-					</select>
-				</form>
-					<br/><br/>
+		<div id="content" class="site-content">
+			<div id="primary" class="content-area column full">
+				<main id="main" class="site-main" role="main">
+					<p class="woocommerce-result-count">Mostra 1–8 di 12 risultati</p>
+					<form class="woocommerce-ordering" method="get">
+						<select name="orderby" class="orderby">
+							<option value="menu_order" selected="selected">Ordinamento
+								di Default</option>
+							<option value="popularity">Popolari</option>
+							<option value="rating">Più comprate</option>
+							<option value="date">Novità</option>
+							<option value="price">Prezzo: crescente</option>
+							<option value="price-desc">Prezzo: descrescente</option>
+						</select>
+					</form>
+					<br />
+					<br />
 
-<div class="grid portfoliogrid" style="position: relative; height: 1455.29px;">
-					<s:iterator value="prodottiUomo">
-						<!-- si preleva l'array presente nella classe Java -->
-						<article class="hentry">
-					<header class="entry-header">
-					<div class="entry-thumbnail">
-						<a href="ShoeDescription?id=<s:property value="idprodotto"/>"><img src="asset/img-prodotti/<s:property value="idprodotto"/>.jpg" style="width: 270px " class="entry-title" /></a>
-					</div>
-					<h3>
-					<s:property value="marca" />
-									<s:property value="nome" />
-								</h3> <span class="price"><span class="amount"><s:property
-											value="prezzo" />€</span></span>
-						<a href="#" class="button">Aggiungi al carrello</a>
-					</header>
-					</article>
+					<div class="grid portfoliogrid"
+						style="position: relative; height: 1455.29px;">
+						<s:iterator value="prodottiUomo">
+							<!-- si preleva l'array presente nella classe Java -->
+							<article class="hentry">
+								<header class="entry-header">
+									<div class="entry-thumbnail">
+										<a href="ShoeDescription?id=<s:property value="idprodotto"/>"><img
+											src="asset/img-prodotti/<s:property value="idprodotto"/>.jpg"
+											style="width: 270px" class="entry-title" /></a>
+									</div>
+									<h3>
+										<s:property value="marca" />
+										<s:property value="nome" />
+									</h3>
+									<span class="price"><span class="amount"><s:property
+												value="prezzo" />€</span></span>
+								</header>
+							</article>
 
-					</s:iterator>
-					
-					
-</div>
+						</s:iterator>
 
-
-									</main> 
-				
-								</div>
-
-						</div> 
 
 					</div>
-					
-		
-					<%@ include file="footer.jsp"%>
-					<script src='js/jquery.js'></script>
-					<script src='js/plugins.js'></script>
-					<script src='js/scripts.js'></script>
-					<script src='js/masonry.pkgd.min.js'></script>
+
+
+				</main>
+
+			</div>
+
+		</div>
+
+	</div>
+
+
+	<%@ include file="footer.jsp"%>
+	<script src='js/jquery.js'></script>
+	<script src='js/plugins.js'></script>
+	<script src='js/scripts.js'></script>
+	<script src='js/masonry.pkgd.min.js'></script>
 </body>
 </html>

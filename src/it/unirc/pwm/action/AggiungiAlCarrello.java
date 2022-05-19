@@ -15,12 +15,14 @@ import com.opensymphony.xwork2.ActionSupport;
 import it.unirc.pwm.ht.prodotto.Prodotto;
 import it.unirc.pwm.ht.prodotto.ProdottoDAO;
 import it.unirc.pwm.ht.prodotto.ProdottoDAOFactory;
+import it.unirc.pwm.ht.prodotto.ProdottoPerCarrello;
 
 
 public class AggiungiAlCarrello extends ActionSupport implements ServletResponseAware,SessionAware{
 	private static final long serialVersionUID = 1L;
 	private Map <String,Object> session;
-	private int id,richiesta;
+	private int id;
+	private int richiesta;
 	private static Logger logger = LogManager.getLogger("Aggiungi al carrello: ");
 
 	public Map<String, Object> getSession() {
@@ -70,16 +72,18 @@ public class AggiungiAlCarrello extends ActionSupport implements ServletResponse
 //	}
 	@Override
 	public String execute() throws Exception {
-
 		Prodotto p = new Prodotto();
 		p.setIdprodotto(id);
+		System.out.println("kamekahh "+p.getIdprodotto());
+
 		ProdottoDAO pd = ProdottoDAOFactory.getDAO();
 		p=pd.getProdotto(p);
-		ComponenteCarrello prodottoToCarrello = new ComponenteCarrello(p, richiesta);
-		Vector<ComponenteCarrello> carrello = (Vector<ComponenteCarrello>) session.get("carrello");
+		logger.info("Hai chiesto di aggiungere" + p.getNome() + "in quantità: " + richiesta);
+		ProdottoPerCarrello prodottoToCarrello = new ProdottoPerCarrello(p, richiesta);
+		Vector<ProdottoPerCarrello> carrello = (Vector<ProdottoPerCarrello>) session.get("carrello");
 		if(carrello==null) {
 			//Se il carrello non esiste allora lo crea
-			carrello = new Vector<ComponenteCarrello>();
+			carrello = new Vector<ProdottoPerCarrello>();
 			carrello.add(prodottoToCarrello);
 			logger.info("Carrello creato e prodotto aggiunto");
 		}

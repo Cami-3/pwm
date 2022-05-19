@@ -135,13 +135,14 @@ public class ProdottoDAOHibernateImpl implements ProdottoDAO{
 	}
 	
 	public List<Prodotto> getProdottoByNome(String tipoCliente,String nome) {
-
+System.out.println("nome " + nome);
+System.out.println("tipo " + tipoCliente);
 		Session session = HibernateUtil.getSessionFactory().openSession();
 		Transaction transaction = null;
 		List<Prodotto> prodottiUomo = null;
 		try {
 			transaction = session.beginTransaction();
-			Query<Prodotto> q = session.createQuery("from Prodotto where tipo_cliente=?1 and nome=?2").setParameter(1,tipoCliente).setParameter(2, nome);
+			Query<Prodotto> q = session.createQuery("from Prodotto where tipo_cliente=:tipo and nome=:nome").setParameter("tipo",tipoCliente).setParameter("nome", nome);
 			prodottiUomo = (List<Prodotto>) q.list();
 		} catch (HibernateException e) {
 			transaction.rollback();
@@ -179,7 +180,7 @@ public class ProdottoDAOHibernateImpl implements ProdottoDAO{
 		List<Prodotto> prodotti = null;
 		try {
 			transaction = session.beginTransaction();
-			Query<Prodotto> q = session.createQuery("FROM Prodotto order by rand()").setMaxResults(6);
+			Query<Prodotto> q = session.createQuery("FROM Prodotto group by nome order by rand()").setMaxResults(6);
 			prodotti = (List<Prodotto>) q.list();
 			transaction.commit();
 		} catch (HibernateException e) {

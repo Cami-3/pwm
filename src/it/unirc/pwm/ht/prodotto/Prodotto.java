@@ -95,7 +95,7 @@ public class Prodotto implements java.io.Serializable {
 	}
 
 	public int getTaglia() {
-		return idprodotto;
+		return taglia;
 	}
 
 	public void setTaglia(int taglia) {

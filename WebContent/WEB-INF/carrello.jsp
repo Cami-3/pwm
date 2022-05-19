@@ -24,42 +24,37 @@
 <link rel='stylesheet' href='css/easy-responsive-shortcodes.css'
 	type='text/css' media='all' />
 </head>
-<body
-	class="archive post-type-archive post-type-archive-product woocommerce woocommerce-page">
-	<%@ include file="Header.jsp"%>
-	<div class="container">
-carrello
-<s:iterator value="prodottiCarrello">
-						
-						<article class="hentry">
-					<header class="entry-header">
-					<div class="entry-thumbnail">
-						<a href="Carrello?id=<s:property value="idprodotto"/>"><img src="asset/img-prodotti/<s:property value="idprodotto"/>.jpg"" style="width: 270px " class="entry-title" "/></a>
-					</div>
-					<h3>
-					<s:property value="marca" />
-									<s:property value="nome" />
-								</h3> <span class="price"><span class="amount"><s:property
-											value="prezzo" />€</span></span>
-						</a><a href="#" class="button">Procedi al pagamento</a>
-					</header>
-					</article>
+<div class="container">
+	<body
+		class="archive post-type-archive post-type-archive-product woocommerce woocommerce-page">
+		<%@ include file="Header.jsp"%>
 
-					</s:iterator>
+		<table class="source-tableeditor">
+			<tbody>
+				<tr>
+					<td>PRODOTTO</td>
+					<td rowspan="1">RIEPILOGO</td>
+				</tr>
 
-
-
-
+				<!-- Iterator -->
+				<s:iterator value="carrello">
+					<tr>
+						<td><a href="ShoeDescription?id=<s:property value="p.idprodotto"/>"> <s:property value="p.nome" /> </a> <br> <s:property
+								value="quantRichiesta" /> <br> <span class="price">
+								<span class="amount"> <s:property value="p.prezzo" />€ </td>
+					</tr>
+				</s:iterator>
+				<!-- Iterator fine -->
+				</tr>
+			</tbody>
+		</table>
 
 
 
 
-
-
-
-
-
-
+		<br>
+		<a href="#" class="button">Procedi al pagamento</a>
+</div>
 
 
 
@@ -68,9 +63,9 @@ carrello
 
 </div>
 <%@ include file="footer.jsp"%>
-					<script src='js/jquery.js'></script>
-					<script src='js/plugins.js'></script>
-					<script src='js/scripts.js'></script>
-					<script src='js/masonry.pkgd.min.js'></script>
+<script src='js/jquery.js'></script>
+<script src='js/plugins.js'></script>
+<script src='js/scripts.js'></script>
+<script src='js/masonry.pkgd.min.js'></script>
 </body>
 </html>
