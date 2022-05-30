@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!-- Generated 20 nov 2021, 18:11:58 by Hibernate Tools 5.4.12.Final --><!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 30 mag 2022, 12:25:22 by Hibernate Tools 5.4.12.Final --><!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
 <hibernate-mapping auto-import="true" default-access="property" default-cascade="none" default-lazy="true">
     <class catalog="pwm" dynamic-insert="false" dynamic-update="false" mutable="true" name="it.unirc.pwm.ht.cliente.Cliente" optimistic-lock="version" polymorphism="implicit" select-before-update="false" table="cliente">
         <id name="idcliente" type="int">
             <column name="idcliente"/>
-            <generator class="sequence"/>
+            <generator class="foreign">
+                <param name="property">account</param>
+            </generator>
         </id>
+        <one-to-one class="it.unirc.pwm.ht.account.Account" constrained="true" embed-xml="true" name="account"/>
         <property generated="never" lazy="false" name="nome" optimistic-lock="true" type="string" unique="false">
             <column length="45" name="nome" not-null="true"/>
         </property>
@@ -24,7 +27,6 @@
         <property generated="never" lazy="false" name="PIva" optimistic-lock="true" type="string" unique="false">
             <column length="11" name="p_iva" not-null="true"/>
         </property>
-        <one-to-one class="it.unirc.pwm.ht.account.Account" constrained="false" embed-xml="true" name="account"/>
         <set embed-xml="true" fetch="select" inverse="true" lazy="true" mutable="true" name="ordines" optimistic-lock="true" sort="unsorted" table="ordine">
             <key on-delete="noaction">
                 <column name="idcliente"/>

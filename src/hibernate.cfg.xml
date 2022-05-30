@@ -17,6 +17,7 @@
 		<mapping resource="it/unirc/pwm/ht/account/Account.hbm.xml"/>
 		<mapping resource="it/unirc/pwm/ht/cliente/Cliente.hbm.xml"/>
 		<mapping resource="it/unirc/pwm/ht/ordine/Ordine.hbm.xml"/>
+		<mapping resource="it/unirc/pwm/ht/ordine/OrdineProdotto.hbm.xml"/>
 		<mapping resource="it/unirc/pwm/ht/prodotto/Prodotto.hbm.xml"/>
 		<mapping resource="it/unirc/pwm/ht/titolare/Titolare.hbm.xml"/>
 	</session-factory>

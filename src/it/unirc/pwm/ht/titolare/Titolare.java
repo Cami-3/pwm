@@ -1,7 +1,5 @@
 package it.unirc.pwm.ht.titolare;
-// Generated 20 nov 2021, 18:11:58 by Hibernate Tools 5.4.12.Final
-
-import java.io.Serializable;
+// Generated 30 mag 2022, 12:25:21 by Hibernate Tools 5.4.12.Final
 
 import it.unirc.pwm.ht.account.Account;
 
@@ -11,30 +9,21 @@ import it.unirc.pwm.ht.account.Account;
 public class Titolare implements java.io.Serializable {
 
 	private int idtitolare;
+	private Account account;
 	private String nome;
 	private String cognome;
 	private int capitale;
 	private String CF;
-	private Account account;
 
 	public Titolare() {
 	}
 
-	public Titolare(int idtitolare, String nome, String cognome, int capitale, String CF) {
-		this.idtitolare = idtitolare;
-		this.nome = nome;
-		this.cognome = cognome;
-		this.capitale = capitale;
-		this.CF = CF;
-	}
-
-	public Titolare(int idtitolare, String nome, String cognome, int capitale, String CF, Account account) {
-		this.idtitolare = idtitolare;
-		this.nome = nome;
-		this.cognome = cognome;
-		this.capitale = capitale;
-		this.CF = CF;
+	public Titolare(Account account, String nome, String cognome, int capitale, String CF) {
 		this.account = account;
+		this.nome = nome;
+		this.cognome = cognome;
+		this.capitale = capitale;
+		this.CF = CF;
 	}
 
 	public int getIdtitolare() {
@@ -43,6 +32,14 @@ public class Titolare implements java.io.Serializable {
 
 	public void setIdtitolare(int idtitolare) {
 		this.idtitolare = idtitolare;
+	}
+
+	public Account getAccount() {
+		return this.account;
+	}
+
+	public void setAccount(Account account) {
+		this.account = account;
 	}
 
 	public String getNome() {
@@ -77,17 +74,60 @@ public class Titolare implements java.io.Serializable {
 		this.CF = CF;
 	}
 
-	public Account getAccount() {
-		return this.account;
+	@Override
+	public int hashCode() {
+		final int prime = 31;
+		int result = 1;
+		result = prime * result + ((CF == null) ? 0 : CF.hashCode());
+		result = prime * result + ((account == null) ? 0 : account.hashCode());
+		result = prime * result + capitale;
+		result = prime * result + ((cognome == null) ? 0 : cognome.hashCode());
+		result = prime * result + idtitolare;
+		result = prime * result + ((nome == null) ? 0 : nome.hashCode());
+		return result;
 	}
 
-	public void setAccount(Account account) {
-		this.account = account;
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		Titolare other = (Titolare) obj;
+		if (CF == null) {
+			if (other.CF != null)
+				return false;
+		} else if (!CF.equals(other.CF))
+			return false;
+		if (account == null) {
+			if (other.account != null)
+				return false;
+		} else if (!account.equals(other.account))
+			return false;
+		if (capitale != other.capitale)
+			return false;
+		if (cognome == null) {
+			if (other.cognome != null)
+				return false;
+		} else if (!cognome.equals(other.cognome))
+			return false;
+		if (idtitolare != other.idtitolare)
+			return false;
+		if (nome == null) {
+			if (other.nome != null)
+				return false;
+		} else if (!nome.equals(other.nome))
+			return false;
+		return true;
 	}
 
-	public Serializable getIdcliente() {
-		// TODO Auto-generated method stub
-		return null;
+	@Override
+	public String toString() {
+		return "Titolare [idtitolare=" + idtitolare + ", account=" + account + ", nome=" + nome + ", cognome=" + cognome
+				+ ", capitale=" + capitale + ", CF=" + CF + "]";
 	}
+
 
 }

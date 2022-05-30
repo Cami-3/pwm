@@ -8,27 +8,29 @@ import org.hibernate.Transaction;
 
 import it.unirc.pwm.hibernate.util.HibernateUtil;
 
-
-
-
-
-
-
-
-
 public class ClienteDAOHibernateImpl implements ClienteDAO{
 
 	
 	protected ClienteDAOHibernateImpl(){
 	}
 
+//	public Cliente getForId(int id) {
+//		Session session = HibernateUtil.getSessionFactory().openSession();
+//		try {
+//			c=(Cliente) session.get(Cliente.class,id);
+//		} catch(HibernateException e) {
+//			return null;
+//		}finally {
+//			if(session!=null)
+//				session.close();
+//		}
+//		return c;
+//	}
 	public Cliente getCliente(Cliente c) {
 		Session session = HibernateUtil.getSessionFactory().openSession();
-		
-		try {
-			
-			
-			c= (Cliente) session.get(Cliente.class,c.getIdcliente());
+		Cliente res = new Cliente();
+		try {		
+			res= (Cliente) session.get(Cliente.class,c.getIdcliente());
 			
 		} catch (HibernateException e) {
 			
@@ -38,7 +40,7 @@ public class ClienteDAOHibernateImpl implements ClienteDAO{
 			if (session!=null) //spesso omesso
 				session.close();
 		}
-		return c;
+		return res;
 	}
 
 	public boolean inserisciCliente(Cliente c) {

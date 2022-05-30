@@ -1,7 +1,6 @@
 package it.unirc.pwm.ht.prodotto;
-// Generated 20 nov 2021, 18:11:58 by Hibernate Tools 5.4.12.Final
+// Generated 30 mag 2022, 12:25:21 by Hibernate Tools 5.4.12.Final
 
-import java.io.Serializable;
 import java.util.HashSet;
 import java.util.Set;
 
@@ -18,15 +17,14 @@ public class Prodotto implements java.io.Serializable {
 	private int taglia;
 	private String colore;
 	private int quantita;
-	private Set ordines = new HashSet(0);
-	private String tipo_cliente;
-
+	private String tipoCliente;
+	private Set ordineProdottos = new HashSet(0);
 
 	public Prodotto() {
 	}
 
 	public Prodotto(int idprodotto, String nome, String marca, float prezzo, String genere, int taglia, String colore,
-			int quantita) {
+			int quantita, String tipoCliente) {
 		this.idprodotto = idprodotto;
 		this.nome = nome;
 		this.marca = marca;
@@ -35,13 +33,11 @@ public class Prodotto implements java.io.Serializable {
 		this.taglia = taglia;
 		this.colore = colore;
 		this.quantita = quantita;
+		this.tipoCliente = tipoCliente;
 	}
 
-
-
 	public Prodotto(int idprodotto, String nome, String marca, float prezzo, String genere, int taglia, String colore,
-			int quantita, Set ordines, String tipo_cliente) {
-		super();
+			int quantita, String tipoCliente, Set ordineProdottos) {
 		this.idprodotto = idprodotto;
 		this.nome = nome;
 		this.marca = marca;
@@ -50,8 +46,8 @@ public class Prodotto implements java.io.Serializable {
 		this.taglia = taglia;
 		this.colore = colore;
 		this.quantita = quantita;
-		this.ordines = ordines;
-		this.tipo_cliente = tipo_cliente;
+		this.tipoCliente = tipoCliente;
+		this.ordineProdottos = ordineProdottos;
 	}
 
 	public int getIdprodotto() {
@@ -95,7 +91,7 @@ public class Prodotto implements java.io.Serializable {
 	}
 
 	public int getTaglia() {
-		return taglia;
+		return this.taglia;
 	}
 
 	public void setTaglia(int taglia) {
@@ -118,36 +114,20 @@ public class Prodotto implements java.io.Serializable {
 		this.quantita = quantita;
 	}
 
-	public Set getOrdines() {
-		return this.ordines;
+	public String getTipoCliente() {
+		return this.tipoCliente;
 	}
 
-	public void setOrdines(Set ordines) {
-		this.ordines = ordines;
+	public void setTipoCliente(String tipoCliente) {
+		this.tipoCliente = tipoCliente;
 	}
 
-	public Serializable getIdcliente() {
-		// TODO Auto-generated method stub
-		return null;
+	public Set getOrdineProdottos() {
+		return this.ordineProdottos;
 	}
 
-	public String getTipo_cliente() {
-		return tipo_cliente;
+	public void setOrdineProdottos(Set ordineProdottos) {
+		this.ordineProdottos = ordineProdottos;
 	}
-
-	public void setTipo_cliente(String tipo_cliente) {
-		this.tipo_cliente = tipo_cliente;
-	}
-
-	@Override
-	public String toString() {
-		return "Prodotto [idprodotto=" + idprodotto + ", nome=" + nome + ", marca=" + marca + ", prezzo=" + prezzo
-				+ ", genere=" + genere + ", taglia=" + taglia + ", colore=" + colore + ", quantita=" + quantita
-				+ ", tipo_cliente=" + tipo_cliente + "]";
-	}
-
-	
-	
-	
 
 }

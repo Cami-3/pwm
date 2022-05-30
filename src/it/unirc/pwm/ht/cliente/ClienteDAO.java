@@ -7,6 +7,6 @@ public interface ClienteDAO {
 	public boolean inserisciCliente(Cliente c);
 	public boolean aggiornaCliente(Cliente c);
 	public boolean eliminaCliente(Cliente c);
-	
+//	public Cliente getForId(int id);
 
 }

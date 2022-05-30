@@ -1,15 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!-- Generated 20 nov 2021, 18:11:58 by Hibernate Tools 5.4.12.Final --><!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 30 mag 2022, 12:25:22 by Hibernate Tools 5.4.12.Final --><!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
 <hibernate-mapping auto-import="true" default-access="property" default-cascade="none" default-lazy="true">
     <class catalog="pwm" dynamic-insert="false" dynamic-update="false" mutable="true" name="it.unirc.pwm.ht.account.Account" optimistic-lock="version" polymorphism="implicit" select-before-update="false" table="account">
         <id name="id" type="int">
             <column name="id"/>
-            <generator class="foreign">
-                <param name="property">cliente</param>
-            </generator>
+            <generator class="assigned"/>
         </id>
-        <one-to-one class="it.unirc.pwm.ht.cliente.Cliente" constrained="true" embed-xml="true" name="cliente"/>
-        <one-to-one class="it.unirc.pwm.ht.titolare.Titolare" constrained="true" embed-xml="true" name="titolare"/>
         <property generated="never" lazy="false" name="email" optimistic-lock="true" type="string" unique="false">
             <column length="45" name="email" not-null="true"/>
         </property>
@@ -19,5 +15,7 @@
         <property generated="never" lazy="false" name="numero" optimistic-lock="true" type="string" unique="false">
             <column length="10" name="numero" not-null="true"/>
         </property>
+        <one-to-one class="it.unirc.pwm.ht.titolare.Titolare" constrained="false" embed-xml="true" name="titolare"/>
+        <one-to-one class="it.unirc.pwm.ht.cliente.Cliente" constrained="false" embed-xml="true" name="cliente"/>
     </class>
 </hibernate-mapping>

@@ -70,8 +70,7 @@
 
 		<action name="Login" class="it.unirc.pwm.action.Login">
 			<result name="input">WEB-INF/login.jsp</result>
-			<result name="cliente" type="redirect">/AreaCliente
-			</result>
+			<result name="cliente" type="redirect">/AreaCliente</result>
 			<result name="titolare">WEB-INF/areatitolare.jsp</result>
 		</action>
 		<action name="RichiediLogin">

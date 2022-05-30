@@ -3,4 +3,9 @@
 
 <hibernate-reverse-engineering>
   <table-filter match-catalog="pwm" match-name="account"/>
+  <table-filter match-catalog="pwm" match-name="cliente"/>
+  <table-filter match-catalog="pwm" match-name="ordine"/>
+  <table-filter match-catalog="pwm" match-name="ordine_prodotto"/>
+  <table-filter match-catalog="pwm" match-name="prodotto"/>
+  <table-filter match-catalog="pwm" match-name="titolare"/>
 </hibernate-reverse-engineering>

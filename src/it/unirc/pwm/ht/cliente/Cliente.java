@@ -1,5 +1,5 @@
 package it.unirc.pwm.ht.cliente;
-// Generated 20 nov 2021, 18:11:58 by Hibernate Tools 5.4.12.Final
+// Generated 30 mag 2022, 12:25:21 by Hibernate Tools 5.4.12.Final
 
 import java.util.Date;
 import java.util.HashSet;
@@ -12,25 +12,22 @@ import it.unirc.pwm.ht.account.Account;
  */
 public class Cliente implements java.io.Serializable {
 
-	/**
-	 * 
-	 */
-	private static final long serialVersionUID = 1L;
 	private int idcliente;
+	private Account account;
 	private String nome;
 	private String cognome;
 	private Date datanascita;
 	private String CF;
 	private String iban;
 	private String PIva;
-	private Account account;
 	private Set ordines = new HashSet(0);
 
 	public Cliente() {
 	}
 
-	public Cliente(int idcliente, String nome, String cognome, Date datanascita, String CF, String iban, String PIva) {
-		this.idcliente = idcliente;
+	public Cliente(Account account, String nome, String cognome, Date datanascita, String CF, String iban,
+			String PIva) {
+		this.account = account;
 		this.nome = nome;
 		this.cognome = cognome;
 		this.datanascita = datanascita;
@@ -39,16 +36,15 @@ public class Cliente implements java.io.Serializable {
 		this.PIva = PIva;
 	}
 
-	public Cliente(int idcliente, String nome, String cognome, Date datanascita, String CF, String iban, String PIva,
-			Account account, Set ordines) {
-		this.idcliente = idcliente;
+	public Cliente(Account account, String nome, String cognome, Date datanascita, String CF, String iban, String PIva,
+			Set ordines) {
+		this.account = account;
 		this.nome = nome;
 		this.cognome = cognome;
 		this.datanascita = datanascita;
 		this.CF = CF;
 		this.iban = iban;
 		this.PIva = PIva;
-		this.account = account;
 		this.ordines = ordines;
 	}
 
@@ -58,6 +54,14 @@ public class Cliente implements java.io.Serializable {
 
 	public void setIdcliente(int idcliente) {
 		this.idcliente = idcliente;
+	}
+
+	public Account getAccount() {
+		return this.account;
+	}
+
+	public void setAccount(Account account) {
+		this.account = account;
 	}
 
 	public String getNome() {
@@ -108,14 +112,6 @@ public class Cliente implements java.io.Serializable {
 		this.PIva = PIva;
 	}
 
-	public Account getAccount() {
-		return this.account;
-	}
-
-	public void setAccount(Account account) {
-		this.account = account;
-	}
-
 	public Set getOrdines() {
 		return this.ordines;
 	}
@@ -123,5 +119,4 @@ public class Cliente implements java.io.Serializable {
 	public void setOrdines(Set ordines) {
 		this.ordines = ordines;
 	}
-
 }

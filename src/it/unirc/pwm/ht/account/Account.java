@@ -1,6 +1,6 @@
 package it.unirc.pwm.ht.account;
-// Generated 20 nov 2021, 18:11:58 by Hibernate Tools 5.4.12.Final
-//AAAAA
+// Generated 30 mag 2022, 12:25:21 by Hibernate Tools 5.4.12.Final
+
 import it.unirc.pwm.ht.cliente.Cliente;
 import it.unirc.pwm.ht.titolare.Titolare;
 
@@ -9,26 +9,30 @@ import it.unirc.pwm.ht.titolare.Titolare;
  */
 public class Account implements java.io.Serializable {
 
-	/**
-	 * 
-	 */
-	private static final long serialVersionUID = 1L;
 	private int id;
-	private Cliente cliente;
-	private Titolare titolare;
 	private String email;
 	private String password;
 	private String numero;
+	private Titolare titolare;
+	private Cliente cliente;
 
 	public Account() {
 	}
 
-	public Account(Cliente cliente, Titolare titolare, String email, String password, String numero) {
-		this.cliente = cliente;
-		this.titolare = titolare;
+	public Account(int id, String email, String password, String numero) {
+		this.id = id;
 		this.email = email;
 		this.password = password;
 		this.numero = numero;
+	}
+
+	public Account(int id, String email, String password, String numero, Titolare titolare, Cliente cliente) {
+		this.id = id;
+		this.email = email;
+		this.password = password;
+		this.numero = numero;
+		this.titolare = titolare;
+		this.cliente = cliente;
 	}
 
 	public int getId() {
@@ -37,22 +41,6 @@ public class Account implements java.io.Serializable {
 
 	public void setId(int id) {
 		this.id = id;
-	}
-
-	public Cliente getCliente() {
-		return this.cliente;
-	}
-
-	public void setCliente(Cliente cliente) {
-		this.cliente = cliente;
-	}
-
-	public Titolare getTitolare() {
-		return this.titolare;
-	}
-
-	public void setTitolare(Titolare titolare) {
-		this.titolare = titolare;
 	}
 
 	public String getEmail() {
@@ -77,6 +65,22 @@ public class Account implements java.io.Serializable {
 
 	public void setNumero(String numero) {
 		this.numero = numero;
+	}
+
+	public Titolare getTitolare() {
+		return this.titolare;
+	}
+
+	public void setTitolare(Titolare titolare) {
+		this.titolare = titolare;
+	}
+
+	public Cliente getCliente() {
+		return this.cliente;
+	}
+
+	public void setCliente(Cliente cliente) {
+		this.cliente = cliente;
 	}
 
 }

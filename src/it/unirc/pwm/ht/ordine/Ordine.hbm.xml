@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!-- Generated 20 nov 2021, 18:11:58 by Hibernate Tools 5.4.12.Final --><!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 30 mag 2022, 12:25:22 by Hibernate Tools 5.4.12.Final --><!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
 <hibernate-mapping auto-import="true" default-access="property" default-cascade="none" default-lazy="true">
     <class catalog="pwm" dynamic-insert="false" dynamic-update="false" mutable="true" name="it.unirc.pwm.ht.ordine.Ordine" optimistic-lock="version" polymorphism="implicit" select-before-update="false" table="ordine">
         <id name="idordine" type="int">
@@ -9,20 +9,20 @@
         <many-to-one class="it.unirc.pwm.ht.cliente.Cliente" embed-xml="true" fetch="select" insert="true" name="cliente" not-found="exception" optimistic-lock="true" unique="false" update="true">
             <column name="idcliente"/>
         </many-to-one>
-      
+        <property generated="never" lazy="false" name="cumulativoOrdine" optimistic-lock="true" type="java.lang.Integer" unique="false">
+            <column name="cumulativo_ordine"/>
+        </property>
         <property generated="never" lazy="false" name="quantita" optimistic-lock="true" type="int" unique="false">
             <column name="quantita" not-null="true"/>
         </property>
         <property generated="never" lazy="false" name="data" optimistic-lock="true" type="date" unique="false">
             <column length="10" name="data" not-null="true"/>
         </property>
-        <set embed-xml="true" fetch="select" inverse="false" lazy="true" mutable="true" name="prodottos" optimistic-lock="true" sort="unsorted" table="ordine_prodotto">
+        <set embed-xml="true" fetch="select" inverse="true" lazy="true" mutable="true" name="ordineProdottos" optimistic-lock="true" sort="unsorted" table="ordine_prodotto">
             <key on-delete="noaction">
                 <column name="idordine" not-null="true"/>
             </key>
-            <many-to-many embed-xml="true" entity-name="it.unirc.pwm.ht.prodotto.Prodotto" not-found="exception" unique="false">
-                <column name="idprod" not-null="true"/>
-            </many-to-many>
+            <one-to-many class="it.unirc.pwm.ht.ordine.OrdineProdotto" embed-xml="true" not-found="exception"/>
         </set>
     </class>
 </hibernate-mapping>

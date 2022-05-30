@@ -1,5 +1,5 @@
 package it.unirc.pwm.ht.ordine;
-// Generated 20 nov 2021, 18:11:58 by Hibernate Tools 5.4.12.Final
+// Generated 30 mag 2022, 12:25:21 by Hibernate Tools 5.4.12.Final
 
 import java.util.Date;
 import java.util.HashSet;
@@ -12,15 +12,12 @@ import it.unirc.pwm.ht.cliente.Cliente;
  */
 public class Ordine implements java.io.Serializable {
 
-	/**
-	 * 
-	 */
-	private static final long serialVersionUID = 1L;
 	private int idordine;
 	private Cliente cliente;
+	private Integer cumulativoOrdine;
 	private int quantita;
 	private Date data;
-	private Set prodottos = new HashSet(0);
+	private Set ordineProdottos = new HashSet(0);
 
 	public Ordine() {
 	}
@@ -31,12 +28,14 @@ public class Ordine implements java.io.Serializable {
 		this.data = data;
 	}
 
-	public Ordine(int idordine, Cliente cliente, int quantita, Date data, Set prodottos) {
+	public Ordine(int idordine, Cliente cliente, Integer cumulativoOrdine, int quantita, Date data,
+			Set ordineProdottos) {
 		this.idordine = idordine;
 		this.cliente = cliente;
+		this.cumulativoOrdine = cumulativoOrdine;
 		this.quantita = quantita;
 		this.data = data;
-		this.prodottos = prodottos;
+		this.ordineProdottos = ordineProdottos;
 	}
 
 	public int getIdordine() {
@@ -55,6 +54,14 @@ public class Ordine implements java.io.Serializable {
 		this.cliente = cliente;
 	}
 
+	public Integer getCumulativoOrdine() {
+		return this.cumulativoOrdine;
+	}
+
+	public void setCumulativoOrdine(Integer cumulativoOrdine) {
+		this.cumulativoOrdine = cumulativoOrdine;
+	}
+
 	public int getQuantita() {
 		return this.quantita;
 	}
@@ -71,12 +78,12 @@ public class Ordine implements java.io.Serializable {
 		this.data = data;
 	}
 
-	public Set getProdottos() {
-		return this.prodottos;
+	public Set getOrdineProdottos() {
+		return this.ordineProdottos;
 	}
 
-	public void setProdottos(Set prodottos) {
-		this.prodottos = prodottos;
+	public void setOrdineProdottos(Set ordineProdottos) {
+		this.ordineProdottos = ordineProdottos;
 	}
 
 }

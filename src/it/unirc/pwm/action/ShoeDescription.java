@@ -56,12 +56,12 @@ public class ShoeDescription extends ActionSupport implements Action {
 		System.out.println("id : " + id);
 		prodotto = pDao.getProdotto(p);
 
-		prodottostessonome = pDao.getProdottoByNome(prodotto.getTipo_cliente(), prodotto.getNome());
+		prodottostessonome = pDao.getProdottoByNome(prodotto.getTipoCliente(), prodotto.getNome());
 
 
 		System.out.println("nome prodotto:" +prodotto.getNome());
 
-		prodottostessonome = pDao.getProdottoByNome(prodotto.getTipo_cliente(),prodotto.getNome());
+		prodottostessonome = pDao.getProdottoByNome(prodotto.getTipoCliente(),prodotto.getNome());
 		System.out.println("Prodotto stesso nome " + prodottostessonome);
 
 

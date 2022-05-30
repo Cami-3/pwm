@@ -25,12 +25,9 @@ public class TitolareDAOHibernateImpl implements TitolareDAO{
 
 	public Titolare getTitolare(Titolare c) {
 		Session session = HibernateUtil.getSessionFactory().openSession();
-
+		Titolare res = new Titolare();
 		try {
-
-
-			c= (Titolare) session.get(Titolare.class,c.getIdtitolare());
-
+			res= (Titolare) session.get(Titolare.class,c.getIdtitolare());
 		} catch (HibernateException e) {
 
 			return null;
@@ -39,7 +36,7 @@ public class TitolareDAOHibernateImpl implements TitolareDAO{
 			if (session!=null) //spesso omesso
 				session.close();
 		}
-		return c;
+		return res;
 	}
 
 	public boolean inserisciTitolare(Titolare c) {

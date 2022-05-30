@@ -17,11 +17,14 @@ import it.unirc.pwm.ht.cliente.ClienteAware;
 import it.unirc.pwm.ht.cliente.ClienteDAO;
 import it.unirc.pwm.ht.cliente.ClienteDAOFactory;
 import it.unirc.pwm.ht.titolare.Titolare;
+import it.unirc.pwm.ht.titolare.TitolareAware;
 import it.unirc.pwm.ht.titolare.TitolareDAO;
 import it.unirc.pwm.ht.titolare.TitolareDAOFactory;
 
-public class Login extends ActionSupport implements SessionAware,ClienteAware {
+public class Login extends ActionSupport implements SessionAware {
 
+	private static final long serialVersionUID = 1L;
+	
 	private static Logger logger = LogManager.getLogger("Login");
 	private String email;
 	private String password;
@@ -29,9 +32,6 @@ public class Login extends ActionSupport implements SessionAware,ClienteAware {
 	private Cliente cliente;
 	private Titolare titolare;
 	private Account account;
-
-
-
 
 	public Titolare getTitolare() {
 		return titolare;
@@ -74,22 +74,13 @@ public class Login extends ActionSupport implements SessionAware,ClienteAware {
 	}
 
 	@Override
-	public void setCliente(Cliente cliente) {
-		// TODO Auto-generated method stub
-
-	}
-
-	@Override
 	public void setSession(Map<String, Object> arg0) {
-		// TODO Auto-generated method stub
-
+		this.session = arg0;
 	}
 
 	@Override
 	public String execute() throws Exception {
 		System.out.println(email + " " + password);
-
-	
 
 		AccountDAO ad = AccountDAOFactory.getDAO();
 		account=new Account();
@@ -100,29 +91,25 @@ public class Login extends ActionSupport implements SessionAware,ClienteAware {
 		ClienteDAO cd = ClienteDAOFactory.getDAO();
 		TitolareDAO td = TitolareDAOFactory.getDAO();
 
-
-
         cliente=new Cliente();
+        cliente.setIdcliente(account.getId());
         titolare=new Titolare();
+        titolare.setIdtitolare(account.getId());
         
         //provo a fare il login del cliente
         if(cd.getCliente(cliente)!=null) {
-			logger.info("Cliente: (dopo IF) " + cliente.getNome() + " " + cliente.getCognome());
+        	cliente = cd.getCliente(cliente);
 			session.put("utente", cliente);
-			logger.info("cliente ok");
-			return "cliente";	
+			return "cliente";
         }
         //provo a fare il login titolare
         else if(td.getTitolare(titolare)!=null) {
-        	logger.info("titolare  ok");
+        	titolare = td.getTitolare(titolare);
+        	session.put("utente", titolare);
         	return "titolare";
         }
 		else {
 			return INPUT;
 		}
-
 	}
-
-
-
 }
