@@ -71,7 +71,7 @@
 		<action name="Login" class="it.unirc.pwm.action.Login">
 			<result name="input">WEB-INF/login.jsp</result>
 			<result name="cliente" type="redirect">/AreaCliente</result>
-			<result name="titolare">WEB-INF/areatitolare.jsp</result>
+			<result name="titolare" type="redirect">/AreaTitolare</result>
 		</action>
 		<action name="RichiediLogin">
 			<result>WEB-INF/login.jsp</result>
@@ -83,30 +83,44 @@
 		</action>
 		<action name="RichiediRegistrazione">
 			<result>WEB-INF/registrazione.jsp</result>
-		</action> 
-		<action name="VisualizzaCarrello" class="it.unirc.pwm.action.VisualizzaCarrello">
+		</action>
+		<action name="VisualizzaCarrello"
+			class="it.unirc.pwm.action.VisualizzaCarrello">
 			<result>WEB-INF/carrello.jsp</result>
 		</action>
-		<action name="AggiungiCarrello" class="it.unirc.pwm.action.AggiungiAlCarrello">
-			<result type="redirect" name="success">/VisualizzaCarrello
-			</result>
-		</action>	
-		<action name="EliminaCarrello" class="it.unirc.pwm.action.EliminaDalCarrello">
+		<action name="AggiungiCarrello"
+			class="it.unirc.pwm.action.AggiungiAlCarrello">
 			<result type="redirect" name="success">/VisualizzaCarrello
 			</result>
 		</action>
-				<action name="Profilo">
-			<result >WEB-INF/areacliente.jsp </result>
+		<action name="EliminaCarrello"
+			class="it.unirc.pwm.action.EliminaDalCarrello">
+			<result type="redirect" name="success">/VisualizzaCarrello
+			</result>
 		</action>
-		
-		<action name="AreaCliente" class="it.unirc.pwm.action.AreaCliente">
-			<result >WEB-INF/areacliente.jsp </result>
-		</action>
-		
-		<action name="Logout">
-			<result>WEB-INF/home1.jsp</result>
+		<action name="Profilo">
+			<result>WEB-INF/areacliente.jsp </result>
 		</action>
 
+		<action name="AreaCliente"
+			class="it.unirc.pwm.action.AreaCliente">
+			<result>WEB-INF/areacliente.jsp </result>
+		</action>
+		
+		<action name="AreaTitolare"
+			class="it.unirc.pwm.action.AreaTitolare">
+			<result>WEB-INF/areatitolare.jsp </result>
+		</action>
+
+		<action name="Logout" class="it.unirc.pwm.action.Logout">
+			<result type="redirect" name="success">/Home1</result>
+		</action>
+
+		<action name="Splitter" class="it.unirc.pwm.action.Splitter">
+			<result type="redirect" name="cli">/AreaCliente</result>
+			<result type="redirect" name="tit">/AreaTitolare</result>
+			<result type="redirect" name="login">/RichiediLogin</result>
+		</action>
 	</package>
 
 

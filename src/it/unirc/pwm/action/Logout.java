@@ -48,6 +48,7 @@ public class Logout extends ActionSupport implements SessionAware{
 		
 		session.clear();
 		session.remove("utente");
+		session.remove("account");
 		return SUCCESS;
 	}
 

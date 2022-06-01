@@ -25,7 +25,7 @@
 			<h1 class="site-title"><a href="index.html" rel="home">Choose your Shoes</a></h1>
 			<h2 class="site-description">Shop online</h2>
 			<div align="right">
-			<a href="Profilo"><i class="fa fa-user" aria-hidden="true"style=" font-size:35px;color:black">  </i></a> &nbsp
+			<a href="Splitter"><i class="fa fa-user" aria-hidden="true"style=" font-size:35px;color:black">  </i></a> &nbsp
 			<!-- Far comparire questa icona solo una volta eseguito il login. Fare acnhe logout -->
 			<a href="VisualizzaCarrello"><i class="fa fa-shopping-cart" aria-hidden="true" style=" font-size:35px; color:black">  </i></a> &nbsp &nbsp
 			<a href="RichiediLogin"><i class="fa fa-sign-in" aria-hidden="true"style=" font-size:35px;color:black">  </i></a>

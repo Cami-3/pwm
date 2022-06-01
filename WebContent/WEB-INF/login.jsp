@@ -54,6 +54,8 @@
 			</s:form>
 			<a href="RichiediRegistrazione"><button>Registrazione</button></a>
 	</div>
+	
+	
 <%@ include file="footer.jsp"%>
 					<script src='js/jquery.js'></script>
 					<script src='js/plugins.js'></script>

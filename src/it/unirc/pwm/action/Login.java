@@ -101,12 +101,14 @@ public class Login extends ActionSupport implements SessionAware {
         	cliente = cd.getCliente(cliente);
 			session.put("utente", cliente);
 			session.put("account", account);
+			session.put("TipologiaUtente", "cli");
 			return "cliente";
         }
         //provo a fare il login titolare
         else if(td.getTitolare(titolare)!=null) {
         	titolare = td.getTitolare(titolare);
         	session.put("utente", titolare);
+        	session.put("TipologiaUtente", "tit");
         	return "titolare";
         }
 		else {
