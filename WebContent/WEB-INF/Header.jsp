@@ -29,6 +29,7 @@
 			<!-- Far comparire questa icona solo una volta eseguito il login. Fare acnhe logout -->
 			<a href="VisualizzaCarrello"><i class="fa fa-shopping-cart" aria-hidden="true" style=" font-size:35px; color:black">  </i></a> &nbsp &nbsp
 			<a href="RichiediLogin"><i class="fa fa-sign-in" aria-hidden="true"style=" font-size:35px;color:black">  </i></a>
+			<a href="Logout"><i class="fa fa-sign-in" aria-hidden="true"style=" font-size:35px;color:black">  </i></a>
 
 			</div>
 		</div>

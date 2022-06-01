@@ -100,6 +100,7 @@ public class Login extends ActionSupport implements SessionAware {
         if(cd.getCliente(cliente)!=null) {
         	cliente = cd.getCliente(cliente);
 			session.put("utente", cliente);
+			session.put("account", account);
 			return "cliente";
         }
         //provo a fare il login titolare

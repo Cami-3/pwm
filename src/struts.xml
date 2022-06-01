@@ -103,8 +103,8 @@
 			<result >WEB-INF/areacliente.jsp </result>
 		</action>
 		
-		<action name="Profilo">
-			<result >WEB-INF/areacliente.jsp </result>
+		<action name="Logout">
+			<result>WEB-INF/home1.jsp</result>
 		</action>
 
 	</package>

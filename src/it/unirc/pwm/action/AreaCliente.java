@@ -25,8 +25,21 @@ public class AreaCliente extends ActionSupport implements SessionAware,ClienteAw
 	private static Logger logger = LogManager.getLogger("AreaCliente");
 	private Map<String,Object> session; 
 	private Cliente cliente;
+	private Account account;
 
 	
+
+	public Account getAccount() {
+		return account;
+	}
+
+
+
+	public void setAccount(Account account) {
+		this.account = account;
+	}
+
+
 
 	public static Logger getLogger() {
 		return logger;
@@ -67,6 +80,8 @@ public class AreaCliente extends ActionSupport implements SessionAware,ClienteAw
 	@Override
 	public String execute() throws Exception {
 		cliente=(Cliente) session.get("utente");
+		account=(Account) session.get("account");
+	
 			
 		
 		
