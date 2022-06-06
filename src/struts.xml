@@ -121,6 +121,10 @@
 			<result type="redirect" name="tit">/AreaTitolare</result>
 			<result type="redirect" name="login">/RichiediLogin</result>
 		</action>
+		
+		<action name="Pagamento" class="it.unirc.pwm.action.Pagamento">
+			<result type="redirect" name="success">/Home1</result>
+		</action>
 	</package>
 
 

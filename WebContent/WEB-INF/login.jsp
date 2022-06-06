@@ -27,39 +27,56 @@
 <body
 	class="archive post-type-archive post-type-archive-product woocommerce woocommerce-page">
 	<%@ include file="Header.jsp"%>
-<div class="container">
-	<s:form action="Login" method="post" theme="simple">
+	<div class="container">
 
-				<div id="regLogin"
-					style="width: 100%; text-align: center; margin-top: 10%;">
 
+		<s:form action="Login" method="post" theme="simple">
+
+			<div id="regLogin"
+				style="width: 100%; text-align: left; margin-top: 10%;">
+		
 					<h2>Effettua il Login:</h2>
-					
-					<div class="containerLogin" style="width: 50%;">
-						<label class="labelLogin" for="email"> <b>Username</b>
-						</label>
-						<s:textfield name="email" />
-						<label for="password" class="labelLogin"> <b>Password</b></label>
-						<s:textfield name="password" type="password" />
+			
 
-						<button class="buttonLogin" type="submit">Login</button>
-						<label class="labelLogin"> 
-							<b>Ricordami</b>
-						</label>
+
+				<div class="containerLogin" style="width: 50%;">
+					<label class="labelLogin" for="email"> <b>Username</b>
+					</label>
+
+					<s:textfield name="email" />
+					<br> <br> <label for="password" class="labelLogin">
+						<b>Password</b>
+					</label>
+					<s:textfield name="password" type="password" />
+					<br> <br>
+					<div style="text-align: left">
+						<button
+							style="background-color: black; border-color: black; color: white"
+							;
+						class="buttonLogin" type="submit">Login</button>
+						<label class="labelLogin">
 					</div>
-											
-					
+					<br> </label>
 				</div>
-				
-			</s:form>
-			<a href="RichiediRegistrazione"><button>Registrazione</button></a>
+
+
+			</div>
+
+		</s:form>
+
+		<a href="RichiediRegistrazione"><button
+				style="background-color: black; border-color: black; color: white";>Registrazione</button></a>
+		<br> <br>
+
 	</div>
-	
-	
-<%@ include file="footer.jsp"%>
-					<script src='js/jquery.js'></script>
-					<script src='js/plugins.js'></script>
-					<script src='js/scripts.js'></script>
-					<script src='js/masonry.pkgd.min.js'></script>
+
+
+
+
+	<%@ include file="footer.jsp"%>
+	<script src='js/jquery.js'></script>
+	<script src='js/plugins.js'></script>
+	<script src='js/scripts.js'></script>
+	<script src='js/masonry.pkgd.min.js'></script>
 </body>
 </html>

@@ -58,22 +58,26 @@
 										€</span>
 								</h3>
 
-								
+
 
 
 
 								<s:form action="AggiungiCarrello">
-									<s:hidden name="id" value="%{prodotto.idprodotto}" /> 
-									<s:select headerKey="-1" headerValue="Scegli la taglia"
-										list="taglie" name="" />
+									<s:hidden name="id" value="%{prodotto.idprodotto}" />
+									<s:select label="Scegli la taglia" headerKey="-1"
+										headerValue="-" list="taglie" name="" />
 
 									<s:textfield name="richiesta" label="Quantità" type="number"
 										min="1" value="1" max="3"></s:textfield>
+									<br>
+									<div>
+										<button
+											style="background-color: black; border-color: black; color: white"
+											; type="submit" class="single_add_to_cart_button button alt">Aggiungi
+											al carrello</button>
+									</div>
 
 
-									<button type="submit"
-										class="single_add_to_cart_button button alt">Aggiungi
-										al carrello</button>
 
 								</s:form>
 

@@ -33,19 +33,37 @@
 			<tbody>
 				<tr>
 					<td>PRODOTTO</td>
-					<td rowspan="1">RIEPILOGO</td>
+					<td>IMG</td>
 				</tr>
 
 				<!-- Iterator -->
 				<s:iterator value="carrello">
 					<tr>
-						<td><a href="ShoeDescription?id=<s:property value="p.idprodotto"/>"> <s:property value="p.nome" /> </a> <br> <s:property
-								value="quantRichiesta" /> <br> <span class="price">
-								<span class="amount"> <s:property value="p.prezzo" />€ </td>
+						<td>
+							<h5>Nome:</h5> <s:property value="p.nome" />
+						</td>
+						<td rowspan="3"> <img
+							src="asset/img-prodotti/<s:property value="p.idprodotto"/>.jpg"
+							alt="" style="width: 200px; margin-right: 1px"></td>
+					</tr>
+					<tr>
+						<td><h5>Quantità richiesta :</h5> <s:property
+								value="quantRichiesta" /></td>
+					</tr>
+					<tr>
+						<td><h5>Prezzo:</h5> <span class="price"> <span
+								class="amount"> <s:property value="p.prezzo" />€</td>
+					</tr>
+					<tr>
+						<!-- COL1 -->
+						<td><br> <br> </span></span></td>
+						<!-- COL2-->
+
+						<td></td>
 					</tr>
 				</s:iterator>
 				<!-- Iterator fine -->
-				</tr>
+
 			</tbody>
 		</table>
 
@@ -53,7 +71,11 @@
 
 
 		<br>
-		<a href="#" class="button">Procedi al pagamento</a>
+		<a href="Pagamento" class="button">Procedi al pagamento</a>
+		
+		<br>
+		
+		<br>
 </div>
 
 

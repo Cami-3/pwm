@@ -33,112 +33,109 @@
 		<article class="post invert style3 alt">
 
 			<div style="width: 50%">
-				<%-- 			<s:form action="Login" method="post" theme="simple"> --%>
-
-				<!-- 				<div id="regLogin" -->
-				<!-- 					style="width: 100%; text-align: center; margin-top: 10%;"> -->
-
-				<!-- 					<h2>Effettua il Login:</h2> -->
-				<%-- 					<s:fielderror style="color:red" fieldName="emailpassword" /> --%>
-				<!-- 					<div class="containerLogin" style="width: 50%;"> -->
-				<!-- 						<label class="labelLogin" for="username"> <b>Username</b> -->
-				<!-- 						</label> -->
-				<%-- 						<s:textfield name="email" /> --%>
-				<!-- 						<label for="password" class="labelLogin"> <b>Password</b></label> -->
-				<%-- 						<s:textfield name="password" type="password" /> --%>
-
-				<!-- 						<button class="buttonLogin" type="submit">Login</button> -->
-				<!-- 						<label class="labelLogin"> <input type="checkbox" -->
-				<!-- 							checked="checked" name="remember"> -->
-				<!-- 						</label> -->
-				<!-- 					</div> -->
-				<!-- 				</div> -->
-				<%-- 			</s:form> --%>
-			</div>
+							</div>
 			<div style="width: 50%; background: white;">
 				<div id="regLogin"
 					style="width: 100%; text-align: center; margin-top: 5%;">
 
 
-					<h2 style="color: #1c1c1c;">Registrati qui:</h2>
-					<div style="margin-left: 20%; margin-right: 20%;">
+					<h2 style="color: #1c1c1c; ">Registrati qui:</h2>
+					<div style="text-align:center">
 						<div>
+						
 							<div>
 								<span></span>
 							</div>
+							<div align="left">
+							
 							<s:form theme="simple" method="post" action="Registrazione">
-								<div>
-									<div>
-										<div>
-											<label for="email">Email</label>
+							
+							<table>
+    <tr>
+        <td>		<label for="email">Email</label>
 
-											<s:textfield cssClass="form-control" name="email" />
+											
 
-											<h6 style="color: red;">
-												<s:fielderror fieldName="email" />
-											</h6>
-											<h6 style="color: red;">
-												<s:fielderror fieldName="email_presente" />
-											</h6>
-										</div>
-									</div>
-									<div>
-										<div>
-											<label for="nome">Nome </label>
+											</td>
+											
+        <td><s:textfield cssClass="form-control" name="email" /></td>
+    </tr>
+    <tr>
+        <td><label for="nome">Nome </label>
 
-											<s:textfield cssClass="form-control" name="cliente.nome" />
+								
 
-											<h6 style="color: red;">
-												<s:fielderror fieldName="cliente.nome" />
-											</h6>
-										</div>
-									</div>
-								</div>
-								<div>
-									<div>
-										<div>
-											<label for="cognome">Cognome </label>
-											<s:textfield cssClass="form-control" name="cliente.cognome" />
-											<h6 style="color: red;">
-												<s:fielderror fieldName="cliente.cognome" />
-											</h6>
-										</div>
-									</div>
-									<div>
-
-										<form>
-											<label>Data di Nascita <input
-												type="date" name="cliente.datanascita">
+											</td>
+											<td>	<s:textfield cssClass="form-control" name="cliente.nome" /> </td>
+    </tr>
+    <tr>
+        <td><label for="cognome">Cognome </label>
+											
+											</td>
+											<td><s:textfield cssClass="form-control" name="cliente.cognome" /></td>
+    </tr>
+    <tr>
+        <td>	<form>
+											<label>Data di Nascita 
 											</label>  
-										</form>
-										<div>
-											<label for="Cf">Codice Fiscale </label>
-											<s:textfield cssClass="form-control" name="cliente.CF" />
-											<h6 style="color: red;">
-												<s:fielderror fieldName="cliente.c_f" />
-											</h6>
-										</div>
-										<div>
-											<label for="Piva">P.Iva </label>
-											<s:textfield cssClass="form-control" name="cliente.PIva" />
-											<h6 style="color: red;">
-												<s:fielderror fieldName="cliente.p_iva" />
-											</h6>
-										</div>
-										<div>
+										</td>
+										<td><input
+												type="date" name="cliente.datanascita"></td>
+												</form>
+    </tr>
+    <tr>
+        <td>		<label for="Cf">Codice Fiscale </label>
+											
+											</td>
+											<td><s:textfield cssClass="form-control" name="cliente.CF" /></td>
+    </tr>
+    <tr>
+        <td>	<label for="Piva">P.Iva </label>
+										
+										</td>
+										<td>	<s:textfield cssClass="form-control" name="cliente.PIva" /></td>
+    </tr>
+    <tr>
+        <td>
 											<label for="iban">Iban </label>
-											<s:textfield cssClass="form-control" name="cliente.iban" />
-											<h6 style="color: red;">
-												<s:fielderror fieldName="cliente.iban" />
-											</h6>
-										</div>
-										<div>
+											
+											</td>
+											<td><s:textfield cssClass="form-control" name="cliente.iban" /></td>
+    </tr>
+    <tr>
+        <td>
 											<label for="telefono">Numero di telefono</label>
-											<s:textfield cssClass="form-control" name="account.numero" />
-											<h6 style="color: red;">
-												<s:fielderror fieldName="account.numero" />
-											</h6>
-										</div>
+											
+										</td>
+										<td><s:textfield cssClass="form-control" name="account.numero" /></td>
+    </tr>
+    <tr>
+        <td><label for="password">Password </label>
+												
+												</td>
+												<td><s:password cssClass="form-control" name="password" /></td>
+    </tr>
+    <tr>
+        <td><div class="form-group">
+												<label for="confermaPassword">Conferma password</label>
+											
+											
+												</div></td>
+												<td>	<s:password name="confermaPassword" /></td>
+    </tr>
+</table>
+								
+									
+						</s:form>	
+											
+									
+									
+
+									
+										
+									
+									
+										
 										<!-- 									<div> -->
 										<!-- 										<label for="indirizzo-via">Indirizzo e via</label> -->
 										<%-- 										<s:textfield cssClass="form-control" name="indirizzo.via" /> --%>
@@ -155,38 +152,27 @@
 										</h6>
 									</div>
 								</div>-->
-										<div>
+										
+												
+										
+											
+										
 											<div>
-												<label for="password">Password </label>
-												<s:password cssClass="form-control" name="password" />
-												<h6 style="color: red;">
-													<s:fielderror fieldName="password" />
-												</h6>
-											</div>
-										</div>
-										<div>
-											<div class="form-group">
-												<label for="confermaPassword">Conferma password</label>
-												<s:password name="confermaPassword" />
-												<h6 style="color: red;">
-													<s:fielderror fieldName="conferma_incoerente" />
-												</h6>
-											</div>
-
-										</div>
-										<div>
-											<div>
+							<button
+											style="background-color: black; border-color: black; color: white"
+											; type="submit" class="single_add_to_cart_button button alt">Aggiungi
+											al carrello</button>
 												<s:submit value="Registrati"></s:submit>
+												</div>
+														
 											</div>
 										</div>
 									</div>
-							</s:form>
+							
 							<p></p>
 
 						</div>
-					</div>
-				</div>
-			</div>
+		
 		</article>
 
 
