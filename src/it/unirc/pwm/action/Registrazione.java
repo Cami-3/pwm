@@ -82,7 +82,7 @@ public class Registrazione extends ActionSupport {
 
 		account.setCliente(cliente);
 		cd.inserisciCliente(cliente);
-		ac.inserisciAccount(account);
+		//ac.inserisciAccount(account);
 		logger.info("ho finito");
 
 		return SUCCESS;
