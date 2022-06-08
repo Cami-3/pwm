@@ -79,7 +79,7 @@
 
 		<action name="Registrazione"
 			class="it.unirc.pwm.action.Registrazione">
-			<result name="success" type="redirect">/Home1</result>
+			<result>WEB-INF/home1.jsp</result>
 		</action>
 		<action name="RichiediRegistrazione">
 			<result>WEB-INF/registrazione.jsp</result>
