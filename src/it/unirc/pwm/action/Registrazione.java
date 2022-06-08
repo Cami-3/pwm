@@ -77,10 +77,14 @@ public class Registrazione extends ActionSupport {
 		Account b = ac.getLastAccount();
 		logger.info("L'ultimo account registrato è il n°: " + b.getId());
 		ClienteDAO cd = ClienteDAOFactory.getDAO();
-		account.setId(b.getId()+1);
+		int nuovoid= b.getId()+1;
+		account.setId(nuovoid);
 		account.setEmail(email);
 		account.setPassword(password);
 		account.setCliente(cliente);
+		cliente.setAccount(account);
+		logger.info("Account: " + account.toString());
+		logger.info("Cliente: " + cliente.toString());
 		ac.inserisciAccount(account);
 		cd.inserisciCliente(cliente);
 		logger.info("ho finito");
