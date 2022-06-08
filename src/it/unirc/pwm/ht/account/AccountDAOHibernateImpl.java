@@ -120,5 +120,22 @@ public class AccountDAOHibernateImpl implements AccountDAO{
 		return c;
 	}
 	
+	public Account getLastAccount() {
+		Session session = HibernateUtil.getSessionFactory().openSession();
+		Transaction transaction = session.beginTransaction();
+		Account i = null; 
+		try {
+			i = (Account) session.createQuery("from Account order by id desc").setMaxResults(1).uniqueResult();
+			transaction.commit();
+		} catch (HibernateException e) {
+			transaction.rollback();
+			return null;
+
+		} finally {
+			if (session!=null) //spesso omesso
+				session.close();
+		}
+		return i;
+	}
 
 }

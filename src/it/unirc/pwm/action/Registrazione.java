@@ -74,15 +74,16 @@ public class Registrazione extends ActionSupport {
 	public String execute(){
 		logger.info("Sono nell'execute");
 		AccountDAO ac = AccountDAOFactory.getDAO();
-
+		Account b = ac.getLastAccount();
 		ClienteDAO cd = ClienteDAOFactory.getDAO();
 		logger.info("i dao sono ok");
+		account.setId(b.getId()+1);
 		account.setEmail(email);
 		account.setPassword(password);
-
+		account.setNumero("0000000000");
 		account.setCliente(cliente);
+		ac.inserisciAccount(account);
 		cd.inserisciCliente(cliente);
-		//ac.inserisciAccount(account);
 		logger.info("ho finito");
 
 		return SUCCESS;

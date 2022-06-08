@@ -8,6 +8,6 @@ public interface AccountDAO {
 	public boolean aggiornaAccount(Account c);
 	public boolean eliminaAccount(Account c);
 	public Account autentica(Account c);
-	
+	public Account getLastAccount();
 
 }
