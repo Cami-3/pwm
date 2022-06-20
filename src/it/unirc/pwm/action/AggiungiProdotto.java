@@ -25,7 +25,7 @@ public class AggiungiProdotto extends ActionSupport {
 	private static Logger logger = LogManager.getLogger("Aggiungi prodotto: ");
 
 	private Prodotto p;
-	
+
 
 
 
@@ -47,9 +47,11 @@ public class AggiungiProdotto extends ActionSupport {
 
 
 	public String execute(){
-
-	ProdottoDAO pd = ProdottoDAOFactory.getDAO();
-	pd.inserisciProdotto(p);
+		
+		ProdottoDAO pd = ProdottoDAOFactory.getDAO();
+		int id = pd.getLastProdotto().getIdprodotto();
+		p.setIdprodotto(id+1);
+		pd.inserisciProdotto(p);
 
 		return SUCCESS;
 	}

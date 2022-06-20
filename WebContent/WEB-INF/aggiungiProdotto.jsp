@@ -43,13 +43,57 @@
 						<label> Nome: </label>
 						<s:textfield name="p.nome" />
 					</div>
+					<br>
 					
 					<div> 
 						<label> Marca: </label>
 						<s:textfield name="p.marca" />
 					</div>
+					<br>
+					
+					<div> 
+						<label> Genere: </label>
+						<s:textfield name="p.genere" />
+					</div>
+					<br>
+					
+					<div> 
+						<label> Prezzo: </label>
+						<s:textfield name="p.prezzo" />
+					</div>
+					<br>
+					
+					<div> 
+						<label> Taglia: </label>
+						<s:textfield name="p.taglia" />
+					</div>
+					
+					
+					<br>
+					
+					<div> 
+						<label> Colore: </label>
+						<s:textfield name="p.colore" />
+					</div>
+					<br>
+					
+					<div> 
+						<label> tipoCliente: </label>
+						<s:textfield name="p.tipoCliente" />
+					</div>
+					<br>
+<!-- 					<div>  -->
+<!-- 						<label> Quantità: </label> -->
+<%-- 						<s:textfield name="p.quantita" /> --%>
+<!-- 					</div> -->
+					
+					<div> 
+					<label> Quantità: </label>
+					<s:textfield name="p.quantita" label="Quantità" type="number"
+										min="1" value="1" max=""></s:textfield>
+										</div> 
 
-					<button class="buttonLogin" type="submit">Login</button>
+					<button class="buttonLogin" type="submit">Aggiungi</button>
 					<!-- CON SUBMIT MANDI I DATI DEL FORM ALLA ACTION -->
 				</s:form>
 				<!-- CON QUESTA DICHIARAZIONE CHIUDI UN FORM -->

@@ -15,6 +15,7 @@ public interface ProdottoDAO {
 	public List<Prodotto> getProdotti();
 	public List<Prodotto> getProdottiRandom();
 	public List<Prodotto> getProdottoByNome(String tipoCliente,String nome);
+	public Prodotto getLastProdotto();
 	
 
 }

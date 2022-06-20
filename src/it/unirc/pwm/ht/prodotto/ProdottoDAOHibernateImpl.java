@@ -9,6 +9,7 @@ import org.hibernate.query.Query;
 
 
 import it.unirc.pwm.hibernate.util.HibernateUtil;
+import it.unirc.pwm.ht.account.Account;
 
 
 
@@ -214,7 +215,23 @@ System.out.println("tipo " + tipoCliente);
 		return prodottiBambino;
 	}
 	
+	public Prodotto getLastProdotto() {
+		Session session = HibernateUtil.getSessionFactory().openSession();
+		Transaction transaction = session.beginTransaction();
+		Prodotto i = null; 
+		try {
+			i = (Prodotto) session.createQuery("from Prodotto order by id desc").setMaxResults(1).uniqueResult();
+			transaction.commit();
+		} catch (HibernateException e) {
+			transaction.rollback();
+			return null;
 
+		} finally {
+			if (session!=null) //spesso omesso
+				session.close();
+		}
+		return i;
+	}
 
 
 }
