@@ -134,6 +134,10 @@
 			<result type="redirect" name="success">/AreaTitolare</result>
 		</action>
 		
+						<action name="VisualizzaProdotti" class="it.unirc.pwm.action.VisualizzaProdotti">
+			<result name="success">WEB-INF/visualizzaProdotti.jsp</result>
+		</action>
+		
 	</package>
 
 

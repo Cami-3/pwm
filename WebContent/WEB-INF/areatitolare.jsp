@@ -105,6 +105,7 @@
 										<s:fielderror name="descrizione"></s:fielderror>
 										<button style="background-color:black; border-color:black; color:white">Visualizza Ordini</button>
 										<a href="richiediAggiungiProdotto"><button style="background-color:black; border-color:black; color:white">Aggiungi un prodotto</button></a>
+										<a href="VisualizzaProdotti"><button style="background-color:black; border-color:black; color:white">Visualizza prodotti</button></a>
 										 <br>
 										 <br>
 									

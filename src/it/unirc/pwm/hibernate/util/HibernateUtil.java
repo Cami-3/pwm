@@ -17,7 +17,7 @@ public class HibernateUtil {
 		try {
 			//Scegliere in base all'esercitazione da svolgere
 			//ogni volta andare a selezionare quale serve
-			SessionFactory sessionFactory = new Configuration().configure().buildSessionFactory();
+			SessionFactory sessionFactory = new Configuration().configure("/hibernate.cfg.xml").buildSessionFactory();
 
 			return sessionFactory;
 
