@@ -38,14 +38,16 @@
 			<table>
 				<s:iterator value="prodotti">
 					<tr>
-						<td style="font-size: 18px; color: black"><s:property
-								value="nome" /></td>
-						<td style="font-size: 18px; color: black"><i
-							class="fa fa-times" aria-hidden="true"
-							style="font-size: 18px; color: black"></td>
-						<td style="font-size: 18px; color: black"><i
-							class="fa fa-pencil" aria-hidden="true"
-							style="font-size: 18px; color: black"></td>
+						<td style="font-size: 18px; color: black"> <s:property value="nome" /> </td>
+						<td style="font-size: 18px; color: black" >  Taglia: <s:property value="taglia" /></td>
+						<td style="font-size: 18px; color: black"> <a class="fa fa-times" href="EliminaProdotto?idp=<s:property	value="idprodotto"/>"> 
+						 </a>
+							</td>
+						<td style="font-size: 18px; color: black">
+						<a class="fa fa-pencil" href="RichiediModificaProdotto?pM.idprodotto=<s:property	value="idprodotto"/>">
+							</td>
+<td style="font-size: 18px; color: black"> <a class="fa fa-plus" href="RichiediIncrementaProdotto?pA.idprodotto=<s:property	value="idprodotto"/>"> 
+							</td>
 					</tr>
 				</s:iterator>
 			</table>
@@ -65,5 +67,9 @@
 <script src='js/plugins.js'></script>
 <script src='js/scripts.js'></script>
 <script src='js/masonry.pkgd.min.js'></script>
+<script type="text/javascript">
+function Sicuro() {
+"Prodotto eliminato!"	
+}</script>
 </body>
 </html>

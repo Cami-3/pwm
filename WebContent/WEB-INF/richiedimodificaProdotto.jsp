@@ -31,69 +31,77 @@
 	<div class="container">
 		<div id="regLogin"
 			style="width: 100%; text-align: left; margin-top: 10%;">
-			<h2>Area titolare: inserisci un prodotto</h2>
+			<h2>Area titolare: Modifica un prodotto</h2>
 
 			<!-- DENTRO IL FORM CI VANNO SOLO I DATI DA MANDARE ALLA PAGINA SUCCESSIVA -->
 			<div>
-				<s:form action="AggiungiProdotto" method="post" theme="simple">
+				<s:form action="IncrementaProdotto" method="post" theme="simple">
+					<%-- 				<s:hidden name="p1.idprodotto" value="%{pA.idprodotto}"/> --%>
 					<!-- CON QUESTA DICHIARAZIONE APRI UN FORM -->
 
 
-					<div> <!-- Ogni volta che dovete aggiungere un parametro al form, copiate da questa riga fino alla chiusura del div (</div> - riga 45) e adattate i parametri, mi raccomando la dicitura p. -->
+					<div>
+						<!-- Ogni volta che dovete aggiungere un parametro al form, copiate da questa riga fino alla chiusura del div (</div> - riga 45) e adattate i parametri, mi raccomando la dicitura p. -->
 						<label> Nome: </label>
-						<s:textfield name="p.nome" />
+						<s:textfield name="p2.nome" value="%{pM.nome}"></s:textfield>
+						<%-- 						<s:hidden name="p1.nome" value="%{pM.nome}" /> --%>
 					</div>
 					<br>
-					
-					<div> 
+
+					<div>
 						<label> Marca: </label>
-						<s:textfield name="p.marca" />
+
+						<s:textfield name="p2.marca" value="%{pM.marca}"></s:textfield>
+
 					</div>
 					<br>
-					
-					<div> 
+
+					<div>
 						<label> Genere: </label>
-						<s:textfield name="p.genere" />
+						<s:textfield name="p2.genere" value="%{pM.genere}"></s:textfield>
+
 					</div>
 					<br>
-					
-					<div> 
+
+					<div>
 						<label> Prezzo: </label>
-						<s:textfield name="p.prezzo" />
+						<s:textfield name="p2.prezzo" value="%{pM.prezzo}"></s:textfield>
+
 					</div>
 					<br>
-					
-					<div> 
+
+					<div>
 						<label> Taglia: </label>
-						<s:textfield name="p.taglia" />
+						<s:textfield name="p2.taglia" value="%{pM.taglia}"></s:textfield>
 					</div>
-					
-					
+
+
 					<br>
-					
-					<div> 
+
+					<div>
 						<label> Colore: </label>
-						<s:textfield name="p.colore" />
+						<s:textfield name="p2.colore" value="%{pM.colore}"></s:textfield>
+
 					</div>
 					<br>
-					
-					<div> 
+
+					<div>
 						<label> tipoCliente: </label>
-						<s:textfield name="p.tipoCliente" />
+						<s:textfield name="p2.tipoCliente" value="%{pM.tipoCliente}"></s:textfield>
+
 					</div>
 					<br>
-<!-- 					<div>  -->
-<!-- 						<label> Quantità: </label> -->
-<%-- 						<s:textfield name="p.quantita" /> --%>
-<!-- 					</div> -->
-					
-					<div> 
-					<label> Quantità: </label>
-					<s:textfield name="p.quantita" label="Quantità" type="number"
-										min="1" value="1" max=""></s:textfield>
-										</div> 
+					<!-- 					<div>  -->
+					<!-- 						<label> Quantità: </label> -->
+					<%-- 						<s:textfield name="p.quantita" /> --%>
+					<!-- 					</div> -->
+
+					<div>
+						<label> Quantità: </label>
+						<s:textfield name="p2.quantita" value="%{pM.quantita}"></s:textfield>
+					</div>
 <br>
-					<button class="buttonLogin" type="submit">Aggiungi</button>
+					<button type="submit">Aggiungi</button>
 					<!-- CON SUBMIT MANDI I DATI DEL FORM ALLA ACTION -->
 				</s:form>
 				<!-- CON QUESTA DICHIARAZIONE CHIUDI UN FORM -->

@@ -138,6 +138,23 @@
 			<result name="success">WEB-INF/visualizzaProdotti.jsp</result>
 		</action>
 		
+					<action name="EliminaProdotto" class="it.unirc.pwm.action.EliminaProdotti">
+			<result name="success" type="redirect">/VisualizzaProdotti</result>
+		</action>
+		<action name="RichiediIncrementaProdotto" class="it.unirc.pwm.action.RichiediIncrementaProdotto">
+			<result>WEB-INF/richiediincrementaProdotto.jsp</result>
+		</action>
+		
+				<action name="IncrementaProdotto" class="it.unirc.pwm.action.IncrementaProdotto">
+			<result type="redirect" name="success">/VisualizzaProdotti</result>
+		</action>
+		<action name="RichiediModificaProdotto" class="it.unirc.pwm.action.RichiediModificaProdotto">
+			<result>WEB-INF/richiedimodificaProdotto.jsp</result>
+		</action>
+		
+				<action name="ModificaProdotto" class="it.unirc.pwm.action.ModificaProdotto">
+			<result type="redirect" name="success">/VisualizzaProdotti</result>
+		</action>
 	</package>
 
 

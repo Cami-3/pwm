@@ -175,6 +175,25 @@ System.out.println("tipo " + tipoCliente);
 		return prodotti;
 	}
 	
+	public List<Prodotto> getProdottiAll() {
+		Session session = HibernateUtil.getSessionFactory().openSession();
+		Transaction transaction = null;
+		List<Prodotto> prodotti = null;
+		try {
+			transaction = session.beginTransaction();
+			Query<Prodotto> q = session.createQuery("FROM Prodotto order by nome");
+			prodotti = (List<Prodotto>) q.list();
+			transaction.commit();
+		} catch (HibernateException e) {
+			transaction.rollback();
+			e.printStackTrace();
+		} finally {
+			if (session!=null) //spesso omesso
+				session.close();
+		}	
+		return prodotti;
+	}
+	
 	public List<Prodotto> getProdottiRandom() {
 		Session session = HibernateUtil.getSessionFactory().openSession();
 		Transaction transaction = null;

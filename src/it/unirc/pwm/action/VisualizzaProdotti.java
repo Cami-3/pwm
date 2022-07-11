@@ -42,7 +42,7 @@ public class VisualizzaProdotti extends ActionSupport{
 	@Override
 	public String execute() throws Exception {
 		ProdottoDAO pd = ProdottoDAOFactory.getDAO();
-		prodotti = pd.getProdotti();
+		prodotti = pd.getProdottiAll();
 		 logger.info("Nel DB ci sono: "+prodotti.size()+" prodotti");
 		return SUCCESS;
 	}
