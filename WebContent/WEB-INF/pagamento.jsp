@@ -28,78 +28,28 @@
 	<body
 		class="archive post-type-archive post-type-archive-product woocommerce woocommerce-page">
 		<%@ include file="Header.jsp"%>
-
-		<table class="source-tableeditor">
-			<tbody>
-				<tr>
-					<td>PRODOTTO</td>
-					<td>IMG</td>
-				</tr>
-
-				<!-- Iterator -->
-				<s:iterator value="carrello1">
-					<tr>
-						<td>
-							<h5>Nome:</h5> <s:property value="p.nome" />
-						</td>
-						<td rowspan="3"> <img
-							src="asset/img-prodotti/<s:property value="p.idprodotto"/>.jpg"
-							alt="" style="width: 200px; margin-right: 1px"></td>
-					</tr>
-					<tr>
-						<td><h5>Quantità richiesta :</h5> <s:property
-								value="quantRichiesta" /></td>
-					</tr>
-					<tr>
-						<td><h5>Prezzo:</h5> <span class="price"> <span
-								class="amount"> <s:property value="p.prezzo" />€</td>
-					</tr>
-					<tr>
-						<!-- COL1 -->
-						<td><br> <br> </span></span></td>
-						<!-- COL2-->
-
-						<td></td>
-					</tr>
-				</s:iterator>
-				<!-- Iterator fine -->
-
-			</tbody>
-		</table>
-
-
-
-
-		<br>
-		
+<s:form action="#" method="post" theme="simple">
 
 			<div id="regLogin"
 				style="width: 100%; text-align: left; margin-top: 10%;margin-left:230px">
 		
-					<h2>Sei sicuro di voler effettuare l'acquisto?</h2>
+					<h2>Complimenti, hai effettuato un ordine!</h2>
 			
 
 
 				<div class="containerLogin" style="width: 50%; margin-left: 188px">
 					
-						<a href="Pagamento"><button
-				style="background-color: black; border-color: black; color: white";>SI</button></a>
-						
-						
-							<a href="VisualizzaCarrello"><button
-				style="background-color: black; border-color: black; color: white";>NO</button></a>
+						<a href="AreaCliente"		style="background-color: black; border-color: black; color: white";>Torna all'area personale </a>
+					
+					
 					</div>
-					<br> 
+					<br>
 				</div>
 
 
 			</div>
 
-	
-		
-		<br>
-		
-		<br>
+		</s:form>
 </div>
 
 

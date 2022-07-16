@@ -159,8 +159,8 @@
 		<action name="RiepilogoOrdine" >
 			<result type="redirect" name="success">/AreaCLiente</result>
 		</action>
-			<action name="RiepiProva" >
-			<result type="redirect" name="success">/AreaCLiente</result>
+			<action name="Pagamento"  class="it.unirc.pwm.action.Pagamento" >
+			<result name="success">WEB-INF/pagamento.jsp</result>
 		</action>
 			<action name="Prova" >
 			<result type="redirect" name="success">/AreaCLiente</result>

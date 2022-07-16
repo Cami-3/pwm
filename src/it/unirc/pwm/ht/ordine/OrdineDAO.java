@@ -7,6 +7,6 @@ public interface OrdineDAO {
 	public boolean inserisciOrdine(Ordine c);
 	public boolean aggiornaOrdine(Ordine c);
 	public boolean eliminaOrdine(Ordine c);
-	
+	public Ordine getLastOrdine();
 
 }

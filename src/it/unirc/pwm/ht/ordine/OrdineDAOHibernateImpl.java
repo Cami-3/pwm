@@ -7,6 +7,7 @@ import org.hibernate.Session;
 import org.hibernate.Transaction;
 
 import it.unirc.pwm.hibernate.util.HibernateUtil;
+import it.unirc.pwm.ht.prodotto.Prodotto;
 
 
 
@@ -99,6 +100,23 @@ public class OrdineDAOHibernateImpl implements OrdineDAO{
 				return true;
 	}
 	
+	public Ordine getLastOrdine() {
+		Session session = HibernateUtil.getSessionFactory().openSession();
+		Transaction transaction = session.beginTransaction();
+		Ordine i = null; 
+		try {
+			i = (Ordine) session.createQuery("from Ordine order by id desc").setMaxResults(1).uniqueResult();
+			transaction.commit();
+		} catch (HibernateException e) {
+			transaction.rollback();
+			return null;
+
+		} finally {
+			if (session!=null) //spesso omesso
+				session.close();
+		}
+		return i;
+	}
 
 
 
