@@ -139,12 +139,13 @@
 
 
 
-								<div>
+								<div style="margin-left: 171px;">
 									<button
 										style="background-color: black; border-color: black; color: white"
 										; type="submit" class="single_add_to_cart_button button alt">Aggiungi
 										al carrello</button>
-									<s:submit value="Registrati"></s:submit>
+										<div style="margin-left: 32px;margin-top: 9px;"><s:submit value="Registrati"></s:submit></div>
+									
 								</div>
 
 							</div>

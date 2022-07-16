@@ -122,9 +122,7 @@
 			<result type="redirect" name="login">/RichiediLogin</result>
 		</action>
 		
-		<action name="Pagamento" class="it.unirc.pwm.action.Pagamento">
-			<result type="redirect" name="success">/Home1</result>
-		</action>
+		
 		
 				<action name="richiediAggiungiProdotto">
 			<result>WEB-INF/aggiungiProdotto.jsp</result>
@@ -154,6 +152,18 @@
 		
 				<action name="ModificaProdotto" class="it.unirc.pwm.action.ModificaProdotto">
 			<result type="redirect" name="success">/VisualizzaProdotti</result>
+		</action>
+		<action name="RichiediRiepilogoOrdine" class="it.unirc.pwm.action.RichiediRiepilogoOrdine">
+			<result name="success">WEB-INF/riepilogordine.jsp</result>
+		</action>
+		<action name="RiepilogoOrdine" >
+			<result type="redirect" name="success">/AreaCLiente</result>
+		</action>
+			<action name="RiepiProva" >
+			<result type="redirect" name="success">/AreaCLiente</result>
+		</action>
+			<action name="Prova" >
+			<result type="redirect" name="success">/AreaCLiente</result>
 		</action>
 	</package>
 

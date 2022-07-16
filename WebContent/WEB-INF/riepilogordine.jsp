@@ -37,7 +37,7 @@
 				</tr>
 
 				<!-- Iterator -->
-				<s:iterator value="carrello">
+				<s:iterator value="carrello1">
 					<tr>
 						<td>
 							<h5>Nome:</h5> <s:property value="p.nome" />
@@ -71,7 +71,31 @@
 
 
 		<br>
-		<a href="RichiediRiepilogoOrdine" class="button">Procedi al pagamento</a>
+		<s:form action="Login" method="post" theme="simple">
+
+			<div id="regLogin"
+				style="width: 100%; text-align: left; margin-top: 10%;margin-left:230px">
+		
+					<h2>Sei sicuro di voler effettuare l'acquisto?</h2>
+			
+
+
+				<div class="containerLogin" style="width: 50%; margin-left: 188px">
+					
+						<<a href="AreaCliente"><button
+				style="background-color: black; border-color: black; color: white";>SI</button></a>
+						<label class="labelLogin">
+						
+							<a href="VisualizzaCarrello"><button
+				style="background-color: black; border-color: black; color: white";>NO</button></a>
+					</div>
+					<br> </label>
+				</div>
+
+
+			</div>
+
+		</s:form>
 		
 		<br>
 		

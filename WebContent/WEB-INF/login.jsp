@@ -30,16 +30,16 @@
 	<div class="container">
 
 
-		<s:form action="Login" method="post" theme="simple">
+		<s:form action="Login" method="post" style="margin-left: -41px;margin-top: -65px;" theme="simple">
 
 			<div id="regLogin"
-				style="width: 100%; text-align: left; margin-top: 10%;">
+				style="width: 100%; text-align: left; margin-top: 10%;margin-left:375px;">
 		
-					<h2>Effettua il Login:</h2>
+					<h2 style="margin-left: 44px;">Effettua il Login:</h2>
 			
 
 
-				<div class="containerLogin" style="width: 50%;">
+				<div class="containerLogin" style="width: 50%;margin-top: 27px;">
 					<label class="labelLogin" for="email"> <b>Username</b>
 					</label>
 
@@ -51,7 +51,7 @@
 					<br> <br>
 					<div style="text-align: left">
 						<button
-							style="background-color: black; border-color: black; color: white"
+							style="background-color: black; border-color: black; color: white;margin-left: 136px;"
 							;
 						class="buttonLogin" type="submit">Login</button>
 						<label class="labelLogin">
@@ -65,7 +65,7 @@
 		</s:form>
 
 		<a href="RichiediRegistrazione"><button
-				style="background-color: black; border-color: black; color: white";>Registrazione</button></a>
+				style="background-color: black; border-color: black; color: white;margin-left: 448px;";>Registrazione</button></a>
 		<br> <br>
 
 	</div>
