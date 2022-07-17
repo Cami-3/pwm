@@ -57,6 +57,7 @@ public class Pagamento extends ActionSupport implements ServletResponseAware, Se
 		OrdineDAO od = OrdineDAOFactory.getDAO();
 		Prodotto p = new Prodotto();
 		ProdottoDAO pd = ProdottoDAOFactory.getDAO();
+		int cumulativo_ordine = od.getLastOrdine().getCumulativoOrdine();
 		//logger.info("Data : " +d);
 		for (ProdottoPerCarrello ppc : carrello) {
 			int nod=od.getLastOrdine().getIdordine();
@@ -65,14 +66,14 @@ public class Pagamento extends ActionSupport implements ServletResponseAware, Se
 			o.setIdordine(nod+1);
 			o.setCliente(c);
 			o.setData(d);
+			o.setCumulativoOrdine(cumulativo_ordine);
 			OrdineProdottoId id1 = new OrdineProdottoId(o.getIdordine(), ppc.getP().getIdprodotto());
 			logger.info("Op : " +id1.toString());
 			OrdineProdotto op = new OrdineProdotto(id1, o, ppc.getP());
-			od.inserisciOrdine(o);
 			logger.info("Comprato prodotto : " +ppc.getP().getNome());
 			p = pd.getProdotto(ppc.getP());
 			p.setQuantita(p.getQuantita() - ppc.getQuantRichiesta());
-
+			od.inserisciOrdine(o);
 			pd.aggiornaProdotto(p);
 			logger.info("Aggiornato prodotto : " +ppc.getP().getNome());
 		}
