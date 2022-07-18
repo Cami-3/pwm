@@ -19,6 +19,8 @@ import it.unirc.pwm.ht.ordine.Ordine;
 import it.unirc.pwm.ht.ordine.OrdineDAO;
 import it.unirc.pwm.ht.ordine.OrdineDAOFactory;
 import it.unirc.pwm.ht.ordine.OrdineProdotto;
+import it.unirc.pwm.ht.ordine.OrdineProdottoDAO;
+import it.unirc.pwm.ht.ordine.OrdineProdottoDAOFactory;
 import it.unirc.pwm.ht.ordine.OrdineProdottoId;
 import it.unirc.pwm.ht.prodotto.Prodotto;
 import it.unirc.pwm.ht.prodotto.ProdottoDAO;
@@ -55,9 +57,10 @@ public class Pagamento extends ActionSupport implements ServletResponseAware, Se
 		logger.info("Il cliente e' : " +c.getNome() +" "+c.getCognome());
 		Date d = new Date();
 		OrdineDAO od = OrdineDAOFactory.getDAO();
+		OrdineProdottoDAO odp= OrdineProdottoDAOFactory.getDAO();
 		Prodotto p = new Prodotto();
 		ProdottoDAO pd = ProdottoDAOFactory.getDAO();
-		int cumulativo_ordine = od.getLastOrdine().getCumulativoOrdine();
+		int cumulativo_ordine = od.getLastOrdine().getCumulativoOrdine()+1;
 		//logger.info("Data : " +d);
 		for (ProdottoPerCarrello ppc : carrello) {
 			int nod=od.getLastOrdine().getIdordine();
@@ -66,6 +69,7 @@ public class Pagamento extends ActionSupport implements ServletResponseAware, Se
 			o.setIdordine(nod+1);
 			o.setCliente(c);
 			o.setData(d);
+			o.setQuantita(ppc.getQuantRichiesta());
 			o.setCumulativoOrdine(cumulativo_ordine);
 			OrdineProdottoId id1 = new OrdineProdottoId(o.getIdordine(), ppc.getP().getIdprodotto());
 			logger.info("Op : " +id1.toString());
@@ -75,6 +79,7 @@ public class Pagamento extends ActionSupport implements ServletResponseAware, Se
 			p.setQuantita(p.getQuantita() - ppc.getQuantRichiesta());
 			od.inserisciOrdine(o);
 			pd.aggiornaProdotto(p);
+			odp.inserisciOrdineProdotto(op);
 			logger.info("Aggiornato prodotto : " +ppc.getP().getNome());
 		}
 		return SUCCESS;
